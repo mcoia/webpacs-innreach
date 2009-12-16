@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Test Search Form</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF">
+<form target=_parent action=/search/w?golf method=GET>
+  <select name=searchtype >
+    <option value=W SELECTED> KEYWORD 
+    <option value=d> SUBJECT 
+    <option value=m> MEDICAL SUBJECT 
+    <option value=t> TITLE 
+    <option value=a> AUTHOR 
+    <option value=U> ADDED KEYWORD 
+    <option value=s> PERIODICAL 
+    <option value=g> GOVT DOC # 
+    <option value=i> ISN 
+    <option value=c> LC CALL NO 
+  </select>
+
+    <input type=TEXT name=searcharg 
+size=30 maxlength=75
+value="golf">
+
+    <input type="SUBMIT" name=SUBMIT value="Search" >
+</form>
+</body>
+</html>

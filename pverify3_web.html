@@ -1,0 +1,181 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<TITLE>mobius Union Catalog</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="http://mobius.missouri.edu/screens/innreach_styles.css">
+</HEAD>
+
+<BODY bgcolor="#ffffff" text="#000000" vlink="#0000ff" alink="#0000ff">
+
+<SCRIPT language="JavaScript">
+<!-- hide from older browsers
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=400,height=196,resizable=yes,scrollbars=yes');
+return false;
+}
+//-->
+</SCRIPT>
+<!--{toplogo}-->
+
+
+<SCRIPT language="JavaScript">
+<!-- hide from older browsers
+function popup(mylink, windowname)
+{
+if (! window.focus)return true;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=725,height=400,resizable=yes,scrollbars=yes');
+return false;
+}
+//-->
+</SCRIPT>
+
+<!--Begin the main content table-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top" class="pageMainArea">
+<td class="pageMainArea">&nbsp;
+<!--Beginning main page content-->
+<span class="pageMainAreaHeader"></span>
+<BR>
+<!--{reqmsg}-->
+<BR>
+<form name="patform" method="POST">
+<!--{iferrmsg}-->
+<span class="errorMessage">
+<!--{iferrmsgisPIN}-->
+<!--{newpinmsg}-->
+<!--{else}-->
+<!--{errmsg}-->
+<!--{xif}-->
+<!--{xif}-->
+</span>
+<!--{ifrequestmoney}-->
+<span class="msg">
+<!--{requestmoney}-->
+</span>
+<!--{xif}-->
+
+
+<!--{extpatform}-->
+
+
+<!-- used if external patron authentication is unavailable -->
+<!--{enterinfo}-->
+<table width="100%">
+<!--{ifneedpatronname}-->
+<tr><td width="30%"></td><td><span class="helpNote">
+<!--{nameexample}-->
+</span></td></tr>
+<tr>
+<td>
+<!--{nameprompt}-->
+</td>
+<td>
+<!--{name}-->
+</td>
+</tr>
+<!--{xif}-->
+<!--{ifneedpatronverify}-->
+<tr><td></td><td><span class="helpNote">
+<!--{barcodeexample}-->
+</span></td></tr>
+<tr><td>
+<!--{barcodeprompt}-->
+</td><td>
+<!--{barcode}-->
+</td></tr>
+<!--{ifneedspin}-->
+<!--{iferrmsgisPIN}-->
+<tr><td colspan="2">
+<!--{newpinmsg}-->
+</td></tr><tr><td>
+<!--{pin1prompt}-->
+</td><td>
+<!--{pin1}-->
+</td></tr><tr><td>
+<!--{pin2prompt}-->
+</td><td>
+<!--{pin2}-->
+</td></tr>
+<!--{else}-->
+<tr><td></td><td><span class="helpNote">
+<!--{pininstructions}-->
+</span></td></tr><tr><td>
+<!--{pinprompt}-->
+</td><td>
+<!--{pin}-->
+</td></tr>
+<!--{xif}-->
+<!--{xif}-->
+<!--{xif}-->
+</table>
+<p />
+<!--{xif}-->
+
+<a href="/screens/ReqInfo.html" style="text-decoration: none;" onClick="return popup(this,'req_id_format')" target="_blank">
+<img src="/screens/id_help.gif" alt="Click for ID Help" border="0"/></a>
+<br>
+<!--{ifcampus}-->
+<!--{campus}-->
+<!--{else}-->
+<!--{holdshelfmenu}-->
+<!--{xif}-->
+<p />&nbsp;&nbsp;
+<!--{ifreqinst}-->
+<!--{reqinst}-->
+<br />
+<br />
+<!--{inst}-->
+<br />
+<!--{xif}-->
+<!--{ifneedNNA}-->
+<!--{needbyprompt}-->
+<!--{needby}-->
+<br /><br />
+<!--{xif}-->
+<!--{submit}-->
+</form>
+<div align="left">
+<!--{startover}-->
+</div> 
+
+<!--End of main page content-->
+</td>
+</tr>
+</table>
+<!--End the main content table-->
+
+<center>
+  <table border=0 width="570" cellpadding="0" cellspacing="0">
+    <tr align="left" valign="top" class="ft-bar"> 
+      <td class="ft-bar"><img src="/screens/shim.gif" width="1" height="1" alt=""></td>
+    </tr>
+  </table>
+</center>
+<center>
+  <table border=0>
+    <tr> 
+      <td align=center><a href="/screens/libinfo.html" style="text-decoration: none;">Members</a></td>
+      <td>&nbsp;|&nbsp;</td>
+      <td align=center><a href="/screens/about_mobius.html" style="text-decoration: none;">About MOBIUS</a></td>
+    </tr>
+  </table>
+</center>
+</BODY>
+</HTML>
+
+</body>
+</html>
+

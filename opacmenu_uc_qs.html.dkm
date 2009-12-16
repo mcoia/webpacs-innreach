@@ -1,0 +1,99 @@
+<html><head>
+<title>MOBIUS Union Catalog</title>
+</head>
+
+<body bgcolor=#ffffff link=#0000ff vlink=#0000ff>
+
+
+<center>
+  <form name="SearchForm" target="_parent" action="/search/w?form" method="get">
+    <table width=570 border=0 cellpadding="0" cellspacing="0">
+      <tr> 
+        <td colspan="5"><img src="/screens/mobius_color_small.gif" width="350" height="97"></td>
+      </tr>
+      <tr> 
+        <td colspan="5" height="4"></td>
+      </tr>
+      <tr> 
+        <td colspan="5"><img src="/screens/cat_bar.gif" alt="MOBIUS Union Catalog" width="570" height="14"></td>
+      </tr>
+      <tr class="ft-bar" valign="top"> 
+        <td valign="bottom" align="left"></td>
+        <td valign="bottom" align="left"><b><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="-2"><b>Search 
+          by:</b></font><br>
+          <select name="searchtype">
+            <option value="w">KeyWords</option>
+            <option value="d">Subject</option>
+            <option value="m">Medical Subject</option>
+            <option value="t">Exact Title</option>
+            <option value="a">Author</option>
+            <option value="U">TOC</option>
+            <option value="s">Periodical</option>
+            <option value="g">Govt Doc #</option>
+            <option value="i">ISN </option>
+            <option value="c">LC Call #</option>
+          </select>
+          </b></td>
+        <td valign="bottom" align="left"><b><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif" size="-2">Search 
+          for:</font><br>
+          <input type="TEXT" name="searcharg" maxlength="75" size="45">
+          </b></td>
+        <td valign="bottom" align="right"><b> 
+          <input type="SUBMIT" name=SUBMIT value="Search" >
+          </b></td>
+        <td valign="bottom" align="right"></td>
+      </tr>
+      <tr class="ft-bar" valign="top"> 
+        <td valign="bottom" height="4" align="left"></td>
+        <td valign="bottom" height="4" align="left"></td>
+        <td valign="bottom" height="4" align="left"></td>
+        <td valign="bottom" align="right" height="4"></td>
+        <td valign="bottom" align="right" height="4"></td>
+      </tr>
+    </table>
+
+    
+  </form>
+</center>
+<script language="JavaScript">
+<!-- hide JavaScript
+document.SearchForm.searcharg.focus();
+document.SearchForm.searcharg.select();
+//-->
+</script>
+
+
+
+<center>
+  <table border=0 width="570" cellpadding="0" cellspacing="0">
+    <tr align="left" valign="top"> 
+      <td> 
+        <ul>
+          <li><a href="/search/w">KeyWords</a> 
+          <li><a href="/search/d">Subjects (Library of Congress)</a> 
+          <li><a href="/search/m">Medical Subjects (MESH)</a> 
+          <li><a href="/search/t">Exact Title</a> 
+          <li><a href="/search/a">Author</a> 
+        </ul>
+      </td>
+      <td> 
+        <ul>
+          <li><a href="/search/q">Author and Title</a> 
+          <li><a href="/search/U">Tables of Contents and Notes</a> 
+          <li><a href="/search/s">Journal, Magazine and Newspaper Titles</a> 
+          <li><a href="/search/g">Government Document Number</a> 
+          <li><a href="/search/i">ISBN, ISSN, Music, etc. Number</a> 
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <!-- #BeginLibraryItem "/Library/botlogo.lbi" --><center>
+  <table border=0 width="570" cellpadding="0" cellspacing="0">
+    <tr align="left" valign="top" class="ft-bar"> 
+      <td class="ft-bar"><img src="/screens/shim.gif" width="1" height="1"></td></tr>
+  </table></center>
+<!--{botlogo}-->
+
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+marcfile.c
+110.19
+03476 03476 54306 54306 zzz8827.part2
+set noai
+3134a
+			substr++;
+			}
+		else if (*substr == '+')
+			{
+			sprintf(temp, "%02d", ++incremented_counter);
+			p1 = temp;
+			substr++;
+			}
+		else if (*substr == '=')
+			{
+			sprintf(temp, "%02d", incremented_counter);
+			p1 = temp;
+.
+3097a
+static char temp[3];
+.
+2451a
+	incremented_counter = 0;
+.
+110a
+static	int	incremented_counter = 0;
+.
+1c
+static char VERSION[] = "110@(#) marcfile.c 110.21@(#) 9/18/97 13:59:46";
+.
+w
