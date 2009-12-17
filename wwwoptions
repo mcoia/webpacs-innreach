@@ -1,33 +1,3 @@
-#***************************************************************************
-#***************************************************************************
-#  PLEASE DO NOT EDIT THE WWWOPTIONS WITHOUT CHECKING WITH FOLKS WHO WORK 
-#  ON THE WEBPACS, OR YOUR CHANGES WILL BE OVERWRITTEN!!!!!!!!!!!!  040617
-#***************************************************************************
-#***************************************************************************
-#########################################################################
-#
-# 	WWWOptions file for: MOBI 
-#             Created: 12/14/2000 Updated: 0809/22 lee
-#
-##########################################################################
-# 
-# Revision Log: Please note your revision in this log, even if it is minor.
-#
-# BEGIN ALL LINES WITH A #, which is the comment character.
-#
-# Date        Your Initials - Change Description - Remedy Ticket Number
-#?????????
-#Changes log.
-#- Combined two BROWSE_t commands into a single command - cag, 031229
-#     (MCO-007725).
-#Changed image for MATTYPE@ to MATTTYPE2, and MATTTYPEl from artwork
-#to book - jst, 040102 (MCO-008128)
-# updated location code entries via Companion -hjp 040126
-# Updated TIMEOUT to 1800; MCO-012821 ahd.  080318
-# Updated DROP_DOWN=Ytdmhasgic to DROP_DOWN=Ytasdmhgioce MCO-012822 ahd
-# Added SORT_BROWSE=t:Title|a:Author|r:Reverse Year|c:Year|m:Material Type MCO-013541 ahd
-############################################################################
-
 #   ADVANCED SEARCHING OPTIONS
 ASSEARCH=3
 AVS_TAG=XYZ
