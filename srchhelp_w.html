@@ -1,183 +1,44 @@
-<HTML><!-- #BeginTemplate "/Templates/srchhelp.dwt" -->
-
-<HEAD>
-
-<META HTTP-EQUIV="Refresh" CONTENT="90;URL=/search/">
-
-<!-- #BeginEditable "doctitle" --> 
-
-<TITLE>INNOPAC Word Search </TITLE>
-
-<!-- #EndEditable --> 
-
-</HEAD>
-
-<BODY BGCOLOR="#ffffff" link="#0000FF" vlink="#0000FF" onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<!-- #BeginLibraryItem "/Library/toplogo.lbi" --><SCRIPT language="JavaScript">
-
-<!-- hide from older browsers
-
-function popup(mylink, windowname)
-
-{
-
-if (! window.focus)return true;
-
-var href;
-
-if (typeof(mylink) == 'string')
-
-   href=mylink;
-
-else
-
-   href=mylink.href;
-
-window.open(href, windowname, 'width=400,height=196,resizable=yes,scrollbars=yes');
-
-return false;
-
-}
-
-//-->
-
-</SCRIPT>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onLoad="document.forms[0].elements[1].focus();">
 <!--{toplogo}-->
-
-<!-- #EndLibraryItem --> 
-
-<center>
-
-<!-- #BeginEditable "body" --> 
-
-  <center>
-
-  </center>
-
-  <p> 
-
-  <div align="center"> Type the <B>WORD(S)</B> you want, then press <b>&lt;Enter&gt;</b> 
-
-    or click <b>Submit Search</b><br>
-
-    <FORM METHOD=GET>
-
-      <INPUT TYPE=TEXT NAME=SEARCH MAXLENGTH=64 SIZE=48 ALIGN=CENTER>
-
-      <br>
-
-      <INPUT TYPE=SUBMIT VALUE="Submit Search">
-
-    </FORM>
-
-    <A HREF="/search/"><IMG SRC="/screens/newsrch.gif" BORDER=0 ALT="[START OVER]"></A> 
-
-    <P> INNOPAC will search the library's records, looking for the words that 
-
-      you type in various fields,<br>
-
-      such as title, contents notes, corporate names, etc. 
-
-    <p> You may use the Boolean operators <b>AND, OR and NOT</b> <br>
-
-      You may also &quot;truncate&quot; words with an asterisk 
-
-    <p> For example 
-
-    <UL>
-
-      <TABLE>
-
-        <TR> 
-
-          <TD> 
-
-            <LI>Soviet <b>and</b> Russian
-
-          </TD>
-
-        </TR>
-
-        <TR> 
-
-          <TD> 
-
-            <LI>Soviet Union <b>or</b> Russia
-
-          </TD>
-
-        </TR>
-
-        <TR> 
-
-          <TD> 
-
-            <LI>Mexico <b>not</b> New
-
-          </TD>
-
-        </TR>
-
-        <TR> 
-
-          <TD> 
-
-            <LI>(games <b>or</b> toys) and (child* <b>or</b> infant*)
-
-          </TD>
-
-        </TR>
-
-      </TABLE>
-
-    </UL>
-
-  </div>
-
-  <!-- #EndEditable -->
-
-</center>
-
-<p>&nbsp;</p>
-
-  <!-- #BeginLibraryItem "/Library/botlogo.lbi" --><center>
-
-  <table border=0 width="570" cellpadding="0" cellspacing="0">
-
-    <tr align="left" valign="top" class="ft-bar"> 
-
-      <td class="ft-bar"><img src="/screens/shim.gif" width="1" height="1" alt=""></td>
-
-    </tr>
-
-  </table>
-
-</center>
-
-<center>
-
-  <table border=0>
-
-    <tr> 
-
-      <td align=center><a href="/screens/libinfo.html">Members</a></td>
-
-      <td>&nbsp;</td>
-
-      <td align=center><a href="/screens/about_mobius.html">About MOBIUS</a></td>
-
-    </tr>
-
-  </table>
-
-</center>
-
-<!-- #EndLibraryItem --> 
-
-  <p>&nbsp;</p>
-
-</BODY>
-
-<!-- #EndTemplate --></HTML>
-
+<h2 class="srchhelpHeader">Word Search</h2>
+<div class="srchhelpText">Type the word you want to find, then press the Enter key or click Submit.</div>
+<div class="tool">
+<form method="get" class="unpadded">
+<span class="magFive">
+<!--{submit}-->
+</span>
+<table border="0"  class="textFix">
+<tr>
+<td align="right">Search for:</td>
+<td>
+<!--{search}-->
+</td>
+</tr>
+</table>
+</form>
+</div>
+<div class="srchhelpText">The catalog will search the library's records, looking for the words that you type in various fields, such as title, contents notes, corporate names, etc.
+<ul class="unpadded srchhelpList">
+<li>You may use the Boolean operators <strong>AND</strong>, <strong>OR</strong> and <strong>NOT</strong></li>
+<li>You may also truncate words with an asterisk <strong>*</strong>
+<br />
+For example:
+<ul class="unpadded srchhelpList">
+<li>Soviet <strong>and</strong> Russian</li>
+<li>Soviet Union <strong>or</strong> Russia</li>
+<li>Mexico <strong>not</strong> New</li>
+<li>(games <strong>or</strong> toys) and (child<strong>*</strong> <strong>or</strong> infant<strong>*</strong>)</li>
+</ul>
+</li>
+</ul>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

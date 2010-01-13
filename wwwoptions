@@ -1,54 +1,391 @@
-#   ADVANCED SEARCHING OPTIONS
-ASSEARCH=3
-AVS_TAG=XYZ
+#<!-- Rel 2007 "Skyline" Example Set -->*/
+#<!-- This File Last Changed: 19 August 2008 -->*/
 
-#  AIRPAC OPTIONS - NOT USED
-#  ASRS OPTIONS - NOT USED 
-#  ARTICLEREACH OPTIONS - NOT USED
-#  BOOKING OPTIONS - NOT USED 
-#  CIRCA OPTIONS - NOT USED
-#  COMMUNITY MANAGER OPTIONS - NOT USED
-#  CONTENT LINKING AND OTHER RESOURCES - NOT USED 
-#  EBOOKS OPTIONS - NOT USED 
-#  ECOMMERCE OPTIONS - NOT USED 
-#  ELECTRONIC RESOURCES MANAGEMENT OPTIONS - NOT USED 
-#  FEATURED LISTS OPTIONS - NOT USED 
-#  FEEDS OPTIONS - NOT USED 
+#Directory:
+# General Display and Behavior
+# Staff
+# General and Phrase Searching
+# Advanced Searching
+# Search Results
+# Record Displays
+# Electronic Resource Management
+# Holdings
+# My Lists
+# Saving and Exporting
+# Requesting
+# Patron Record
+# My Millennium
+# Patron Ratings
+# Ecommerce
+# Bookings
+# ILL
+# INN-Reach
+# Media Management
+# Reserves
+# Featured Lists
+# Content Linking and Other Resources
+# WebBridge/Pathfinder Pro
+# Patron Feeds
+# Z39.50
+# Partner
+# AirPAC
+# Patron Registration
+# My Federated Search (Research Pro or MetaFind)
+# WebPAC Pro
+# Research Pro
+# Program Registration
 
-#  GENERAL DISPLAY AND BEHAVIOR OPTIONS
+
+# General Display and Behavior
+AVAILLIM=<span class="availLimMessage">Limit search to available items</span>|<span class="availLimMessage">Search results limited to available items</span>
+AVAILLIM_STATS=-,o
 BOTLOGO=@screens/botlogo.html
-#FORM_FOCUS
+BUT_CANCEL=/screens/cancel.gif
+BUT_CLOSEWINDOW=/screens/closewindow.gif" class="button
+BUT_CLOSEWN=/screens/closewn.gif" class="button
+BUT_RET2CAT=/screens/ret2cat.gif
+BUT_SUBMIT=/screens/submit.gif
+CUSTOM_MESSAGES=true
+FORM_FOCUS=true
+ICON_CANCEL=<img src="/screens/cancel.gif" alt="Cancel" border="0" class="button" />
+ICON_OK=<img src="/screens/ok.gif" class="button" border="0" alt="OK" />
+ICON_PREVPAGE=<img src="/screens/prevscrn.gif" class="button" border="0" alt="Previous" />
+ICON_SUBMIT=<button class="glossy">Submit</button>
+ICON_STARTOVER=<img src="/screens/start_over.gif" alt="Clear All"/>
+ICON_UPDATELIST=<img src="/screens/updatelist.gif" alt="Update List" border="0" class="button" />
+ICON_CLEAR_ALL=<img src="/screens/clear_all.gif" alt="Clear All"/>
+ICON_CLEAR_FORM=<img src="/screens/clear_form.gif" alt="Clear Form"/>
+ICON_DELETE_SELECTED=<img src="/screens/delete_selected.gif" alt="Delete Selected"/>
+ICON_SELECT_ALL=<img src="/screens/save_all.gif" alt="Save All"/>
+INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/bibdisplay.js"></script><script type="text/javascript" src="/screens/jquery.min.js"></script><!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" /><![endif]-->
+
+#RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0" border="0"||Elsewhere
+RIGHT_CELL_WIDTH=15|15
 SSLPORT=80:443:mobius.missouri.edu:mobius.umsystem.edu|2082:444|2083:2443
-STARTOVER=/search/
+STARTOVER=/search
 STATGROUP=800
-STYLESHEET=/screens/innreach_styles.css
-TIMEOUT=1800;URL=/search/
+STYLESHEET=/screens/styles.css
+#TIMEOUT=1800;URL=/search/
 TOPLOGO=@screens/toplogo.html
+#UPDATECIRC=true
 XSTARTOVER=/search/
 
-#  GENERAL AND PHRASE SEARCHING OPTIONS
+# Staff - NOT USED
+#BUT_PUBLIC=/screens/public.gif
+#BUT_STAFF=/screens/staff.gif
+#STAFF=199
+##STAFF_LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into staff mode at %s as %s</span>
+
+# General and Phrase Searching
+BUT_ANOTHER=/screens/another.gif
+BUT_NEWSRCH=/screens/startover.gif
+BUT_WORDSRCH=/screens/wordsrch.gif
 DROP_DOWN=Ytasdmhgioceljrpv
-FRAMEURL=0 
-KEYWORD_COLOR=Y|all|RED
+FRAMEURL=0
+IBROWSE_MAX=
+KEYWORD_COLOR=Y|all|red
+MULT_LIMITS=true
 NOSEARCH=nub
+OFFER_HISTORY=true
 
-#  HOMEBOUND OPTIONS - NOT USED  
-#  HOLDINGS OPTIONS - NOT USED
+# Advanced Searching
+AVS_MODIFY_TAG=X
+AVS_TAG=XYZ
+BUT_MODIFY=/screens/modify.gif
+BUT_SHOWSIM=/screens/showsim.gif
+ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;Most relevant titles&nbsp;
+ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;Highly relevant titles&nbsp;
+ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;Very relevant titles&nbsp;
+ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="Relevant">&nbsp;Relevant titles&nbsp;
+ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;Other relevant titles&nbsp;
+IMAGE_AVS1=/screens/relevance1.gif
+IMAGE_AVS2=/screens/relevance2.gif
+IMAGE_AVS3=/screens/relevance3.gif
+IMAGE_AVS4=/screens/relevance4.gif
+IMAGE_AVS5=/screens/relevance5.gif
+#ICON_AWS_BYRELEVANCE_LINK=
+#ICON_AWS_BYDATE_LINK=
+#ICON_AWS_BYTITLE_LINK=
+RELSEARCH=searchtool||<img src="/screens/relsearch.gif" class="button" border="0" alt="See Related Searches" />
 
-#   INN-REACH OPTIONS
+
+# Search Results
+AUTHMSG=<em>%u</em> -- See %w <strong>%a</strong> <span class="authPublicNote">%p</span>|%u -- See Also %w %a <span class="authPublicNote">%p</span>
+AUTHMSG_SR=athe later heading|bthe earlier heading|dthe full form of the heading|fa musical composition based on this work|gthe narrower term|hthe broader term
+BODYPARAM=bgcolor="#FFFFFF"
+BRIEF=A
+BROWSE_t=245/abhnp/0|240/afklmnopr/0|700/tmnr/0|970/t/0|/abhnpv/0
+BROWSE_HEADERS=Mark|Media
+BUT_BRIEF=/screens/brief.gif
+BUT_EXTENDED=/screens/extended.gif
+BUT_LIMAVAIL=/screens/limavail.gif
+BUT_LIMIT=/screens/modify.gif
+BUT_UNLIMAVAIL=/screens/unlimavail.gif
+DISPLAY_245=atd
+EXTENDED=1
+HEADING_LENGTH=100
+ICON_856LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px"/>Website
+ICON_962LINK=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px"/>Digital Image
+ICON_BOOKCART=<img src="/screens/bookcart.gif" alt="Book Cart" class="button" border="0" />
+ICON_BOOKCART_SAVED=<img src="/screens/bookcart_saved.gif" alt="In Book Cart" class="button" border="0" />
+ICON_FULLRECORD=<img src="/screens/viewfullrecord.gif" alt="View full record" class="button" border="0" width="36" height="25" /> See Full Record
+ICON_LOCATEINRESULTS=<img src="/screens/locateinresults.gif" alt="Locate in results" class="button" width="120" height="20" border="0" />
+ICON_PAGING_CAPTION=Result Page&nbsp;
+ICON_PAGING_NEXT=Next
+ICON_PAGING_PREV=Prev
+ICON_PROGRAM=<img src="/screens/program.gif" border="0" alt="Library Event">
+#ICON_RESOURCE=
+ICON_SAVEALLPAGE=<img src="/screens/saveallpage.gif" alt="Save all on page" class="button" width="120" height="20" border="0" />
+ICON_SAVEMARKED=<img src="/screens/savemarked.gif" alt="Save marked records" class="button" width="120" height="20" border="0" />
+IMAGE_MATTYPE-=/screens/media_book.gif
+IMAGE_MATTYPEa=/screens/media_book.gif
+IMAGE_MATTYPEb=/screens/media_book.gif
+IMAGE_MATTYPEc=/screens/media_music.gif
+IMAGE_MATTYPEd=/screens/media_music.gif
+IMAGE_MATTYPEe=/screens/media_cartographic_printed.gif
+IMAGE_MATTYPEf=/screens/media_cartographic_printed.gif
+IMAGE_MATTYPEg=/screens/media_projectedmedia.gif
+IMAGE_MATTYPEi=/screens/media_nonmusicalsound.gif
+IMAGE_MATTYPEj=/screens/media_musicalsound.gif
+IMAGE_MATTYPEk=/screens/media_2dartwork.gif
+IMAGE_MATTYPEl=/screens/media_2dartwork.gif
+IMAGE_MATTYPEm=/screens/media_computerfile.gif
+IMAGE_MATTYPEo=/screens/media_3dartwork.gif
+IMAGE_MATTYPEp=/screens/media_3dartwork.gif
+IMAGE_MATTYPEr=/screens/media_3dartwork.gif
+IMAGE_MATTYPEt=/screens/media_book.gif
+IMAGE_MATTYPEy=/screens/media_ebook.gif
+IMAGE_MATTYPEz=/screens/media_ebook.gif
+#INDEX_EXT=Xatdcoi
+INDEX_EXT=coi
+MEDIA=2
+NO_COPIES=Currently no copies available
+SORT_BROWSE=t:Title|a:Author|c:Year|r:Reverse Year|n:Call Number|m:Material Type
+SORT_MEDIA=@amcdji
+SUPPRESS_YEAR=False
+TABLEPARAM_BRIEFCIT=true|border="0" cellpadding="3" width="100%"
+TABLEPARAM_BROWSE=width="100%" cellpadding="2" cellspacing="0" border="0"|align="center" cellpadding="3" cellspacing="0"|width="100%" cellpadding="3" cellspacing="0" border="0"|cellpadding="2" cellspacing="0" border="0"
+
+# Record Displays
+BIB_TOC_HEADER=<strong>Table of Contents</strong>
+BUT_MARC_DISPLAY=/screens/marc_display.gif
+BUT_REGULAR_DISPLAY=/screens/regular_display.gif
+BUT_RTRNTB=/screens/rtrntb.gif
+DISPLAY_856=3z
+HOLDINGS_POS=atp
+HOTLINK=i^024,i^028,g^086
+ICON_BIB_HOLDINGS_ITEMS=View Copies
+#ICON_NEARBY=<img src="/screens/near_shelf.gif" alt="Nearby on shelf" border="0"/>
+ICON_BIB_PAGING_CAPTION=Result page:
+ICON_BIB_PAGING_NEXT=<img src="/screens/bib_paging_next.gif" class="button" border="0" alt="Next Record" />
+ICON_BIB_PAGING_PREV=<img src="/screens/bib_paging_prev.gif" class="button" border="0" alt="Previous Record" />
+ICON_RECORDLINK=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">Bookmark link for this record</a></div>
+#LINK856TEXT=Connect to
+MARC=yes
+#SHOWOREC=no_cdate
+TABLEPARAM_BIB=width="100%" cellpadding="2" cellspacing="0" border="0"|cellpadding="2" cellspacing="0" border="0" align="center"
+TABLEPARAM_BIB_DETAIL=width="100%" border="0" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_HOLDINGS=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_HOLDS=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_INFO=width="100%" border="0" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_ITEMS=width="100%" border="0" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_LINKS=width="100%" border="0" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_ORDER=width="100%" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_PAGER=border="0"
+TABLEPARAM_BIB_THUMBNAILS=align="center" cellspacing="1" cellpadding="2"
+TABLEPARAM_BIB_TOC=border="0" cellspacing="1"
+WEBPUBDEF=true
+
+# Electronic Resource Management - NOT USED
+#BIB_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx
+#BIB_LICENSE_FIELDS_BRIEF=
+#BIB_RESOURCE_CAPTION=<strong>This title is available electronically via:</strong>
+#BIB_RESOURCE_FIELDS=:VeT|:VeE|:Vek
+#BIB_RESOURCE_FIELDS_BRIEF=:VcY|:Vch|:VeE
+#BIB_RESOURCE_NUM_BRIEF=A
+#ICON_BIB_RESOURCE_DETAILS=<img src="/screens/bib_resource_details.gif" class="button" border="0" alt="Full Details" />
+#ICON_RESOURCE_RECORD=<img src="/screens/resource_record.gif" class="button" border="0" alt="About This Resource" />
+#ICON_VIEW_ADDITIONAL_ITEMS=<img src="/screens/view_additional_items.gif" border="0" alt="View Additional Items" />
+#RESOURCE_ADVISORY=k
+#RESOURCE_HOLDINGS_FIELDS=Title:VbT|Coverage:Vch|Full Text:VcY
+#RESOURCE_HOLDINGS_MAX=12
+#RESOURCE_LICENSE_FIELDS=Permitted:Vlw|Restricted:Vlx|Available to:Vlf|Access notes:Vla
+#TABLEPARAM_BIB_LICENSE=width="100%" border="0" cellpadding="2"
+#TABLEPARAM_BIB_RESOURCE=border="0" cellspacing="1" cellpadding="2"
+#TABLEPARAM_BIB_RESOURCE_BRIEF=border="0" cellspacing="1" cellpadding="2"
+#TABLEPARAM_RESOURCE_BIB=width="100%" border="0" cellpadding="2"
+#TABLEPARAM_RESOURCE_LICENSE=width="100%" border="0" cellpadding="2"
+#TABLEPARAM_RESOURCE_RESOURCE=width="100%" border="0" cellspacing="1" cellpadding="2"
+
+# Holdings - NOT USED
+#BUT_CARDFORM_BOX=/screens/cardform_box.gif
+#BUT_CARDFORM_LIN=/screens/cardform_lin.gif
+#CHECKIN_BGCOLOR=ARRIVED=#FFFFFF|EXPECTED=#FFFFFF|TO BIND/BOUND=#FFFFFF|LATE=#FFFFFF|OTHER=#FFFFFF
+#CHECKIN_FONTCOLOR=ARRIVED=GREEN|EXPECTED=BLACK|TO BIND/BOUND=RED|LATE=BLACK|OTHER=BLACK
+#CHECKIN_STATUS=ARRIVED=Here|EXPECTED=Coming soon|TO BIND/BOUND=Being bound|LATE=Late|Other=See staff
+#DISPLAY_CHECKIN_856=z
+#HOLDINGS_REQ=Deliver this article to me
+#SORT_ITEMS=true
+#SUPPRESS_CARD=UI
+
+# My Lists - NOT USED
+#MY_LISTS=n
+#ICON_MYLISTS=<img src="/screens/my_lists.gif" alt="My Lists" border="0" />
+#ICON_MYLISTS_EXPORT=<img src="/screens/mylists_export.gif" alt="Export My Lists" border="0" />
+#ICON_MYLISTS_REQUEST=<img src="/screens/request.gif" alt="Request" border="0" />
+#ICON_MYLISTS_REMOVE_DUPLICATES=<img src="/screens/mylist_remove_dup.gif" alt="Remove titles already in Reading History" border="0" />
+#ICON_MYLISTS_SAVE=<img src="/screens/mylists_save.gif" alt="Save to My Lists" border="0" />
+#ICON_MYLISTS_SAVE_TO_LIST=<img src="/screens/save_to_my_lists.gif" alt="Save to My Lists" border="0"/>
+#ICON_BACK_TO_MYLISTS=<img src="/screens/back_to_mylists.gif" alt="Back to Lists" border="0" />
+
+# Saving and Exporting
+BRIEF_EXPORT=c|a|t|p
+BUT_BIBEXPORT=/screens/bibexport.gif
+BUT_CLEAR_MARKED=/screens/clear_marked.gif
+BUT_EXPORT_MULTI=/screens/export_multi.gif
+BUT_EXPORT_VIEW_SAVES=/screens/view_saves.gif
+BUT_VIEW_SAVES=/screens/view_saves.gif
+EMAILOP=From the library catalog|exporter|
+EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
+XRECTYPE=boi
+
+# Requesting
+BIBREQUEST=f
+BUT_REQUEST=/screens/request.gif
+BUT_REQUEST_ALL=/screens/request_all.gif
+BUT_REQUEST_MULTI=/screens/request_multi.gif
+BUT_REQUEST_RESET=/screens/request_reset.gif
+BUT_REQUEST_SELECTED=/screens/request_selected.gif
+ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px"/>Request
+#REQFILLTIME=14|<br />Request available in approximately %d days|<br />Current estimated availability: approximately %d days|<br />This material may be immediately available
+REQUEST=<div style="padding-top:.5em"><img src="/screens/request.gif" alt="Request this item"/></div>|system
+REQUEST_ARTICLE_IFCHKIN=no
+#REQUEST_INSTRUCTION=Please enter any special instructions:
+#REQUEST_MULTI=Request All Items in Book Cart|system|ask
+
+# Patron Record
+BUT_PAT_CANCEL=/screens/cancel.gif
+BUT_PAT_CANCELALL=/screens/pat_cancelall.gif" class="button
+BUT_PAT_CANCELMARK=/screens/pat_cancelmark.gif
+#BUT_PAT_CHKOUTS=/screens/pat_chkouts.gif
+#BUT_PAT_FINES=/screens/pat_fines.gif
+#BUT_PAT_HOLDS=/screens/pat_holds.gif
+BUT_PAT_INFO=/screens/pat_info.gif
+BUT_PAT_MSGS=/screens/pat_msgs.gif
+BUT_PAT_PIN=/screens/pat_pin.gif
+BUT_PAT_RENEWALL=/screens/pat_renewall.gif
+BUT_PAT_RENEWMARK=/screens/pat_renewmark.gif
+BUT_PAT_SORTBYCHKOUT=/screens/pat_sortbychkout.gif
+BUT_PAT_SORTBYDUE=/screens/pat_sortbydue.gif" class="button
+BUT_PAT_SUBMIT=/screens/submit.gif
+BUT_PSTARTOVER=/screens/startover.gif" class="button
+#BUT_RET2PREC=/screens/ret2prec.gif
+BUT_UPDATE_HOLDS=/screens/updatelist.gif" class="button
+CHANGE_HOLD_LOC=true
+#FREEZE_HOLDS=true
+ICON_CLOSEWINDOW=<img src="/screens/closewindow.gif" class="button" border="0" alt="Close Window" />
+ICON_PAT_CANCELALL=<img src="/screens/pat_cancelall.gif" class="button" border="0" alt="Cancel All" />
+ICON_PAT_CANCELMARK=<img src="/screens/pat_cancelmark.gif" class="button" border="0" alt="Cancel Selected" />
+ICON_PIN_RESET=<img src="/screens/forgot_your_pin.gif" alt="Forget Your PIN?" border="0"/>
+ICON_SORTPUDATE=<img src="/screens/sortpudate.gif" class="button" border="0" alt="Sort by Pickup" />
+ICON_SORTREQDATE=<img src="/screens/sortreqdate.gif" class="button" border="0" alt="Sort by Request" />
+MIN_PIN_LENGTH=6
+#MODIFY_PFLDS=z
+#MODIFY_PFLDS=ahtpzHx
+MY_WEBPAC=false,0,0-255
+NEWPIN_MSG=Please enter a Personal Identification Number (PIN)
+PATRON_FIELDS=n/a|a/a|t/a|F/43
+#Note that in the PATRON_MSG web option you should replace z with the field tag used on your system for messages.
+#PATRON_MSG=z|Message from the library
+#PATRON_NOTICES=apz
+#PIN_ALPHA_NUM=true
+#PIN_NUM_ONLY=false
+#PIN_RESET=true
+#PIN_RESET_EMAIL=Request to reset your library PIN|INSERT LIBRARY FROM EMAIL HERE|INSERT LIBRARY REPLY-TO EMAIL HERE
+PSTARTOVER=/search/
+#SEEPUDATE=true
+TABLEPARAM_PATDISP=border="0"|border="0"|border="0"
+TABLEPARAM_PATFUNC=border="0"|border="0"|border="0"
+TIMEOUT_POPUP=600
+
+# My Millennium - NOT USED
+#BUT_LOGOUT=/screens/logout.gif
+#BUT_PAT_PSEARCH_REMOVE=/screens/pat_psearch_remove.gif
+#BUT_PAT_PSEARCH_UPDATE=/screens/updatelist.gif" class="button
+#BUT_PAT_SEARCH=/screens/pat_search.gif
+#BUT_PLOGOUT=/screens/ret2prec.gif
+#BUT_PAT_GETPSAVEDRECS=/screens/pat_getpsavedrecs.gif
+#CIRC_HIST_LIMIT_TEXT=Limit to titles which aren't in my Reading History
+#HAS_ALTERNATE_ID=false
+#ALTERNATE_ID_EMAIL=username@replacesitename.com|Your login name has changed
+#ICON_PAT_DELETE_ALL=<img src="/screens/pat_delete_all.gif" class="button" border="0" alt="Delete All" />
+#ICON_PAT_DELETE_MARKED=<img src="/screens/pat_delete_marked.gif" class="button" border="0" alt="Delete Marked" />
+#ICON_READING_HISTORY=<img src="/screens/reading_history.gif" class="button" border="0" alt="My Reading History" />
+#ICON_READING_HISTORY_OPTIN=<img src="/screens/reading_history_optin.gif" class="button" border="0" alt="Opt In" />
+#ICON_READING_HISTORY_OPTOUT=<img src="/screens/reading_history_optout.gif" class="button" border="0" alt="Opt Out" />
+#ICON_READING_HISTORY_EXPORT=<img src="/screens/export_readinglist.gif" alt="Export My Reading List"/>
+#LOGGEDIN_MSG=<span class="loggedInMessage">You are logged into %s as %s</span><br />
+#NO_REVERIFY=acq,book,ill,media,mmf,req,wam,z39,mfrpro
+#PATRONVIEW_START=holds,ill,mylists,fines,chkouts,bookings,psearch,mffavs,readhist,patrate,patreview,programs,irnr
+#PREF_SEARCHES=25|Y
+#PREFTEXT=Save as preferred search
+#READING_HISTORY=optin|true|
+#TOPLOGO_LOGGEDIN=Y
+
+# Patron Ratings - NOT USED
+#ICON_PATRATE=<img src="/screens/patrate.gif" border="0" alt="My Ratings" class="button" />
+#ICON_RATE_GROUP=<img src="/screens/rate_group.gif" border="0" width="15" height="14" alt="Rated %d stars out of 5 based on %n ratings" title="Rated %d stars out of 5 based on %n ratings" />
+#ICON_RATE_MY=<img src="/screens/rate_my.gif" border="0" width="15" height="14" alt="You rated this %d stars out of 5" title="You rated this %d stars out of 5" />
+#ICON_RATE_NEED=<img src="/screens/rate_need.gif" border="0" width="15" height="14" alt="Rate this material!" title="Rate this material!" />
+
+#ICON_RATE_NO=<img src="/screens/rate_no.gif" border="0" width="75" height="14" alt="No one has rated this material" title="No one has rated this material" />
+#ICON_RATE_PAD=<img src="/screens/rate_pad.gif" border="0" width="15" height="14" alt="Rated %d stars out of 5 based on %n ratings" title="Rated %d stars out of 5 based on %n ratings" />
+#PATRATE=false
+
+# Ecommerce - NOT USED
+#CC_APPROVED=Your payment has been approved.
+#CC_DECLINED=Sorry. Your payment has been declined. Please confirm your information is entered correctly or pay at the library.
+#CC_EMAIL_RECEIPT=Receipt for payment to Your Library|circadm@example.org|onlinepayments@example.org
+#DONATE_NOTIFY=A new donation has been received|circadm@example.org|donormgmt@example.org
+#ICON_PAY=<img src="/screens/pay.gif" class="button" border="0" alt="Pay Online" />
+#ICON_PAY_CLEAR_ALL=<img src="/screens/pay_clear_all.gif" class="button" border="0" alt="Clear All" />
+#ICON_PAY_SELECT_ALL=<img src="/screens/pay_select_all.gif" class="button" border="0" alt="Select All" />
+#ICON_PRINT=<img src="/screens/print.gif" class="button" border="0" alt="Print" />
+#MINDONATE=1000|Donations must be at least $10.00 to cover processing costs. Thank you.
+#PAYAMTS=500|Please visit the library to pay this amount|00
+
+# Bookings - NOT USED
+#BOOKINGS=no|true|true|false
+#BOOKINGS_DAY_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">X</span> hours. No items available on <span id="unavailable">grayed out</span> hours.</span>
+#BOOKINGS_MONTH_LEGEND=<span class="bookingsLegend">Library closed on <span id="closed">X</span> days. No items available on <span id="unavailable">grayed out</span> days.</span>
+#BOOKINGS_REPEAT=true
+#BUT_PAT_BOOKING=/screens/pat_booking.gif
+#ICON_BOOKINGS_HEADER=<span class="bibBookingsHeader">Book This Material</span>
+#ICON_DAILYCAL=View Daily Calendar
+#ICON_HOURLYCAL=View Hourly Calendar
+#ICON_NEXTCAL=Next
+#ICON_PREVCAL=Previous
+
+# ILL - NOT USED
+#BUT_ILL_CANCEL=/screens/ill_cancel.gif
+#BUT_ILL_FORM=/screens/ill_form.gif
+#BUT_ILL_HOME=/screens/ill_home.gif
+#BUT_PAT_ILL=/screens/pat_ill.gif
+#ILL_CONF_EMAIL_SUBJECT=Library notification of Inter-library Loan request
+#ILL_HOME=/screens/ill.html
+
+# INN-Reach
+IR_PLACEMENT=1
 CONSORTIUM_HOLDINGS=0
-#INNREACH
-INSTITUTIONLABEL=With which <a href="/screens/help_clusters_institutions.html"
- onClick="return popup(this,'find_cluster_popup')" target="_blank" 
- style="text-decoration: underline;">
- cluster</a> are you affiliated?
+INSTITUTIONLABEL=What <a href="#clusters">
+cluster</a> do you belong to?
 IR_CENT_DISTLEARN=true|Pickup Cluster
 IR_CENT_HOLD_CHECKIN=C|^|f|"
 IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;25|Electronic Link;14|Call Number and Serial Holdings;33|Request Status;17
 IR_CENT_HOLD_INST=^|U||
 #IR_CENT_HOLD_INST_VARFLD
 IR_CENT_HOLD_ITEM=C|U|E|F
-#IR_CENT_HOLD_LIMITS=0|0
+IR_CENT_HOLD_LIMITS=0|0
 IR_CENT_HOLD_ORDER=C| |^|F
 IR_CENT_HOLD_TABLEPARAM=BORDER=1 bordercolor="#cccccc" cellspacing=0 cellpadding=2 class="browselist" bgcolor=#f5f5f5
 IR_CENT_INST_TABLEPARAM=t|BORDER=1 bordercolor="#cccccc" cellspacing=0 cellpadding=2 class="browselist"
@@ -61,575 +398,136 @@ IR_NOREAUTH=T
 #IRMARCDISP
 TIMEOUT_IRNOREAUTH=600
 
-#  INTER-LIBRARY LOAN OPTIONS - NOT USED
-#  LANGUAGE HANDLING OPTIONS - NOT USED 
-#  MEDIA MANAGEMENT OPTIONS - NOT USED 
-#  MY LISTS OPTIONS - NOT USED
-#  MY METAFIND DATABASES OPTIONS - NOT USED 
-#  MY MILLENNIUM OPTIONS - NOT USED 
-#  PARTNER OPTIONS - NOT USED 
-#  PATRON FEEDS OPTIONS - NOT USED
-#  PATRON MATERIALS RATINGS OPTIONS - NOT USED 
+# Media Management - NOT USED
+#BUT_RET2CRS=/screens/ret2crs.gif
+#ERESERVE=[0123456789]
+#IMAGE_PRINT=yes
+#IMAGE_SAVE=yes
 
-#   PATRON RECORD OPTIONS
-PSTARTOVER=/search/
+# Reserves - NOT USED
+#RSRV_FORMAT=true
+#RSRV_HEADER=Materials for this Course
+#RSRV_HEADER=Featured Titles This Month
+#TABLEPARAM_RSRV_BIBS=width="100%" border="0" cellpadding="3" cellspacing="0"
 
-#  PATRON REVIEW OPTIONS - NOT USED
-#  PROGRAM DISPLAY OPTIONS - NOT USED
+# Featured Lists - NOT USED
+#BUT_PREVSCRN=/screens/prevscrn.gif
+#BUT_RET2FEAT=/screens/ret2feat.gif
+#FEATURED_LIST=01,02,03|FEATURED LISTS|CATEGORY|# of Titles
 
-#   RECORD DISPLAY OPTIONS
-DISPLAY_856=3z
-HOLDINGS_POS=atp
-HOTLINK=i^024,i^028,g^086
-#LINK856TEXT=Click "Display Holdings" for additional links
-MARC=yes
-#RECORDFRAME=22,53,25
-TABLEPARAM_BIB=BORDER=0 width="100%"|BORDER=0
-#TABLEPARAM_BIB_DETAIL
-#TABLEPARAM_BIB_HOLDINGS
-#TABLEPARAM_BIB_HOLDS
-#TABLEPARAM_BIB_INFO
-#TABLEPARAM_BIB_ITEMS
-#TABLEPARAM_BIB_LINKS
-#TABLEPARAM_BIB_ORDER
-#TABLEPARAM_BIB_PAGER
-#TABLEPARAM_BIB_THUMBNAILS
-WEBPUBDEF=true
+# Content Linking and Other Resources - NOT USED
+#BIBIMAGE=http://contentcafe2b.btol.com/ContentCafe/Jacket.aspx?UserID=PUTACCOUNTHERE&Password=PUTACCOUNTHERE&Return=T&Type=S&Value=%s&erroroverride=1|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&Password=PUTACCOUNTHERE&ItemKey=%s&Options=Y
+#BIBIMAGE_TEXT=Book Cover
+#BUT_ENCYCPD=/screens/encycpd.gif
+#BUT_FULL_TEXT=/screens/full_text.gif
+#WEBADDRESS=http://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&field-keywords=%s|I|http://www.amazon.com/gp/search/ref=sr_adv_b/?field-isbn=%s|<img src="/screens/moreinfo.gif" border="0" alt="More Information" />|<img src="/screens/moreinfo.gif" border="0" alt="More Information" />|20
+#WEBADDRESS=|I|http://contentcafe2.btol.com/ContentCafeClient/ContentCafe.aspx?UserID=PUTACCOUNTHERE&Password=PUTACCOUNTHERE&ItemKey=%s&Options=N||<IMG SRC="/screens/moreinfo.gif"border="0">
 
-#   REFERENCE DATABASE OPTIONS - NOT USED
+# WebBridge/Pathfinder Pro  - NOT USED
+#BUT_CLOSEFRAME=/screens/closeframe.gif
+#BUT_RESOURCELINK=/screens/resourcelink.gif
+#BUT_RET2RESOURCE=/screens/ret2resource.gif
+#RESLINK=bibresourcetop|browseresourcetop||
+#WBHEADERTEXT=The following resources may provide additional information about<br />#HEADER#
 
-#   REQUESTING OPTIONS
-REQUEST=REQUEST THIS ITEM|system
-REQUEST_MULTI=BUT_REQUEST|system|ask|N
-#REQUEST_INSTRUCTION=Any Special Instructions?
+# Patron Feeds - NOT USED
+#RSS_MIN_TTL=10
+#ICON_PATFEED=<img src="/screens/patfeed.gif" alt="My Record Feeds" border="0" />
+#ICON_PATFEED=My Record Feeds
+#PATFEED_CONFIG=Your Library Record News|Follow links to library record for full details.
+#PATFEED_FINES_INCURRED_RECENTLY=You have new fines or fees
+#PATFEED_HOLDS_READY=Your materials are ready to be picked up
+#PATFEED_IMAGE=/screens/rss.gif|Subscribe to a feed of your library record.|88|31
+#PATFEED_ITEMS_BOOKED_TOMORROW=Materials booked tomorrow
+#PATFEED_ITEMS_DUE_SOON=Materials due soon
+#PATFEED_ITEMS_DUE_TODAY=Materials due today
+#PATFEED_ITEMS_OVERDUE=Materials overdue
+#PATFEED_ITEMS_RECALLED=Materials recalled
+#PATFEED_LIVE_BOOKMARKS=T
+#PATFEED_PROGRAM_SESSION_SOON=An event that you have registered for is coming up soon. Please log on to My Account for the event date, time and location.
+#PATFEED_PROGRAM_SESSION_TOMORROW=An event that you have registered for is coming up tomorrow. Please log on to My Account for the event date, time and location.
+#PATFEED_PROGRAM_SESSION_TODAY=An event that you have registered for is coming up today. Please log on to My Account for the event date, time and location.
 
-#   RESEARCH PRO OPTIONS
-#  RESERVES OPTIONS - NOT USED
+# Z39.50 - NOT USED
+#BUT_EMAIL=/screens/email.gif
+#BUT_NEXTREC=/screens/nextrec.gif
+#BUT_PREVREC=/screens/prevrec.gif
+#BUT_Z39_ANOTHER=/screens/z39_another.gif
+#BUT_Z39_REQUEST=/screens/request.gif
+#BUT_Z39SEARCH=/screens/z39search.gif
+#Z39BROADCAST=Z39.50 Broadcast Search:Please select the Z39.50 servers to which you want to send your search
+#Z39MULTI=500:100
 
-#   SAVING AND EXPORTING OPTIONS
-BRIEF_EXPORT=a|t:245|e|p|i:022
-EMAILOP=mobius Union Catalog Records|exporter
-EXPORT_SELECT_TABLE=Sendto:email,local,browser
-|Format:marc,full,procite,endnote,brief
+# Partner - NOT USED
+#BUT_RETHOME=/screens/rethome.gif
 
-#   SCOPING OPTIONS - NOT USED
+# AirPAC - NOT USED
+#AIRPAC_PORT=6060
 
-#   SEARCH RESULTS OPTIONS
-BODYPARAM=text="#000000" alink="#0000ff" vlink="#0000ff" bgcolor="#ffffff"
-BROWSE_a=111/andce
-BROWSE_d=611/andcvxyz
-BROWSE_t=245/abcnp/|130/adfghklmnoprs/|970/t/
-BROWSE_h=650/abcdevxyz
-BROWSE_m=650/abcdevxyz
-EXTENDED=1
-MEDIA=2
-SORT_BROWSE=t:Title|a:Author|r:Reverse Year|c:Year|m:Material Type
-TABLEPARAM_BRIEFCIT=true|border="1" bordercolor="#cccccc" cellpadding="3" width="100%"
-TABLEPARAM_BROWSE=BORDER=0 cellspacing=0 Width="100%"|BORDER=0 cellspacing=0|BORDER=1 bordercolor="#cccccc" cellspacing=0 cellpadding=2 width=100%|BORDER=0 cellspacing=0
+# Patron Registration - NOT USED
+#SELFREG_ERROR_EMAIL=circadm|example@example.org|Self Registration Error|example@example.org
+#SELFREG_INFO_EMAIL=circadm|example@example.org|New Patron Registration|example@example.org
+#SELFREG_NAME_ORDER=1|2|3|,
+#SELFREG_TEMPLATE=webpat
 
-#   SPELLCHECK OPTIONS
-SPELLCHECK=<span class="spellcheckTool">Did you mean %a?</span> %s
+# My Federated Search (Research Pro or MetaFind)- NOT USED
+#ICON_MFFAVS_HOME=&nbsp; &nbsp; <img src="/screens/mffavs_home.gif" alt="Go to Research Pro" border="0" />
+#ICON_MFFAVS_SEARCH=<img src="/screens/mffavs_search.gif" alt="Search Research Pro" border="0" />
+#ICON_PAT_MFFAVS=<img src="/screens/pat_mffavs.gif" alt="My Research Pro" border="0" />
+#MFFAVS_CONFIRM=Your group, %s, has been saved successfully.
+#MFFAVS_DENY=This function is not available. Please contact a librarian for further assistance.
+#MFFAVS_HOME=http://researchpro-[SITECODE]:[PORT]/iii/mfrpro-[SITECODE]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[ACCOUNT]&accountpassword=[ACCOUNT]&language=eng
+#MFFAVS_URL=true|[ACCOUNT]|[ACCOUNT]|/mfgo/http://researchpro-[SITECODE]:[PORT]/iii/mfrpro-[SITECODE]/search.do
+#MFFAVS_ALL=TRUE
 
-#   STAFF OPTIONS - NOT USED 
-#   WEB ACCESS MANAGEMENT OPTIONS - NOT USED 
-#   WEB WORKS QUICK EDIT OPTIONS - NOT USED
-#   WEB WORKS SELECTION LISTS OPTIONS - NOT USED
-#   WEBBRIDGE OPTIONS - NOT USED 
-
-#   WEBPAC PRO OPTIONS
+# WebPAC Pro
 BROWSE50=true
+ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more&nbsp;&raquo;</span>
+ICON_SPELLCHECK_SEARCH=<img src="/screens/go_but.gif" class="button" border="0" alt="Search">
+INNOVATIVE_FOOTER=center|a
+SPELLCHECK=<span class="spellcheckTool">Did you mean %a? %s </span>
 
-# Z39.50 OPTIONS - NOT USED
+# Research Pro - NOT USED
+#MF_BIBIMAGE=http://syndetics.com/index.aspx/?isbn=%s/SC.gif&client=PUTACCOUNTHERE&type=hw7|i|http://syndetics.com/index.aspx/?isbn=%s/SC.gif&client=PUTACCOUNTHERE&type=hw7
+#MF_BIBIMAGE=http://www.TheContentServer.com/bin/cntsvr.dll?GetImage&SysID=PUTACCOUNTHERE&CustID=PUTACCOUNTHERE&ISBN=%s&Type=S&Return=0|I|http://www.TheContentServer.com/bin/cntsvr.dll?GetImage&SysID=PUTACCOUNTHERE&CustID=PUTACCOUNTHERE&ISBN=%s&Type=L&Return=1
+#MF_BOTLOGO=@screens/MFbotlogo.html
+#MF_EMAIL_SENDER=researchpro@iii.com
+#MF_ICON_ADVANCED_SEARCH=<img src="/screens/advancedsearch.gif" alt="Advanced Search" border="0" class="button" />
+#MF_ICON_CLEAR=<img src="/screens/request_reset.gif" alt="Clear Form" border="0" class="button" />
+#MF_ICON_CLOSE=<img src="/screens/closewindow.gif" alt="Close Window" border="0" class="mfButton" />
+#MF_ICON_DESELECTALL=<img src="/screens/pay_clear_all.gif" class="button" border="0" alt="Clear All" />
+#MF_ICON_EMAIL=<img src="/screens/email.gif" class="mfButton" border="0" alt="Email" title="email"/>
+#MF_ICON_HELP=<img src="/screens/help.gif" alt="Help" class="button" border="0" />
+#MF_ICON_LOGOFFACCOUNT=<img src="/screens/logout.gif" alt="Logout" class="button" border="0" />
+#MF_ICON_MFFAVS_GROUP=<img src="/screens/mf_mfavs_group.gif" class="button" border="0" alt="Save Group">
+#MF_ICON_PATRON_REC=<img src="/screens/ret2prec.gif" class="button" border="0" alt="Return to Patron Record" />
+#MF_ICON_NEW_SEARCH=<img src="/screens/newsrch.gif" class="button" border="0" alt="New Search" />
+#MF_ICON_PRINT=<img src="/screens/print.gif" class="button" border="0" alt="Print" />
+#MF_ICON_RET2CAT=<img src="/screens/ret2cat.gif" class="button" border="0" alt="Back to Catalog" />
+#MF_ICON_SEARCH=<img src="/screens/search_research_pro.gif" alt="Search Research Pro" class="button" border="0"/>
+#MF_ICON_SELECTALL=<img src="/screens/pay_select_all.gif" class="button" border="0" alt="Select All" />
+#MF_ICON_SIMPLE_SEARCH=<img src="/screens/simplesearch.gif" alt="Simple Search" border="0" class="button" />
+#MF_ICON_STOP=/screens/stop.gif
+#MF_ICON_STOP=/screens/cancel.gif
+#MF_ICON_UPDATELIST=<img src="/screens/updatelist.gif" alt="Update List" border="0" />
+#MF_ICON_VIEWSAVED=<img src="/screens/view_saves.gif" alt="View Saved" class="mfButton" border="0"/>
+#MF_RESULTSVIEW=tabbed,View Results Tabbed By Resource|standard,View All Results Interfiled
+#MF_RETURN=true
+#MF_RETURN_URL=http://researchpro-[SITECODE]:[PORT]/iii/mfrpro-[SITECODE]/loadSearchPage.do?searchtype=simple&searchpage=simple&accountid=[ACCOUNT]&accountpassword=[ACCOUNT]
+#MF_SEARCHINDEX=Keywords,Keywords|:CREATOR,Author|:TITLE,Title|:SUBJECT,Subject
+#MF_STYLESHEET=/screens/styles_mf.css
+#MF_TOPLOGO=@screens/MFtoplogo.html
 
-#   GRAPHIC BUTTONS
-BUT_ANOTHER=/screens/b_another.gif
-BUT_BIBEXPORT=/screens/b_bibexport.gif
-BUT_BRIEF=/screens/b_brief.gif
-#BUT_CANCEL=
-BUT_CARDFORM_BOX=/screens/b_boxdisp.gif
-BUT_CARDFORM_LIN=/screens/b_linedisp.gif
-BUT_CLEAR_MARKED=/screens/b_clrsaves.gif
-#BUT_CLOSEFRAME=
-#BUT_CLOSEWINDOW=
-BUT_CLOSEWN=/screens/b_retncat.gif
-BUT_EMAIL=/screens/b_email.gif
-BUT_ENCYCPD=/screens/b_encycpd.gif
-BUT_EXPORT_MULTI=/screens/b_exportlist.gif
-BUT_EXPORT_VIEW_SAVES=/screens/b_exportlist.gif
-BUT_EXTENDED=/screens/b_extended.gif
-BUT_FULL_TEXT=/screens/b_fulltxt.gif
-#BUT_IR_HOLDINGS=
-#BUT_IR_REQUEST=
-BUT_LIMIT=/screens/b_limit.gif
-BUT_LIMAVAIL=/screens/b_limavail.gif
-BUT_MARC_DISPLAY=/screens/b_marcdisp.gif
-BUT_MODIFY=/screens/b_modify.gif
-BUT_NEWSRCH=/screens/b_newsrch.gif
-BUT_NEXTPAGE=/screens/b_nextpage.gif
-BUT_NEXTREC=/screens/b_nextrec.gif
-BUT_PREVPAGE=/screens/b_prevpage.gif
-BUT_PREVREC=/screens/b_prevrec.gif
-BUT_PREVSCRN=/screens/b_prevscrn.gif
-BUT_REGULAR_DISPLAY=/screens/b_regdisp.gif
-BUT_REQUEST=/screens/b_request.gif
-BUT_REQUEST_ALL=/screens/b_request_all.gif
-BUT_REQUEST_MULTI=/screens/b_request_multi.gif
-BUT_REQUEST_RESET=/screens/b_request_reset.gif
-BUT_REQUEST_SELECTED=/screens/b_request_selected.gif
-BUT_RET2CRS=/screens/b_ret2crs.gif
-BUT_RET2FEAT=/screens/b_ret2feat.gif
-BUT_RET2PREC=/screens/b_patronrecord.gif
-BUT_RETHOME=/screens/b_rethome.gif
-BUT_RTRNTB=/screens/b_rtrntb.gif
-BUT_SHOWSIM=/screens/b_showsimilar.gif
-#BUT_SUBMIT=
-BUT_UNLIMAVAIL=/screens/b_unlimavail.gif
-BUT_VIEW_SAVES=/screens/b_bookcart.gif
-BUT_WORDSRCH=/screens/b_wordsrch.gif
-
-#   ICONS  (COPIED FROM TRAIN FOR FUTURE USE)
-#ICON_856LINK=<IMG SRC="/screens/b_856link.gif" ALT="Electronic Resources" BORDER=0>
-#ICON_962LINK=<IMG SRC="/screens/b_962link.gif" ALT="Image" BORDER=0>
-#ICON_BIB_HOLDINGS_ITEMS=<img src="/screens/b_bib_holds_items.gif" alt="View Items" border="0" />
-#ICON_BIB_PAGING_CAPTION=Results Page:&nbsp;
-ICON_BIB_PAGING_NEXT=<img src="/screens/b_nextpage.gif" alt="Next"  border="0" />
-ICON_BIB_PAGING_PREV=<img src="/screens/b_prevpage.gif" alt="Previous"  border="0" />
-#ICON_BIB_RESOURCE_DETAILS=<img src"/screens/b_bib_resource_details.gif" border="0"  alt="Full Details" />
-ICON_BOOKCART=<IMG SRC="/screens/b_bookcart.gif" ALT="Add to Book Cart"  BORDER="0" />
-#ICON_BOOKINGS_HEADER=<IMG src="/screens/b_book_materials.gif" BORDER="0" ALT="Book this Material" />
-ICON_BOOKCART_SAVED=<IMG SRC="/screens/b_bookcart_saved.gif" ALT="Remove from Book Cart"  BORDER="0" />
-#ICON_CANCEL=<IMG src="/screens/b_cancel.gif" alt="Cancel"  border="0" />
-#ICON_CLEAR_FORM=<IMG src="/screens/b_clearform.gif" BORDER="0" ALT="Clear Form" />
-#ICON_CLOSEWINDOW=<img src="/screens/b_close_window.gif" alt="Close Window"  border="0" />
-#ICON_COMMUNITY_LOGOUT=<img src="/screens/b_logout.gif" alt="Logout" border="0" />
-#ICON_DAILYCAL=<IMG src="/screens/b_dailycal.gif" BORDER="0" ALT="View Daily Calendar" />
-#ICON_FULLRECORD=<IMG SRC="/screens/b_fulltxt.gif" ALT="See Full Record"  border="0" />
-#ICON_HOURLYCAL=<IMG src="/screens/b_hourlycal.gif" BORDER="0" ALT="View Hourly Calendar" />
-#ICON_IR_NOHIT
-#ICON_LOCATEINRESULTS=<img src="/screens/b_locateinresults.gif" alt="Locate in results"  border="0" />
-#ICON_NEXTCAL=<IMG src="/screens/b_nextcal.gif" BORDER="0" ALT="Next" />
-#ICON_OK=<IMG src="/screens/b_ok.gif" BORDER="0"  ALT="OK" />
-#ICON_PAGING_CAPTION=<SPAN CLASS="myPagingStyle">Result Page:</SPAN>
-#ICON_PAGING_NEXT=<IMG SRC="/screens/b_nextpage.gif" BORDER=0 ALT="Next Page" />
-#ICON_PAGING_PREV=<IMG SRC="/screens/b_prevpage.gif" BORDER=0 ALT="Previous Page" />
-#ICON_PAT_DELETE_ALL=<img src="/screens/b_pat_deleteall.gif"  border="0" alt="Delete All" />
-#ICON_PAT_DELETE_MARKED=<IMG SRC="=/screens/pat_cancel_selected.gif"BORDER="0"  ALT="Remove Marked Records" />
-#ICON_PREVCAL=<IMG scr="/screens/icon_prevcal.gif" BORDER="0" ALT="Previous" />
-ICON_PREVPAGE=<IMG scr="/screens/b_prevpage.gif" BORDER="0"  ALT="Previous Page" />
-#ICON_PRINT=<img src="/screens/b_print.gif" alt="print"  border="0" />
-#ICON_READING_HISTORY=<img src="/screens/b_reading_history.gif" alt="Reading History"  border="0" />
-#ICON_READING_HISTORY_OPTIN=<img src="/screens/b_optin.gif" alt="Opt In"  border="0" />
-#ICON_READING_HISTORY_OPTOUT=<img src="/screens/b_optout.gif" alt="Opt Out"  border="0" />
-#ICON_RECORDLINK=<div class="bibRecordLink"><a id="recordnum" href="%s" >Permanent URL for this record</a></div>
-#ICON_REGISTER=<img src="/screens/register.gif" alt="Register" border="0" />
-ICON_REL_GROUP_1=<img src="/screens/relevance5.gif" alt="">&nbsp;Most relevant titles&nbsp;
-ICON_REL_GROUP_2=<img src="/screens/relevance4.gif" alt="">&nbsp;Highly relevant titles&nbsp;
-ICON_REL_GROUP_3=<img src="/screens/relevance3.gif" alt="">&nbsp;Very relevant titles&nbsp;
-ICON_REL_GROUP_4=<img src="/screens/relevance2.gif" alt="">&nbsp;Relevant titles&nbsp;
-ICON_REL_GROUP_5=<img src="/screens/relevance1.gif" alt="">&nbsp;Other relevant titles&nbsp;
-ICON_REQUEST=<IMG SRC="/screens/b_request.gif" ALT="Request" BORDER="0" />
-#ICON_RESETSCOPE=<img src="/screens/resetscope.gif" alt="Reset Scope" border="0" />
-#ICON_RESOURCE_RECORD=<img src="/screens/b_resource_rec.gif" alt="Resource"  border="0" />
-#ICON_SAVEALLPAGE=<img src="/screens/b_saveallpage.gif" alt="Save all on page"  width="64" height="26" border="0" />
-#ICON_SAVEMARKED=<img src="/screens/b_save_selected.gif" alt="Save marked records"  width="64" height="26" border="0" />
-#ICON_SORTPUDATE=<img src="/screens/b_sortpudate.gif" alt="Sort by Holds Expiration Date"  border="0" />
-#ICON_SORTREQDATE=<img src="/screens/b_sortreqdate.gif" alt="Sort by Held Date"  border="0" />
-ICON_SPELLCHECK_MORE=<span class="spellcheckToolMore">more &raquo;</span>
-ICON_SPELLCHECK_SEARCH=<img src="/screens/go_but.gif" border="0" alt="Submit Search" >
-ICON_SUBMIT=<img src="/screens/b_submit.gif" BORDER="0"  ALT="Submit" />
-#ICON_UPDATELIST=<IMG scr="/screens/b_updatelist.gif" BORDER="0"  ALT="Remove Marked Records" />
-#ICON_VIEW_ADDITIONAL_ITEMS=<img src="/screens/b_view_additional_items.gif" border="0" alt="View Additional Items"/>
-#ICON_WWAPP_LOGOUT=<img src="/screens/b_logout.gif" alt="Logout" border="0" />
-
-#  MATERIAL TYPES
-IMAGE_AVS1=/screens/avsstar1.gif
-IMAGE_AVS2=/screens/avsstar2.gif
-IMAGE_AVS3=/screens/avsstar3.gif
-IMAGE_AVS4=/screens/avsstar4.gif
-IMAGE_AVS5=/screens/avsstar5.gif
-IMAGE_MATTYPE-=/screens/media_book.gif
-IMAGE_MATTYPEa=/screens/media_book.gif
-IMAGE_MATTYPEb=/screens/media_book.gif
-IMAGE_MATTYPEc=/screens/media_music.gif
-IMAGE_MATTYPEd=/screens/media_music.gif
-IMAGE_MATTYPEe=/screens/media_cartographic_printed.gif
-IMAGE_MATTYPEf=/screens/media_cartographic_printed.gif
-IMAGE_MATTYPEg=/screens/media_projectedmedia.gif
-IMAGE_MATTYPEi=/screens/media_nonmusicalsound.gif
-IMAGE_MATTYPEj=/screens/media_musicalsound.gif
-IMAGE_MATTYPEk=/screens/media_2dartwork.gif
-IMAGE_MATTYPEl=/screens/media_book.gif
-IMAGE_MATTYPEm=/screens/media_computerfile.gif
-IMAGE_MATTYPEo=/screens/media_3dartwork.gif
-IMAGE_MATTYPEp=/screens/media_3dartwork.gif
-IMAGE_MATTYPEr=/screens/media_3dartwork.gif
-IMAGE_MATTYPEt=/screens/media_book.gif
-IMAGE_MATTYPEy=/screens/media_ebook.gif
-IMAGE_MATTYPE2=/screens/media_ebook.gif
-
-# LOCATION CODES
-LOC_2c*=/screens/loc_2c.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_2j*=/screens/loc_2j.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_2l*=/screens/loc_2l.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_2m*=/screens/loc_2m.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_2r*=/screens/loc_2r.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_2t*=/screens/loc_2t.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_2w*=/screens/loc_2w.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_7c*=/screens/loc_7c.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_7j*=/screens/loc_7j.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_7m*=/screens/loc_7m.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_7v*=/screens/loc_7v.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_8m*=/screens/loc_8m.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_8v*=/screens/loc_8v.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_a=/screens/loc_a.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_a1*=/screens/loc_a1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_aa*=/screens/loc_aa.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ab*=/screens/loc_ab.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ac*=/screens/loc_ac.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ad*=/screens/loc_ad.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ae*=/screens/loc_ae.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_af*=/screens/loc_af.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ag*=/screens/loc_ag.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ah*=/screens/loc_ah.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_aj*=/screens/loc_aj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_al*=/screens/loc_al.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_am*=/screens/loc_am.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_an*=/screens/loc_an.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ap*=/screens/loc_ap.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_aq*=/screens/loc_aq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ar*=/screens/loc_ar.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_as*=/screens/loc_as.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_at*=/screens/loc_at.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_au*=/screens/loc_au.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_av*=/screens/loc_av.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_aw*=/screens/loc_aw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ay*=/screens/loc_ay.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_az*=/screens/loc_az.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_b=/screens/loc_b.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_b1*=/screens/loc_b1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ba*=/screens/loc_ba.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bb*=/screens/loc_bb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bc*=/screens/loc_bc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bd*=/screens/loc_bd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_be*=/screens/loc_be.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bf*=/screens/loc_bf.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bg*=/screens/loc_bg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bh*=/screens/loc_bh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bi*=/screens/loc_bi.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bj*=/screens/loc_bj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bk*=/screens/loc_bk.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bl*=/screens/loc_bl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bm*=/screens/loc_bm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bn*=/screens/loc_bn.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bo*=/screens/loc_bo.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bp*=/screens/loc_bp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bq*=/screens/loc_bq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_br*=/screens/loc_br.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bs*=/screens/loc_bs.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bt*=/screens/loc_bt.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bu*=/screens/loc_bu.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bv*=/screens/loc_bv.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_bw*=/screens/loc_bw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_by*=/screens/loc_by.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_c=/screens/loc_c.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_c0*=/screens/loc_c0.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_c1*=/screens/loc_c1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ca*=/screens/loc_ca.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cb*=/screens/loc_cb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cc*=/screens/loc_cc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cd*=/screens/loc_cd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ce*=/screens/loc_ce.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cf*=/screens/loc_cf.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cg*=/screens/loc_cg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ch*=/screens/loc_ch.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ci*=/screens/loc_ci.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cj*=/screens/loc_cj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ck*=/screens/loc_ck.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cl*=/screens/loc_cl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cm*=/screens/loc_cm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cn*=/screens/loc_cn.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_co*=/screens/loc_co.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cp*=/screens/loc_cp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cq*=/screens/loc_cq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cr*=/screens/loc_cr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cs*=/screens/loc_cs.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ct*=/screens/loc_ct.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cu*=/screens/loc_cu.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cv*=/screens/loc_cv.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cw*=/screens/loc_cw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cy*=/screens/loc_cy.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_cz*=/screens/loc_cz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_d=/screens/loc_d.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_da*=/screens/loc_da.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_db*=/screens/loc_db.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dc*=/screens/loc_dc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dd*=/screens/loc_dd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_de*=/screens/loc_de.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_df*=/screens/loc_df.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dh*=/screens/loc_dh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dj*=/screens/loc_dj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dl*=/screens/loc_dl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dm*=/screens/loc_dm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dn*=/screens/loc_dn.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_do*=/screens/loc_do.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dp*=/screens/loc_dp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dr*=/screens/loc_dr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ds*=/screens/loc_ds.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dt*=/screens/loc_dt.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_du*=/screens/loc_du.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dv*=/screens/loc_dv.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dw*=/screens/loc_dw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dy*=/screens/loc_dy.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_dz*=/screens/loc_dz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_e1*=/screens/loc_e1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ea*=/screens/loc_ea.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_eb*=/screens/loc_eb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ec*=/screens/loc_ec.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_eg*=/screens/loc_eg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ek*=/screens/loc_ek.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ep*=/screens/loc_ep.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_eq*=/screens/loc_eq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_er*=/screens/loc_er.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_es*=/screens/loc_es.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ex*=/screens/loc_ex.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_f=/screens/loc_f.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fa*=/screens/loc_fa.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fb*=/screens/loc_fb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fc*=/screens/loc_fc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fd*=/screens/loc_fd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fe*=/screens/loc_fe.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ff*=/screens/loc_ff.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fg*=/screens/loc_fg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fh*=/screens/loc_fh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fi*=/screens/loc_fi.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fj*=/screens/loc_fj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fk*=/screens/loc_fk.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fl*=/screens/loc_fl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fm*=/screens/loc_fm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fn*=/screens/loc_fn.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fp*=/screens/loc_fp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fr*=/screens/loc_fr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fs*=/screens/loc_fs.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ft*=/screens/loc_ft.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fu*=/screens/loc_fu.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fv*=/screens/loc_fv.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fw*=/screens/loc_fw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_fy*=/screens/loc_fy.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_g1*=/screens/loc_g1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ga*=/screens/loc_ga.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_gg*=/screens/loc_gg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_gm*=/screens/loc_gm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_gq*=/screens/loc_gq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_gr*=/screens/loc_gr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_gz*=/screens/loc_gz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_h6*=/screens/loc_h6.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_hl*=/screens/loc_hl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_hs*=/screens/loc_hs.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_hu*=/screens/loc_hu.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_in*=/screens/loc_in.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_j=/screens/loc_j.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_j1*=/screens/loc_j1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ja*=/screens/loc_ja.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_jc*=/screens/loc_jc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_je*=/screens/loc_je.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_jg*=/screens/loc_jg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_jh*=/screens/loc_jh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_jn*=/screens/loc_jn.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_jq*=/screens/loc_jq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_jr*=/screens/loc_jr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_jt*=/screens/loc_jt.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_jz*=/screens/loc_jz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_k=/screens/loc_k.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_k0*=/screens/loc_k0.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_k1*=/screens/loc_k1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ka*=/screens/loc_ka.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kb*=/screens/loc_kb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kc*=/screens/loc_kc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kd*=/screens/loc_kd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ke*=/screens/loc_ke.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kf*=/screens/loc_kf.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kg*=/screens/loc_kg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kh*=/screens/loc_kh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kj*=/screens/loc_kj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kl*=/screens/loc_kl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_km*=/screens/loc_km.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kn*=/screens/loc_kn.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ko*=/screens/loc_ko.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kp*=/screens/loc_kp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kq*=/screens/loc_kq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kr*=/screens/loc_kr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ks*=/screens/loc_ks.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kt*=/screens/loc_kt.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ku*=/screens/loc_ku.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kv*=/screens/loc_kv.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kw*=/screens/loc_kw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ky*=/screens/loc_ky.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_kz*=/screens/loc_kz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_l=/screens/loc_l.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_l1*=/screens/loc_l1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_l4*=/screens/loc_l4.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_la*=/screens/loc_la.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lb*=/screens/loc_lb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lc*=/screens/loc_lc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lf*=/screens/loc_lf.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lg*=/screens/loc_lg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lh*=/screens/loc_lh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ll*=/screens/loc_ll.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lm*=/screens/loc_lm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ln*=/screens/loc_ln.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lo*=/screens/loc_lo.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lp*=/screens/loc_lp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lr*=/screens/loc_lr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ls*=/screens/loc_ls.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lt*=/screens/loc_lt.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lu*=/screens/loc_lu.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lv*=/screens/loc_lv.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_lz*=/screens/loc_lz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_m1*=/screens/loc_m1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_m2*=/screens/loc_m2.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ma*=/screens/loc_ma.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mb*=/screens/loc_mb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mc*=/screens/loc_mc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_me*=/screens/loc_me.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mf*=/screens/loc_mf.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mg*=/screens/loc_mg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mh*=/screens/loc_mh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mk*=/screens/loc_mk.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ml*=/screens/loc_ml.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mo*=/screens/loc_mo.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mp*=/screens/loc_mp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mq*=/screens/loc_mq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mr*=/screens/loc_mr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ms*=/screens/loc_ms.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mt*=/screens/loc_mt.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mu*=/screens/loc_mu.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mw*=/screens/loc_mw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mx*=/screens/loc_mx.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_mz*=/screens/loc_mz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_n3*=/screens/loc_n3.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_o=/screens/loc_o.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_o1*=/screens/loc_o1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_oa*=/screens/loc_oa.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ob*=/screens/loc_ob.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_oc*=/screens/loc_oc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_od*=/screens/loc_od.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_oe*=/screens/loc_oe.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_of*=/screens/loc_of.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_og*=/screens/loc_og.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_oh*=/screens/loc_oh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_oi*=/screens/loc_oi.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_oj*=/screens/loc_oj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ok*=/screens/loc_ok.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ol*=/screens/loc_ol.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_om*=/screens/loc_om.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_on*=/screens/loc_on.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_op*=/screens/loc_op.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_oq*=/screens/loc_oq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_or*=/screens/loc_or.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_os*=/screens/loc_os.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ot*=/screens/loc_ot.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ou*=/screens/loc_ou.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ov*=/screens/loc_ov.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ow*=/screens/loc_ow.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_oy*=/screens/loc_oy.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_p1*=/screens/loc_p1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_pa*=/screens/loc_pa.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_pc*=/screens/loc_pc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_pg*=/screens/loc_pg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ph*=/screens/loc_ph.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_pq*=/screens/loc_pq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_pr*=/screens/loc_pr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_pz*=/screens/loc_pz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_r=/screens/loc_r.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ra*=/screens/loc_ra.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rb*=/screens/loc_rb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rc*=/screens/loc_rc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rd*=/screens/loc_rd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_re*=/screens/loc_re.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rf*=/screens/loc_rf.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rg*=/screens/loc_rg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rh*=/screens/loc_rh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rj*=/screens/loc_rj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rl*=/screens/loc_rl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rm*=/screens/loc_rm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rn*=/screens/loc_rn.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rp*=/screens/loc_rp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rr*=/screens/loc_rr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rs*=/screens/loc_rs.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rt*=/screens/loc_rt.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ru*=/screens/loc_ru.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rv*=/screens/loc_rv.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_rw*=/screens/loc_rw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ry*=/screens/loc_ry.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_s1*=/screens/loc_s1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sa*=/screens/loc_sa.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sd*=/screens/loc_sd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_se*=/screens/loc_se.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sf*=/screens/loc_sf.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sg*=/screens/loc_sg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sh*=/screens/loc_sh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sj*=/screens/loc_sj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sk*=/screens/loc_sk.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sm*=/screens/loc_sm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_so*=/screens/loc_so.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sp*=/screens/loc_sp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sq*=/screens/loc_sq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sr*=/screens/loc_sr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ss*=/screens/loc_ss.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_su*=/screens/loc_su.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_sz*=/screens/loc_sz.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_tp*=/screens/loc_tp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_tr*=/screens/loc_tr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_tu*=/screens/loc_tu.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_uc*=/screens/loc_uc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_uk*=/screens/loc_uk.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_um*=/screens/loc_um.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ur*=/screens/loc_ur.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_us*=/screens/loc_us.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_uw*=/screens/loc_uw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_va*=/screens/loc_va.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_vi*=/screens/loc_vi.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_vm*=/screens/loc_vm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_vs*=/screens/loc_vs.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_w=/screens/loc_w.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_w1*=/screens/loc_w1.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_w4*=/screens/loc_w4.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_w5*=/screens/loc_w5.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wa*=/screens/loc_wa.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wb*=/screens/loc_wb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wc*=/screens/loc_wc.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wd*=/screens/loc_wd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_we*=/screens/loc_we.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wf*=/screens/loc_wf.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wg*=/screens/loc_wg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wh*=/screens/loc_wh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wi*=/screens/loc_wi.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wj*=/screens/loc_wj.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wk*=/screens/loc_wk.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wl*=/screens/loc_wl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wm*=/screens/loc_wm.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wn*=/screens/loc_wn.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wo*=/screens/loc_wo.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wp*=/screens/loc_wp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wq*=/screens/loc_wq.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wr*=/screens/loc_wr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ws*=/screens/loc_ws.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wt*=/screens/loc_wt.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wu*=/screens/loc_wu.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wv*=/screens/loc_wv.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_ww*=/screens/loc_ww.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_wy*=/screens/loc_wy.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_xa*=/screens/loc_xa.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_xe*=/screens/loc_xe.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_xg*=/screens/loc_xg.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_xh*=/screens/loc_xh.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_xl*=/screens/loc_xl.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_xp*=/screens/loc_xp.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_xr*=/screens/loc_xr.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_yb*=/screens/loc_yb.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_yd*=/screens/loc_yd.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-LOC_yw*=/screens/loc_yw.html "target=_blank" onClick="return popup(this,'find_location_popup')"
-
-# IRSSO
-REMOTE_403=false
-REMOTE_USERID_6mrln=u
+# Program Display - NOT USED
+#PROG_AVS_TAG=PHJQIL
+#PROGRAM_SECTION_FIELDS=Date/Time:VsT|Meets:Vss|Location:Fs285|Instructor:Vsn|Status:VsS
+#BUT_PAT_PROGRAMS=
+#BUT_PAT_SORTBYDATE=sortby_date.gif
+#BUT_PAT_SORTBYNAME=sortby_name.gif
+#BUT_RET2PROG=
+#ICON_REGISTER=<br><strong>Click to Register</strong>
+#ICON_ADD_TO_WAITLIST=<br><strong>Add to Waitlist</strong>
+#ICON_VIEW_ADDITIONAL_SESSIONS=<img src="/screens/view_additional_sessions.gif" border="0" alt="View Additional Sessions">
+#ICON_HIDE_ADDITIONAL_SESSIONS=<img src="/screens/hide_additional_sessions.gif" border="0" alt="Hide Additional Sessions">
+#ICON_PROGRAM_CAL=<img src="/screens/program_cal.gif" border="0" alt="Events Calendar">
+#TABLEPARAM_PROG_SECTIONS=width="95%" border="3" cellspacing="1" align="center"

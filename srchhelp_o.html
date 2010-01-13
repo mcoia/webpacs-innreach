@@ -1,96 +1,35 @@
-<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
-
-
-
-
-<HTML>
-<HEAD>
-	<TITLE>MOBIUS - OCLC Number Search</TITLE>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-
-
-
-<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="http://mobius.umsystem.edu/screens/innreach_styles.css">
-
-
-<meta http-equiv="Refresh" CONTENT="300;URL=http://mobius.umsystem.edu/search----->">
-
-
-
-
-</HEAD>
-
-<BODY bgcolor="#ffffff" text="#000000" vlink="#0000ff" alink="#0000ff" 
-	onLoad="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
-<SCRIPT language="JavaScript">
-<!-- hide from older browsers
-function popup(mylink, windowname)
-{
-if (! window.focus)return true;
-var href;
-if (typeof(mylink) == 'string')
-   href=mylink;
-else
-   href=mylink.href;
-window.open(href, windowname, 'width=400,height=196,resizable=yes,scrollbars=yes');
-return false;
-}
-//-->
-</SCRIPT>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onLoad="document.forms[0].elements[1].focus();">
 <!--{toplogo}-->
-
-<!--{patron}-->
-<!--{logout}-->
-
-<center>
-
-<h3>MOBIUS Union Catalog<br>OCLC Number Search</h3>
-
-<!-- Begin Search Help Text -->
-  <p> 
-Search here by OCLC accession number. Type as much or as little of the OCLC Number as you want.
-    <FORM METHOD=GET action="/search/o">
-      <INPUT TYPE=TEXT NAME=SEARCH MAXLENGTH=64 SIZE=48 ALIGN=CENTER>
-      <br>
-      <INPUT TYPE=SUBMIT VALUE="Submit Search">
-    </FORM>
-</p>
-
-      <TABLE>
-
-        <TR><TD><i>for example:</i></TD></TR>
-
-        <TR>
-          <TD>
-            <UL type="square">
-              <LI>1234567</LI>
-              <LI>26158752</LI>
-            </UL>
-          </TD>
-      </TABLE>
-
-    <p><A HREF="/search/"><IMG SRC="/screens/b_newsrch.gif" BORDER=0 ALT="[START OVER]"></A> 
-    </p>
-<!-- End Search Help Text -->
-
-</center>
-
-<center>
-  <table border=0 width="570" cellpadding="0" cellspacing="0">
-    <tr align="left" valign="top" class="ft-bar"> 
-      <td class="ft-bar"><img src="/screens/shim.gif" width="1" height="1" alt=""></td>
-    </tr>
-  </table>
-</center>
-<center>
-  <table border=0>
-    <tr> 
-      <td align=center><a href="/screens/libinfo.html" style="text-decoration: none;">Members</a></td>
-      <td>&nbsp;|&nbsp;</td>
-      <td align=center><a href="/screens/about_mobius.html" style="text-decoration: none;">About MOBIUS</a></td>
-    </tr>
-  </table>
-</center>
-</BODY>
-</HTML>
+<h2 class="srchhelpHeader">Bibliographic Utility Number Search</h2>
+<div class="srchhelpText">Type the OCLC number you want to find, then press Enter or click Submit.</div>
+<div class="tool">
+<form method="get" class="unpadded">
+<span class="magFive">
+<!--{submit}-->
+</span>
+<table border="0"  class="textFix">
+<tr>
+<td align="right">Search for:</td>
+<td>
+<!--{search}-->
+</td>
+</tr>
+</table>
+</form>
+</div>
+<div class="srchhelpText">Type as much or as little of the OCLC number as you want. For example:
+<ul class="unpadded srchhelpList">
+<li>1234567</li>
+<li>26158752</li>
+</ul>
+</div>
+<!--{botlogo}-->
+</body>
+</html>

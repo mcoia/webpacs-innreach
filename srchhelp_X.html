@@ -1,187 +1,70 @@
-<!-- MOBI srchhelp_X.html Spell Check updated 080908 lee -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
 <head>
-<title>MOBIUS - Keyword Search</title>
+<title>Millennium Web Catalog</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Refresh" content="300;URL=http://mobius.umsystem.edu/search-----&#62;" />
 </head>
-<body style="background-color:#FFFFFF; color:#000000" vlink="#0000FF" alink="#0000FF"
-onload="document.forms[0].SEARCH.focus(); document.forms[0].SEARCH.select();">
-
+<!--{advancedsearchbody}-->
 <!--{toplogo}-->
-<!--{patron}-->
-<!--{logout}-->
-<center>
-<h3>MOBIUS Union Catalog<br />Keyword Search</h3>
-<!-- Begin Search Help Text -->
-<!--(msg)-->
+<h2 class="srchhelpHeader">Advanced Keyword Search</h2>
+<!--{msg}-->
 <!--{spellcheck}-->
-<!-- begin advanced keyword search form -->
-<form name="frmAdvancedKeyword" method="get" action="/search/X" id="frmAdvancedKeyword">
-<table style="width:60%; background-color:#ffffff; border:0px; padding:3px; text-align:center;" 
-cellspacing="2" summary="limiters">
-<tr>
-<td style="text-align:center; white-space:nowrap; background-color:#E5E5E5;" colspan="2">
-<strong>Search:</strong> 
-<!--{search}-->
-<input type="submit" value="Search" /><br />
-Example: <tt>civil rights and (congress or supreme court)</tt><br />
-See <a href="#tips">Search tips</a> below for further instructions.
-</td>
-</tr>
-<tr>
-<td style="text-align:center; background-color:#CCCCCC; font-weight:bold;" colspan="2">
-Options
-</td>
-</tr>
-<tr>
-<td style="text-align:left; white-space:nowrap; background-color:#E5E5E5;" colspan="2">
-<!--{sort}-->
-</td>
-</tr>
-<tr>
-<td style="text-align:left; white-space:nowrap; background-color:#E5E5E5;">
-<!--{typepub}-->
-</td>
-<td style="text-align:left; white-space:nowrap; background-color:#E5E5E5;">
+<div class="srchhelpText">Please fill in the form, select limits, and click Submit.
+<div class="advSrchtool">
+<!--{advancedsearchformbegin}-->
+<span class="magFive">
+<!--{clearform}-->
+</span>
+<!--{advancedsearch}-->
+<input type="hidden" name="startLimit" />
+<br>
+<span class="magFive">
+<!--{advancedsubmit}-->
+</span>
+<!--{branch}-->
 <!--{mattype}-->
-</td>
-</tr>
-<tr>
-<td style="text-align:left; white-space:nowrap; background-color:#E5E5E5;" colspan="2">
-<!--{DOCDATE}-->
-</td>
-</tr>
-<tr>
-<td style="text-align:left; white-space:nowrap; background-color:#E5E5E5;" colspan="2">
 <!--{lang}-->
-</td>
-</tr>
-<tr>
-<td style="text-align:left; white-space:nowrap; background-color:#E5E5E5;" colspan="2">
+<!--{DOCDATE}-->
 <!--{publish}-->
+<!--{sort}-->
+<input type="hidden" name="endLimit" />
+<!--{advancedsearchformend}-->
+</div>
+</div>
+<table class="searchTipTable">
+<tr><td colspan="2" align="center" style="font-size:125%;border-bottom:1px solid #000"><strong>Search Tips</strong></td></tr>
+<!-- <tr valign="top"><th align="left">Adjacency</th>
+<td>Multiple words are searched together as one phrase.<br/>
+<span style="text-decoration:underline">Example</span> : world health organization</td>
+</tr> -->
+<tr valign="top"><th align="left">Wildcards</th>
+<td>
+Words may be right-hand truncated using an asterisk ('*') in place of other characters. <!-- Use '**' for open-ended truncation of over five characters.--> The '*' wildcard may also be embedded in a search string. You may use '?' to replace a single character anywhere within a word.<br/>
+<span style="text-decoration:underline">Examples</span> : environment* polic*, wom?n</td>
+</tr>
+<tr valign="top"><th align="left">Boolean Operators</th>
+<td>
+Use "and" or "or" to specify multiple words in any field, any order. Use "and not" to exclude words.<br/>
+<span style="text-decoration:underline">Example</span> : stocks and bonds<br/>
+<span style="text-decoration:underline">Example</span> : (alaska or canada) and (adventure and not vacation)</td>
+</tr>
+<tr valign="top"><th align="left">Field limits</th>
+<td>
+A field limit causes the system to search only the specified field for the specified word(s).</td>
+</tr>
+<tr valign="top">
+<th align="left">Grouping</th>
+<td>
+Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
 </td>
 </tr>
+<!-- <tr valign="top"><th align="left">Proximity Operators</th>
+<td>
+Use "near" to specify words close to each other, in any order.<br/>
+<span style="text-decoration:underline">Example</span> : california near university</td>
+</tr> -->
 </table>
-</form>
-<!-- end advanced keyword search form -->
-
-<table style="padding:4px; width:90%;" cellspacing="2" summary="examples">
-<tr>
-<td style="text-align:center; background-color:#cccccc;" colspan="3">
-<h3 style="text-align:center;">
-<a name="tips" id="tips"><b>Search tips and examples</b></a>
-</h3>
-</td>
-</tr>
-<tr>
-<td style="text-align:center; background-color:#cccccc; font-weight:bold;">
-Search Type
-</td>
-<td style="text-align:center; background-color:#cccccc; font-weight:bold;">
-Description
-</td>
-<td style="text-align:center; background-color:#cccccc; font-weight:bold;">
-Examples
-</td>
-</tr>
-<tr>
-<td style="width:100px; background-color:#E5E5E5; vertical-align:top; font-weight:bold;">
-Phrase
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-Multiple words are searched together as an exact phrase.
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-<tt>united states supreme court<br />
-attention deficit disorder</tt>
-</td>
-</tr>
-<tr>
-<td style="background-color:#E5E5E5; vertical-align:top; font-weight:bold;">
-Truncation
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-Words may be truncated using an asterisk * for 1-5 characters.
-Use double asterisks ** for 6 or more characters.
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-<tt>polic*<br />
-math**</tt>
-</td>
-</tr>
-<tr>
-<td style="width:100px; background-color:#E5E5E5; vertical-align:top; font-weight:bold;">
-Wildcard
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-Use an asterisk * to replace any letter in a word.
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-<tt>wom*n</tt>
-</td>
-</tr>
-<tr>
-<td style="width:100px; background-color:#E5E5E5; vertical-align:top; font-weight:bold;">
-Connectors
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-Use "and" to specify both words. Use "or" to specify either word.
-Use "and not" to exclude words. Use parentheses to group words
-when using multiple connectors.
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-<tt>cat or feline<br />
-(alaska or canada) and (recreation and not hiking)</tt>
-</td>
-</tr>
-<tr>
-<td style="width:100px; background-color:#E5E5E5; vertical-align:top; font-weight:bold;">
-Proximity
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-Use "near" to specify words close to each other, in any order.
-Use " within #" to specify words within a set range of each
-other. Symbol # may stand for any number.
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-<tt>California near university<br />
-colorado within 12 wyoming</tt>
-</td>
-</tr>
-<tr>
-<td style="width:100px; background-color:#E5E5E5; vertical-align:top; font-weight:bold;">
-Field Search
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-Specify fields to search, using field abbreviation. Fields
-available for this database are<br />
-a: (author)<br />
-t: (title)<br />
-s: (subject)<br />
-m: (children's subject) n: (other notes fields)
-</td>
-<td style="background-color:#E5E5E5; vertical-align:top;">
-<tt>a:shakespeare and t:hamlet</tt><br />
-<br />
-<tt>education and a:missouri and (s:handicapped or
-s:disabled)</tt>
-</td>
-</tr>
-</table>
-<p>&nbsp;</p>
-</center>
-<!-- End Search Help Text -->
-
 <!--{botlogo}-->
 </body>
 </html>
-
-
-
-
-<!--<td class="toplogo">
-<img src="/screens/cat_bar_1pixel.gif" width="1" height="14" alt="" />
-</td>-->

@@ -1,44 +1,76 @@
-    <!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><title>MOBIUS Union Catalog</title>
-    <LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="./innreach_styles.css" />
-    
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><meta name="Keywords" content="books, mobius, mobius consortium, missouri, academic, library, libraries, consortium, union catalog"><meta name="Description" content="The MOBIUS Union Catalog contains the holdings of over fifty member colleges and universities in the state of Missouri."><!-- The MOBIUS Union Catalog contains the holdings of over fifty member colleges and universities in the state of Missouri. --></head><body id="opac-menu" text="#000000" vlink="#0000ff" alink="#0000ff" bgcolor="#ffffff"><center><IMG id="masthead-logo" SRC="/screens/mobius_color_small.gif" alt=" MOBIUS Linking Missouri's Libraries " ><p>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 08 June 2009 -->
+<head>
+<title>Millennium Web Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/screens/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 
-<div align="center">
-<p style="color:#7A1F1F; font-size:medium; font-weight:bold;">On Tuesday, December 8, 2009, the MOBIUS catalog will be offline for system maintenance.</p>
-</div>
+	$('#searchtype').change(function(){
+    	$("#exampleText").load("screens/example_text/" + this.value + ".inc");
+	});
+});
+</script>
+</head>
+<body onLoad="document.forms[0].elements[2].focus();">
+<!--{toplogo}-->
+<div class="mainMenuSrchTool">
+<form class="unpadded" action="/search" method="post" name="searchtool" id="search">
+Search:
+<select name="searchtype" id="searchtype">
+<option value="Y" selected="selected">Keyword
+<option value="t">Title
+<option value="a">Author
+<option value="s">Journal Title
+<option value="v">Publisher
+<option value="l">Genre
 
-<TABLE width="570" border="0" cellPadding="4" cellSpacing="4" class="with-borders">  
-<TR align="left" vAlign="top"><TD colspan="2" align="center">
-<form name="SearchForm" target="_parent" action="/search/Y" method="get" />
-<select name="searchtype">
-<option value="Y">KEYWORD
-<option value="t">TITLE
-<option value="a">AUTHOR
-<option value="s">JOURNAL TITLE
-<option value="v">PUBLISHER KEYWORD
+<option value="">------------------</option>
+<option value="d">Subject (Library of Congress)
+<option value="m">Medical Subject (MESH)
+<option value="h">Children's Subject
 
-<option value="">------------------</option>    
-<option value="d">LC SUBJECT
-<option value="m">MEDICAL SUBJ
-<option value="h">CHILDREN'S SUBJ
-
-<option value="">------------------</option>  
-<option value="g">GOVT DOC #
+<option value="">------------------</option>
+<option value="c">Call Number (Library of Congress)
+<option value="e">Call Number (Dewey Decimal)
+<option value="g">Government Document Number
 <option value="i">ISN
-<option value="o">OCLC #
-<option value="c">LC CALL NO
-<option value="e">DEWEY CALL NO
-<option value="l">GENRE
 <option value="j">ISBN
 <option value="r">ISSN
 <option value="p">MUSIC #
+<option value="o">OCLC #
+<!--<option value="y"> Resource Name</option> -->
+<!--<option value="m"> Resource Subject</option> -->
 
-</select>&nbsp;
-<input type="text" name="searcharg" maxlength="75" size="20" style="width: 200px;" />
-<input type="hidden" name="SORT" value="D" />&nbsp;
-<input name="cmdSubmit" type="submit" value="Search" />
+</select>
+<!--{nosort}-->
+<input maxlength="75" name="searcharg" size="20" />
+<!--{scope}-->
+<span class="nowrap"><button class="glossy">Submit</button></span>
 </form>
-</TD></TR>  
-<TR align="center" vAlign="top">    <TD colspan="2" bgcolor="#e5e5e5"><A href="/search/Y" style="text-decoration: none;" title="Search words/phrases in Title, Author, Subject, Notes, Publisher.">Keyword</a> </TD>    </TR>  <TR align=left vAlign=top>    <TD bgcolor="#e5e5e5"><a href="/search/t" style="text-decoration: none;">Title</a></TD>    <TD bgcolor="#e5e5e5"><a href="/search/s" style="text-decoration: none;">Journal,        Magazine &amp; Newspaper Titles</a> </TD>  </TR>  <TR align=left vAlign=top>    <TD width="267" bgcolor="#e5e5e5"><a href="/search/a" style="text-decoration: none;" title="Search Authors, Editors, Composers, Artists/Performers, or Organization.">Author</a> </TD>    	<TD width="267" bgcolor="#e5e5e5"><A href="/search/q" style="text-decoration: none;" TITLE="Search for an Author 		and a Title.">Author and Title</A></TD>			  </TR>  <TR align="left" vAlign="top">    <TD width="267" bgcolor="#e5e5e5"><a href="/screens/subjects.html" style="text-decoration: none;">Subjects</a><br>	<ul type="square">      <LI><A href="/search/d" style="text-decoration: none;">Library of Congress Subjects</A>      <LI><A href="/search/m" style="text-decoration: none;">Medical Subjects (MESH)</A>       <LI><A href="/search/h" style="text-decoration: none;">Children's Subjects</A> </LI></ul></TD>    <TD width="267" bgcolor="#e5e5e5"><a href="/screens/numbers.html" style="text-decoration: none;">Numbers</a><br>      <ul type="square">        <li><A href="/search/g" style="text-decoration: none;">Government Document Number</A></li>        <li><A href="/search/i" style="text-decoration: none;">ISBN, ISSN, Music, etc. Number</A></li>        <li><A href="/search/o" style="text-decoration: none;">OCLC Number</A></li></ul></TD>  </TR>  <TR vAlign="top" align="left">    <TD width="267">&nbsp;</TD>  <TD width="267">&nbsp;</TD>  </TR></TABLE><script language="JavaScript"><!-- hide JavaScriptdocument.SearchForm.searcharg.focus();document.SearchForm.searcharg.select();//--></script>    </center>
+</div><!--end tool -->
+
+<div id="exampleText">
+	<div class="mainMenuSrchText">Type the search term you want to find. Examples:
+		<ul class="unpadded">
+			<li>Italian cooking</li>
+			<li>The Appeal</li>
+		</ul>
+	</div>
+</div>
+<br />
+
+
+<!--
+Insert your content here!
+-->
+
+
 <!--{botlogo}-->
-</BODY></HTML>
+
+
+</body>
+</html>
