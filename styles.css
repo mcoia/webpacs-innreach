@@ -1244,13 +1244,14 @@ td.rightBotCap { border-right:2px solid #F5D9A3; }
 
 #mapTable ul {
 
-	list-style-type: none;
+	list-style-image: none;
 	
 }
 
-#mapTable li {
+#mapTable ul li {
 
 	padding-top: .33em;
+	list-style-image: none;
 	
 }
 

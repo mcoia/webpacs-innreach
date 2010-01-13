@@ -377,8 +377,9 @@ TIMEOUT_POPUP=600
 # INN-Reach
 IR_PLACEMENT=1
 CONSORTIUM_HOLDINGS=0
-INSTITUTIONLABEL=What <a href="#clusters">
-cluster</a> do you belong to?
+INSTITUTIONLABEL=<p>Please choose your library cluster from the drop-down menu below.</p>
+<span style="font-size:smaller"><p><a href="/screens/help_clusters_institutions.html" onClick="return popup(this,'find_cluster_popup')" target="_blank" 
+ style="text-decoration: underline;">Find your cluster.</a></p></span>
 IR_CENT_DISTLEARN=true|Pickup Cluster
 IR_CENT_HOLD_CHECKIN=C|^|f|"
 IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;25|Electronic Link;14|Call Number and Serial Holdings;33|Request Status;17
