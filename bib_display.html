@@ -28,114 +28,53 @@
 <!--{innreach}-->
 <!--{relsearch}-->
 </div>
-<div style="margin:0 0 0 2px;">
-<div id="infoTable">
+<div class="bibDisplayContentMain">
+<table cellpadding="10" cellspacing="0" width="100%">
+<tr><td valign="top">
+<table id="bibDisplayLayout" cellpadding="0" cellspacing="0"width="100%">
+<tr>
+<td valign="top" align="left" >
 <!--{recordinfo:!}-->
+<!--{ifhaspatrate}-->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="bibDetail">
+<tr  class="bibInfoEntry" ><td>
+<!-- BEGIN INNER BIB TABLE -->
+<table width="100%" cellpadding="0" cellspacing="3">
+<tr>
+<td valign="top" width="20%" class="bibInfoLabel">Rating</td>
+<td class="bibInfoData">
+<!--{ratings}-->
+</td>
+</tr></table></td></tr></table>
+<!--{xif}-->
+</td>
+<td valign="top" id="coverImage" align="center">
+<!--{bibimage}-->
+<!--{recordlink}-->
+</td>
+</tr>
+</table>
+<!--{booking}-->
+<!--{holdingslink}-->
 <!--{linkeddocs}-->
 <!--{URLS}-->
-<!--{holdingslink}-->
 <!--{bloblinks}-->
 <!--{imagelinks}-->
 <!--{artthumb}-->
-<br/>
 <!--{xmlframe}-->
-<div id="tabs">
-     
-<ul>
-
-<!-- <div id="bibCopyStatus" class="bibTabOn">
-<b class="tabTop"><b id="copyB1" class="selected1"></b><b id="copyB2" class="selected2"></b><b id="copyB3" class="selected3"></b><b id="copyB4" class="selected4"></b></b>
-<div class="bibContentBox"><div id="copyContent" class="bibTabSelected"><a href="#" id="copySelect">Copy Status</a></div></div>
-</div> -->
-     
-     <li><a href="#" id="copySelect">Copy Status</a></li>
-
-<!-- <div id="bibMoreDetails" class="bibTabOff">
-<b class="tabTop"><b id="moreB1" class="option1"></b><b id="moreB2" class="option2"></b><b id="moreB3" class="option3"></b><b id="moreB4" class="option4"></b></b>
-<div class="bibContentBox"><div id="moreContent" class="bibTabContent">
-<a href="#" id="moreSelect">More Details</a></div></div>
-</div> -->
-
-     <li><a href="#" id="moreSelect">More Details</a></li>
-
-<!-- <div id="bibSimilarItems" class="bibSimTabOff">
-<b class="tabTop"><b id="simItB1" class="option1"></b><b id="simItB2" class="option2"></b><b id="simItB3" class="option3"></b><b id="simItB4" class="option4"></b></b>
-<div class="bibContentBox"><div id="simContent" class="bibSimTabContent">
-<a href="#" id="simSelect">Find Similar Items</a></div></div>
-</div> -->
-
-     <li><a href="#" id="simSelect">Find Similar Items</a></li>
-
-<!-- <div id="bibFullRecord" class="bibTabOff">
-<b class="tabTop"><b id="fullB1" class="option1"></b><b id="fullB2" class="option2"></b><b id="fullB3" class="option3"></b><b id="fullB4" class="option4"></b></b>
-<div class="bibContentBox"><div id="fullContent" class="bibTabContent">
-<a href="#" id="fullSelect">Full Record</a></div></div>
--->
-
-     <li><a href="#" id="fullSelect">Full Record</a></li>
-</ul>     
-</div>
-</div>
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{holds}-->
+<!--{holdings}-->
+<!--{items}-->
+<!--{orders}-->
+</td></tr></tbody></table></div></div>
+<div id="bibDisplayContentMore">
 <div>
-<div class="bibContentWrapper">
-<br/>
-<span id="copySection" class="bibContentSectionDefault">
-<span style="text-align:left;font-size:85%;">
-<!--{holds}-->
-<!--{holdings}-->
-</span>
-<span class="booking">
-<!--{booking}-->
-</span>
-<span class="bibItems">
-<!--{items}-->
-</span>
-<span class="bibItems">
-<!--{orders}-->
-</span>
-</span>
-<span id="moreSection" class="bibContentSectionOptions">
-<!--{recordlink}-->
-<br />
-<!--{recordinfo:crenwi}-->
-<!--{ifTOC}-->
-<!--{TOC}-->
-<!--{xif}-->
-</span>
-<span id="similarSection" class="bibContentSectionOptions">
-<!--{recordinfo:asdbuxz}-->
-</span>
-<span id="fullSection" class="bibContentSectionOptions">
-     <span style="text-align:left;font-size:85%;">
-<!--{holds}-->
-<!--{holdings}-->
-</span>
-<span class="booking">
-<!--{booking}-->
-</span>
-<span class="bibItems">
-<!--{items}-->
-</span>
-<span class="bibItems">
-<!--{orders}-->
-</span>
-<!--{recordinfo:crenwi}-->
-<!--{recordinfo:asdbuxz}-->
-
-<!--{ifTOC}-->
-<!--{TOC}-->
-<!--{xif}-->
-</span>
+<h1 class="bareBreaker">Details</h1>
+<!--{recordinfo:#}-->
 </div>
-<b class="conbottom"><b class="conb4"></b><b class="conb3"></b><b class="conb2"></b><b class="conb1"></b></b>
-</div>
-
-
-</div>
-</div>
-</div>
-<div id="printView"><a href="#" id="printcss">Print Version</a></div>
-<div id="webView"><a href="#" id="webcss">Web View</a></div>
-</div>
-<br/>
+</div><!-- close bibDisplayContent -->
+</div><!-- close bibDisplayBody -->
 <!--{botlogo}-->
