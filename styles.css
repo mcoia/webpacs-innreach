@@ -1200,8 +1200,13 @@ td.rightBotCap { border-right:2px solid #F5D9A3; }
 
 /*  MOBIUS CLUSTER HELP PAGES CLASSES */
 
+.tablePage {
+	background-color:white;
+	background-image:none;
+}
+
 #clusterHelp {
-	margin-top: 4em;
+	margin-top: 1em;
 	
 }
 
@@ -1229,6 +1234,11 @@ td.rightBotCap { border-right:2px solid #F5D9A3; }
 	border: 2px solid #FFFFFF;
 	background: #EDF4FA;
 	
+}
+
+#clusterHelp li {
+	list-style-type:none;
+	padding:5px 2px;
 }
 
 
