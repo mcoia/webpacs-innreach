@@ -613,10 +613,7 @@ div#instructions { font-size: 90%; font-style: italic; }
 
 .magSeven { float:right; margin:3px 0 0 2px; }
 
-#mobiusIcon img.logo{
-	padding: .5em;
-	cursor: pointer;
-	}
+#mobiusIcon {margin:5px; width:130px;}
 
 .msg { font-size: 125%; color: #FF0000; }
 
