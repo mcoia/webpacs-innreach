@@ -1080,11 +1080,11 @@ tr.highlight { background:#FFFFE4; }
 /* styles for Skyline design */
 .leftCol { padding:0;margin:0px; font-size:.9em; }
 
-.leftCol li { list-style:none;padding:2px;display:block; }
+.leftCol li { list-style-type:circle;list-style-position:inside;padding:5px 2px;}
 
-.leftCol li a:link, .leftCol li a:visited, .leftCol li a:active { display:block; color:#444;text-decoration:none;padding:0;margin:0 0 0 3px; }
+.leftCol li a:link, .leftCol li a:visited, .leftCol li a:active {color:#444;text-decoration:none;padding:0;margin:0 0 0 3px; }
 
-.leftCol li a:hover { display:block;color:#000;text-decoration:underline;background:#FFFFE4; }
+.leftCol li a:hover {color:#000;text-decoration:underline;background:#FFFFE4; }
 
 .navHeader { font-weight:bold; color:#5E5D5D; font-size:1em; font-size:.9em; border-bottom:1px dashed #5E5D5D;margin-top:5px;letter-spacing:1px; padding:2px; margin-bottom:0px;}
 
