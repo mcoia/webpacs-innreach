@@ -1233,7 +1233,13 @@ td.rightBotCap { border-right:2px solid #F5D9A3; }
 
 
 
+#map {
+	margin:15px;
+}
 
+#map li {
+	list-style-type:none;
+}
 
 
 #mapTable table {
@@ -1245,14 +1251,14 @@ td.rightBotCap { border-right:2px solid #F5D9A3; }
 
 #mapTable ul {
 
-	list-style-image: none;
+	list-style-type: none;
 	
 }
 
 #mapTable ul li {
 
 	padding-top: .33em;
-	list-style-image: none;
+	list-style-type: none;
 	
 }
 
@@ -1273,5 +1279,124 @@ td.rightBotCap { border-right:2px solid #F5D9A3; }
 	font-size: 1.2em;
 }
 
+.cluster a {
+	text-decoration:none;
+	
+}
+
+#archway a:link {
+	color:#55c1fb;
+}
+
+#archway a:visited {
+	color:#55c1fb;
+}
+
+#arthur a:link {
+	color:#b30649;
+}
+
+#arthur a:visited {
+	color:#b30649;
+}
+
+#bridges a:link {
+	color:#1d29f1;
+}
+
+#galahad a:visited {
+	color:#0aac2f;
+}
+
+#galahad a:link {
+	color:#0aac2f;
+}
+
+#bridges a:visited {
+	color:#1d29f1;
+}
+
+#lance a:link {
+	color:#d1fc59;
+}
+
+#lance a:visited {
+	color:#d1fc59;
+}
+
+#lance a:link {
+	color:#d1fc59;
+}
+
+#merlin a:visited {
+	color:#fe8663;
+}
+
+#merlin a:link {
+	color:#fe8663;
+}
+
+#mrrl a:visited {
+	color:#765dfd;
+}
+
+#mrrl a:link {
+	color:#765dfd;
+}
+
+#quest a:visited {
+	color:#fc59f9;
+}
+
+#quest a:link {
+	color:#fc59f9;
+}
+
+#sgcl a:visited {
+	color:#58fc70;
+}
+
+#sgcl a:link {
+	color:#58fc70;
+}
+
+#slu a:visited {
+	color:#fdd15d;
+}
+
+#slu a:link {
+	color:#fdd15d;
+}
+
+#swan a:visited {
+	color:#fb7953;
+}
+
+#swan a:link {
+	color:#fb7953;
+}
 
 
+#towers a:link {
+	color:#5aedfc;
+}
+
+#towers a:visited {
+	color:#5aedfc;
+}
+
+#wilo a:link {
+	color:#c05bfd;
+}
+
+#washu a:visited {
+	color:#f4fc59;
+}
+
+#washu a:link {
+	color:#f4fc59;
+}
+
+#wilo a:visited {
+	color:#c05bfd;
+}
