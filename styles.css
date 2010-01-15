@@ -502,6 +502,8 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 
 .errormessage h2 { display:inline; }
 
+#exampleText {text-align:center;}
+
 /* External Patron Authentication product style */
 .extpat div { line-height: 1.66em; width: 90%; background: #00437f; border: 2px solid #00437f; padding: 3px; margin-left: auto; margin-right: auto; text-align: right; }
 
@@ -1089,7 +1091,7 @@ tr.highlight { background:#FFFFE4; }
 
 .navHeader { font-weight:bold; color:#5E5D5D; font-size:1em; font-size:.9em; border-bottom:1px dashed #5E5D5D;margin-top:5px;letter-spacing:1px; padding:2px; margin-bottom:0px;}
 
-.mainMenuSrchText { width:55%; margin:auto; letter-spacing:1px; }
+.mainMenuSrchText { width:55%; margin:auto; letter-spacing:1px; text-align:left; }
 
 .mainMenuSrchTool form { margin:auto; padding:5px 10px; }
 
@@ -1199,6 +1201,10 @@ td.rightBotCap { border-right:2px solid #F5D9A3; }
 }
 
 /*  MOBIUS CLUSTER HELP PAGES CLASSES */
+
+tr.alt td {
+	background: #9AC0CD;
+}
 
 .tablePage {
 	background-color:white;
