@@ -281,9 +281,9 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 
 .bibSearch, .browseSearchtool {
 	display:block;
-	background:#f9f9f9 url(images/reverseGradient4x100.gif) bottom left repeat-x;
+	background:#fff;
 	font-size:.9em;
-	border:1px solid #f9f9f9;
+	border:none;
 	margin:5px;
 	padding: 1em;
 	}
