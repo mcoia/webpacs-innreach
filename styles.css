@@ -36,7 +36,9 @@ browse super entry (relevance) yellow - #FFFBD6
 
 /* Section 1 */
 /*Global tag styles*/
-body { margin:0 0 1% 0;padding:0;background:url(images/page-bg-gradient.gif) top left repeat-x #f9f9f9;font-family:Arial,helvetica,Verdana,Trebuchet,sans-serif;  font-style : normal; font-weight : normal;color:#202020;font-size:85%; }
+body{ margin:0 0 1% 0;padding:0;background:#f9f9f9 url(images/page-bg-gradient.gif) top left repeat-x;font-family:Arial,helvetica,Verdana,Trebuchet,sans-serif;  font-style : normal; font-weight : normal;color:#202020;font-size:85%; }
+
+body {background-color:#f9f9f9 !important;}
 
 /*div, table { clear: both; }*/
 

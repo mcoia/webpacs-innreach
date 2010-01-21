@@ -50,7 +50,7 @@ FORM_FOCUS=true
 ICON_CANCEL=<img src="/screens/cancel.gif" alt="Cancel" border="0" class="button" />
 ICON_OK=<img src="/screens/ok.gif" class="button" border="0" alt="OK" />
 ICON_PREVPAGE=<img src="/screens/prevscrn.gif" class="button" border="0" alt="Previous" />
-ICON_SUBMIT=<button class="glossy">Submit</button>
+ICON_SUBMIT=<img src="/screens/submit.gif" alt="Submit" border="0" />
 ICON_STARTOVER=<img src="/screens/start_over.gif" alt="Clear All"/>
 ICON_UPDATELIST=<img src="/screens/updatelist.gif" alt="Update List" border="0" class="button" />
 ICON_CLEAR_ALL=<img src="/screens/clear_all.gif" alt="Clear All"/>
@@ -112,7 +112,6 @@ RELSEARCH=searchtool||<img src="/screens/relsearch.gif" class="button" border="0
 # Search Results
 AUTHMSG=<em>%u</em> -- See %w <strong>%a</strong> <span class="authPublicNote">%p</span>|%u -- See Also %w %a <span class="authPublicNote">%p</span>
 AUTHMSG_SR=athe later heading|bthe earlier heading|dthe full form of the heading|fa musical composition based on this work|gthe narrower term|hthe broader term
-BODYPARAM=bgcolor="#FFFFFF"
 BRIEF=A
 BROWSE_t=245/abhnp/0|240/afklmnopr/0|700/tmnr/0|970/t/0|/abhnpv/0
 BROWSE_HEADERS=Mark|Media
