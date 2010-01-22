@@ -36,7 +36,7 @@ browse super entry (relevance) yellow - #FFFBD6
 
 /* Section 1 */
 /*Global tag styles*/
-body{ margin:0 0 1% 0;padding:0;background:#f9f9f9 url(images/page-bg-gradient.gif) top left repeat-x;font-family:Arial,helvetica,Verdana,Trebuchet,sans-serif;  font-style : normal; font-weight : normal;color:#202020;font-size:85%; }
+body{ margin:0 0 1% 0;padding:0;background:#f9f9f9 url(images/page-bg-gradient.gif) top left repeat-x;font-family:Arial,helvetica,Verdana,Trebuchet,sans-serif !important;  font-style : normal; font-weight : normal;color:#202020;font-size:85%; }
 
 body {background-color:#f9f9f9 !important;}
 
@@ -1083,7 +1083,7 @@ tr.highlight { background:#FFFFE4; }
 
 /* Section 4 */
 /* styles for Skyline design */
-.leftCol { padding:0;margin:0px; font-size:.9em; }
+.leftCol { padding:0;margin:0px; font-size:small; }
 
 .leftCol li { list-style-type:none;list-style-position:inside;padding:4px 20px 4px 16px;text-indent:-14px;}
 
@@ -1091,7 +1091,7 @@ tr.highlight { background:#FFFFE4; }
 
 .leftCol li a:hover {color:#000;text-decoration:underline;background:#FFFFE4; }
 
-.navHeader { font-weight:bold; color:#5E5D5D; font-size:1em; font-size:.9em; border-bottom:1px dashed #5E5D5D;margin-top:5px;letter-spacing:1px; padding:2px; margin-bottom:0px;}
+.navHeader { font-weight:bold; color:#5E5D5D; font-size:small; border-bottom:1px dashed #5E5D5D;margin-top:5px;letter-spacing:1px; padding:2px; margin-bottom:0px;}
 
 .mainMenuSrchText { width:55%; margin:auto; letter-spacing:1px; text-align:left; }
 
