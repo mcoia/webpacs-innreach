@@ -287,7 +287,7 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 	font-size:.9em;
 	border:none;
 	margin:5px;
-	padding: 1em;
+	/*padding: 0px; */
 	}
 
  .bibSearchtoolMessage { text-align:center;font-size:1em; }
@@ -449,7 +449,7 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 
 .browseList { margin-right:10px; margin-top:4px; }
 
-.browsePager { font-size:.8em;font-weight:bold;padding-bottom:10px; cursor:default; }
+.browsePager { font-size:.8em;font-weight:bold;padding-bottom:10px;padding-top:4px;cursor:default; }
 
 .browsePager strong { border:1px solid #96D0FC ;padding:3px;margin:2px 1px;color:#fff;background:#96D0FC; }
 
@@ -469,7 +469,7 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 
 .browseScreen td { vertical-align:top; }
 
-.browseSearchtoolMessage { text-align:center;font-size:1em; }
+.browseSearchtoolMessage { text-align:center;font-size:1em;padding-top:20px; }
 
 .browseSubEntry { color: #000000; font-weight: normal; }
 
