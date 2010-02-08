@@ -208,6 +208,10 @@ div #bibDisplayContentMore { padding-left:7px; width:78%; clear:left; float:left
 	clear:both;
 }
 
+#bibHoldingsTable .browselist {
+	font-size: 85%;
+}
+
 .bibHolds { font-size:90%; border: 1px solid #00437f; }
 
 .bibHoldsEntry { font-size:90%; border: 1px solid #00437f; }

@@ -382,7 +382,7 @@ INSTITUTIONLABEL=<p>Please choose your library cluster from the drop-down menu b
  style="text-decoration: underline;">Find your cluster.</a></p></span>
 IR_CENT_DISTLEARN=true|Pickup Cluster
 IR_CENT_HOLD_CHECKIN=C|^|f|"
-IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;39|Electronic Link;12|Call Number;21|Status;17
+IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;44|Electronic Link;11|Call Number;19|Status;15
 IR_CENT_HOLD_INST=^|U||
 #IR_CENT_HOLD_INST_VARFLD
 IR_CENT_HOLD_ITEM=C|U|E|F
