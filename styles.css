@@ -203,6 +203,11 @@ div #bibDisplayContentMore { padding-left:7px; width:78%; clear:left; float:left
 
 .bibHoldingsLabel { font-size:90%; border-bottom:1px solid #EEEEEE;border-top:1px solid #EEEEEE;border-left:1px solid #EEEEEE; }
 
+#bibHoldingsTable {
+	margin:20px;
+	clear:both;
+}
+
 .bibHolds { font-size:90%; border: 1px solid #00437f; }
 
 .bibHoldsEntry { font-size:90%; border: 1px solid #00437f; }
@@ -447,7 +452,9 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 
 .browseHeaderYear { padding:3px; border-bottom:1px solid #BDBDBD; }
 
-.browseList { margin-right:10px; margin-top:4px; }
+.browseList { margin-right:10px; margin-top:25px; }
+
+.browseList td, .browselist th {padding: 5px;}
 
 .browsePager { font-size:.8em;font-weight:bold;padding-bottom:10px;padding-top:4px;cursor:default; }
 
@@ -1418,3 +1425,4 @@ tr.alt td {
 #wilo a:visited {
 	color:#c05bfd;
 }
+
