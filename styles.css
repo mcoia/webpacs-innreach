@@ -1094,9 +1094,9 @@ tr.highlight { background:#FFFFE4; }
 
 /* Section 4 */
 /* styles for Skyline design */
-.leftCol { padding:0;margin:0px; font-size:small; }
+.leftCol { padding:0;margin:0 20px; font-size:small; }
 
-.leftCol li { list-style-type:none;list-style-position:inside;padding:4px 20px 4px 16px;text-indent:-14px;}
+.leftCol li { list-style-type:none;padding:4px 0;text-indent:-14px;}
 
 .leftCol li a:link, .leftCol li a:visited, .leftCol li a:active {color:#444;text-decoration:none;padding:0;margin:0 0 0 3px; }
 
