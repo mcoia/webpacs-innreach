@@ -906,6 +906,8 @@ table.recordPager { text-align:right; font-size:.8em; }
 
 /*.rssFeed { padding: 5px; margin: 2px; border: 1px solid #00437f; } */
 
+#searchGo {background: url("/screens/submit.gif") no-repeat scroll left top transparent; border: medium none; width: 85px; height: 37px;}
+
 .srchhelpHeader { border-bottom:1px solid #000; }
 
 .searchTipsNavAreaText {  font-family:Arial,helvetica,Verdana,Trebuchet,sans-serif; color: #FFFFFF; text-decoration: none; font-weight: bold; background-color: #0132A7; }
@@ -1094,7 +1096,7 @@ tr.highlight { background:#FFFFE4; }
 
 /* Section 4 */
 /* styles for Skyline design */
-.leftCol { padding:0;margin:0 20px; font-size:small; }
+.leftCol { padding:0;margin:0 20px; font-size:15px; }
 
 .leftCol li { list-style-type:none;padding:4px 0;text-indent:-14px;}
 
