@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 08 June 2009 -->
+<head>
+<title>MOBIUS Union Catalog</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/screens/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+
+<<<<<<< HEAD
+	$('#searchtype').change(function(){
+    	$("#exampleText").load("screens/example_text/" + this.value + ".inc");
+	});
+});
+</script>
+</head>
+<body onLoad="document.forms[0].elements[2].focus();">
+<!--{toplogo}-->
+<div class="mainMenuSrchTool">
+<form class="unpadded" action="/search/" method="get" name="searchtool" id="search">
+Search:
+<select name="searchtype" id="searchtype">
+<option value="Y" selected="selected">Keyword
+<option value="t">Title
+<option value="a">Author
+<option value="s">Periodical Title
+<option value="v">Publisher
+<option value="l">Genre
+
+<option value="">------------------</option>
+<option value="d">Subject (Library of Congress)
+<option value="m">Medical Subject (MESH)
+<option value="h">Children's Subject
+
+<option value="">------------------</option>
+<option value="c">Call Number (Library of Congress)
+<option value="e">Call Number (Dewey Decimal)
+<option value="g">Government Document Number
+=======
+<TABLE width="570" border="0" cellPadding="4" cellSpacing="4" class="with-borders">  
+<TR align="left" vAlign="top"><TD colspan="2" align="center">
+<form name="SearchForm" target="_parent" action="/search/Y" method="get" />
+<select name="searchtype">
+<option value="Y">KEYWORD
+<option value="t">TITLE
+<option value="a">AUTHOR
+<option value="s">JOURNAL TITLE
+<option value="v">PUBLISHER KEYWORD
+
+<option value="">------------------</option>    
+<option value="d">LC SUBJECT
+<option value="m">MEDICAL SUBJ
+<option value="h">CHILDREN'S SUBJ
+
+<option value="">------------------</option>  
+<option value="g">GOVT DOC #
+>>>>>>> f5fa5f45daf0c5349cb103278f10a0efd788e3ee
+<option value="i">ISN
+<option value="j">ISBN
+<option value="r">ISSN
+<option value="p">Music Number
+<option value="o">OCLC Number
+<!--<option value="y"> Resource Name</option> -->
+<!--<option value="m"> Resource Subject</option> -->
+
+</select>
+<!--{nosort}-->
+<input maxlength="75" name="searcharg" size="35" />
+<!--{scope}-->
+<input type="submit" alt="Submit"  value="" src="/screens/submit.gif" id="searchGo" />
+</form>
+</div><!--end tool -->
+
+<div id="exampleText">
+	<div class="mainMenuSrchText">Type the search term you want to find. Examples:
+		<ul class="unpadded">
+			<li>Italian cooking</li>
+			<li>The Appeal</li>
+		</ul>
+	</div>
+</div>
+<br />
+
+
+<!--
+Insert your content here!
+-->
+
+
+<!--{botlogo}-->
+
+
+</body>
+</html>
