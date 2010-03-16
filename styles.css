@@ -204,9 +204,10 @@ div #bibDisplayContentMore { padding-left:7px; width:78%; clear:left; float:left
 .bibHoldingsLabel { font-size:90%; border-bottom:1px solid #EEEEEE;border-top:1px solid #EEEEEE;border-left:1px solid #EEEEEE; }
 
 #bibHoldingsTable {
-	margin:20px;
 	clear:both;
 }
+
+
 
 #bibHoldingsTable .browselist {
 	font-size: 85%;
@@ -906,7 +907,7 @@ table.recordPager { text-align:right; font-size:.8em; }
 
 /*.rssFeed { padding: 5px; margin: 2px; border: 1px solid #00437f; } */
 
-#searchGo {background: url("/screens/submit.gif") no-repeat scroll left top transparent; border: medium none; width: 85px; height: 37px;}
+#searchGo {background: url("/screens/submit_small.gif") no-repeat scroll left top transparent; border: medium none; width: 44px; height:20px;}
 
 .srchhelpHeader { border-bottom:1px solid #000; }
 
@@ -1110,7 +1111,7 @@ tr.highlight { background:#FFFFE4; }
 
 .mainMenuSrchText { width:55%; margin:auto; letter-spacing:1px; text-align:left; }
 
-.mainMenuSrchTool form { margin:auto; padding:5px 10px; }
+.mainMenuSrchTool form {margin:auto; padding:5px 10px;}
 
 .mainMenuSrchTool { display:block; font-size:1.5em; margin:40px 5px; padding:0 ;border-bottom:1px solid #D1D8DD;text-align:center; }
 

@@ -1,76 +1,39 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- 2006 Pro "Bare-style" shickman -->
-<!-- This file last changed: 13 June 2007 -->
+<!-- 2006 Pro "Blog-style" -->
+<!-- This file last changed: 25 Apr 2008 -->
 <head>
-<title>Millennium Web Catalog - Programs</title>
+<title>Millennium Web Catalog</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style>
-table input , table select {font-size:1.1em;}
-table table {font-size:1em;}
-</style>
 </head>
-
-<!--{progsearchbody}-->
+<body onLoad="document.forms[0].elements[1].focus();">
 <!--{toplogo}-->
-<!--{patron}-->
-<!--{msg}-->
-<h2 class="srchhelpHeader">Our Programs</h2>
-<div class="srchhelpText">Here you can search our database for classes, lectures, and other activities sponsored or hosted by the library.</div>
-<div class="advSrchtool">
-<!--{progsearchformbegin}-->
+<h2 class="srchhelpHeader">ISBN/ISSN Search</h2>
+<div class="srchhelpText">Type the standard number (ISBN or ISSN) you want to find, then press the Enter key or click Submit.</div>
+<div class="tool">
+<form method="get" class="unpadded">
 <span class="magFive">
 <!--{submit}-->
-
-<a href="/iii/calendar"> <img src="/screens/program_cal.gif" alt="Programs Calendar" border="0"></a>
 </span>
-
-<table cellpadding="2" cellspacing="2" style="font-size:.9em">
+<table border="0"  class="textFix">
 <tr>
 <td align="right">Search for:</td>
 <td>
-<!--{progsearch}-->
+<!--{search}-->
 </td>
 </tr>
 <tr>
-<td align="right">Location:</td>
+<td align="right">Sort by:</td>
 <td>
-<!--{scope}-->
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<!--{gtype}-->
-</td>
-</tr>
-<!--hardcode alpha sort for programs only-->
-<tr><td colspan="2">
-<input type="hidden" name="SORT" value="AX"/>
-</td>
-</tr>
-<!--end hardcoded sort-->
-<tr>
-<td align="right">Start date:</td>
-<td>
-<!--{sessiondatestart}-->
-</td>
-</tr>
-<tr>
-<td align="right">End date:</td>
-<td>
-<!--{sessiondateend}-->
+<!--{indexsort}-->
 </td>
 </tr>
 </table>
-<!--{progsearchformend}-->
+</form>
 </div>
-<div class="srchhelpText">Explore your interests and expand your horizons at your library!
-<br/>Popular topics include:
-<ul class="unpadded">
-<li>Gardening</li>
-<li>Children's Storytime</li>
-<li>Study Skills</li>
-<li>Writing Workshops</li>
-<li>Digital Photography</li>
+<div class="srchhelpText">Type the ISBN or ISSN as it appears. Punctuation and spaces can be omitted if desired. For example:
+<ul class="unpadded srchhelpList">
+<li>0060254920</li>
+<li>0303-7207</li>
 </ul>
 </div>
 <!--{botlogo}-->
