@@ -203,6 +203,16 @@ div #bibDisplayContentMore { padding-left:7px; width:78%; clear:left; float:left
 
 .bibHoldingsLabel { font-size:90%; border-bottom:1px solid #EEEEEE;border-top:1px solid #EEEEEE;border-left:1px solid #EEEEEE; }
 
+#bibHoldingsTable {
+	clear:both;
+}
+
+
+
+#bibHoldingsTable .browselist {
+	font-size: 85%;
+}
+
 .bibHolds { font-size:90%; border: 1px solid #00437f; }
 
 .bibHoldsEntry { font-size:90%; border: 1px solid #00437f; }
@@ -447,7 +457,9 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 
 .browseHeaderYear { padding:3px; border-bottom:1px solid #BDBDBD; }
 
-.browseList { margin-right:10px; margin-top:4px; }
+.browseList { margin-right:10px; margin-top:25px; }
+
+.browseList td, .browselist th {padding: 5px;}
 
 .browsePager { font-size:.8em;font-weight:bold;padding-bottom:10px;padding-top:4px;cursor:default; }
 
@@ -895,6 +907,8 @@ table.recordPager { text-align:right; font-size:.8em; }
 
 /*.rssFeed { padding: 5px; margin: 2px; border: 1px solid #00437f; } */
 
+#searchGo {background: url("/screens/submit_small.gif") no-repeat scroll left top transparent; border: medium none; width: 44px; height:20px;}
+
 .srchhelpHeader { border-bottom:1px solid #000; }
 
 .searchTipsNavAreaText {  font-family:Arial,helvetica,Verdana,Trebuchet,sans-serif; color: #FFFFFF; text-decoration: none; font-weight: bold; background-color: #0132A7; }
@@ -920,6 +934,8 @@ table.recordPager { text-align:right; font-size:.8em; }
 .spacer { margin:1% 2%; background:#fff; border:1px solid #d0d0d0; }
 
 .srchhelpList li { margin:2px 5px; }
+
+.srchhelpNumberList li { margin:10px 15px; list-style-type:none; }
 
 .srchhelpText { margin:1% 5px;}
 
@@ -1083,9 +1099,9 @@ tr.highlight { background:#FFFFE4; }
 
 /* Section 4 */
 /* styles for Skyline design */
-.leftCol { padding:0;margin:0px; font-size:small; }
+.leftCol { padding:0;margin:0 20px; font-size:15px; }
 
-.leftCol li { list-style-type:none;list-style-position:inside;padding:4px 20px 4px 16px;text-indent:-14px;}
+.leftCol li { list-style-type:none;padding:4px 0;text-indent:-14px;}
 
 .leftCol li a:link, .leftCol li a:visited, .leftCol li a:active {color:#444;text-decoration:none;padding:0;margin:0 0 0 3px; }
 
@@ -1095,7 +1111,7 @@ tr.highlight { background:#FFFFE4; }
 
 .mainMenuSrchText { width:55%; margin:auto; letter-spacing:1px; text-align:left; }
 
-.mainMenuSrchTool form { margin:auto; padding:5px 10px; }
+.mainMenuSrchTool form {margin:auto; padding:5px 10px;}
 
 .mainMenuSrchTool { display:block; font-size:1.5em; margin:40px 5px; padding:0 ;border-bottom:1px solid #D1D8DD;text-align:center; }
 
@@ -1418,3 +1434,4 @@ tr.alt td {
 #wilo a:visited {
 	color:#c05bfd;
 }
+

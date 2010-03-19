@@ -2,42 +2,68 @@
 <!-- Rel 2007 "Skyline" Example Set -->
 <!-- This File Last Changed: 08 June 2009 -->
 <head>
-<title>Millennium Web Catalog</title>
+<title>MOBIUS Union Catalog</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/screens/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
+
+	$('#searchtype').change(function(){
+    	$("#exampleText").load("screens/example_text/" + this.value + ".inc");
+	});
+});
+</script>
 </head>
 <body onLoad="document.forms[0].elements[2].focus();">
 <!--{toplogo}-->
+<!--{patronrecord}-->
 <div class="mainMenuSrchTool">
-<form class="unpadded" action="/search" method="post" name="search" id="search">
+<form class="unpadded" action="/search" method="post" name="searchtool" id="search">
 Search:
 <select name="searchtype" id="searchtype">
-<option value="X" selected="selected"> Keyword</option>
-<option value="t"> Title</option>
-<option value="a"> Author</option>
-<option value="d"> Subject</option>
+<option value="Y" selected="selected">Keyword
+<option value="t">Title
+<option value="a">Author
+<option value="s">Periodical Title
+<option value="v">Publisher
+<option value="l">Genre
 
-<option value="h"> Journal Title</option>
-<option value="c"> LC Call #</option>
-<option value="g"> Govt Doc #</option>
-<option value="i"> ISBN/ISSN</option>
+<option value="">------------------</option>
+<option value="d">Subject (Library of Congress)
+<option value="m">Medical Subject (MESH)
+<option value="h">Children's Subject
+
+<option value="">------------------</option>
+<option value="c">Call Number (Library of Congress)
+<option value="e">Call Number (Dewey Decimal)
+<option value="g">Government Document Number
+<option value="i">ISN
+<option value="j">ISBN
+<option value="r">ISSN
+<option value="p">Music Number
+<option value="o">OCLC Number
 <!--<option value="y"> Resource Name</option> -->
 <!--<option value="m"> Resource Subject</option> -->
 
 </select>
 <!--{nosort}-->
-<input maxlength="75" name="searcharg" size="20" />
+<input maxlength="75" name="searcharg" size="35" />
 <!--{scope}-->
-<span class="nowrap"><input type="image" value="Submit" name="submit" src="/screens/submit.gif" border="0" align="absmiddle" alt="Submit Search" /></span>
+<input type="submit" alt="Submit"  value="" src="/screens/submit.gif" id="searchGo" />
 </form>
 </div><!--end tool -->
 
-<div class="mainMenuSrchText">Type the search term you want to find. Examples:
-<ul class="unpadded">
-<li>Italian cooking</li>
-<li>The Appeal</li>
-</ul>
+<div id="exampleText">
+	<div class="mainMenuSrchText">Type the search term you want to find. Examples:
+		<ul class="unpadded">
+			<li>Italian cooking</li>
+			<li>The Appeal</li>
+		</ul>
+	</div>
 </div>
 <br />
+
 
 <!--
 Insert your content here!

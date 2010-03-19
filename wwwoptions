@@ -62,7 +62,7 @@ INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/bibdisplay.js"></s
 
 #RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0" border="0"||Elsewhere
 RIGHT_CELL_WIDTH=15|15
-SSLPORT=80:443:mobius.missouri.edu:mobius.umsystem.edu|2082:444|2083:2443
+SSLPORT=80:443:mobius.umsystem.edu:mobius.umsystem.edu|2082:444|2083:2443
 STARTOVER=/search
 STATGROUP=800
 STYLESHEET=/screens/styles.css
@@ -148,14 +148,12 @@ IMAGE_MATTYPEg=/screens/media_projectedmedia.gif
 IMAGE_MATTYPEi=/screens/media_nonmusicalsound.gif
 IMAGE_MATTYPEj=/screens/media_musicalsound.gif
 IMAGE_MATTYPEk=/screens/media_2dartwork.gif
-IMAGE_MATTYPEl=/screens/media_2dartwork.gif
 IMAGE_MATTYPEm=/screens/media_computerfile.gif
 IMAGE_MATTYPEo=/screens/media_3dartwork.gif
 IMAGE_MATTYPEp=/screens/media_3dartwork.gif
 IMAGE_MATTYPEr=/screens/media_3dartwork.gif
 IMAGE_MATTYPEt=/screens/media_book.gif
-IMAGE_MATTYPEy=/screens/media_ebook.gif
-IMAGE_MATTYPEz=/screens/media_ebook.gif
+IMAGE_MATTYPE2=/screens/media_ebook.gif
 #INDEX_EXT=Xatdcoi
 INDEX_EXT=coi
 MEDIA=2
@@ -179,7 +177,7 @@ ICON_BIB_HOLDINGS_ITEMS=View Copies
 ICON_BIB_PAGING_CAPTION=Result page:
 ICON_BIB_PAGING_NEXT=<img src="/screens/bib_paging_next.gif" class="button" border="0" alt="Next Record" />
 ICON_BIB_PAGING_PREV=<img src="/screens/bib_paging_prev.gif" class="button" border="0" alt="Previous Record" />
-ICON_RECORDLINK=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">Bookmark link for this record</a></div>
+ICON_RECORDLINK=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">Persistent link for bookmarking</a></div>
 #LINK856TEXT=Connect to
 MARC=yes
 #SHOWOREC=no_cdate
@@ -248,6 +246,7 @@ BUT_VIEW_SAVES=/screens/view_saves.gif
 EMAILOP=From the library catalog|exporter|
 EXPORT_SELECT_TABLE=Sendto:browser,email,local|Format:full,brief,marc,procite,endnote
 XRECTYPE=boi
+BUT_PREVSCRN=/screens/prevscrn.gif
 
 # Requesting
 BIBREQUEST=f
@@ -382,7 +381,7 @@ INSTITUTIONLABEL=<p>Please choose your library cluster from the drop-down menu b
  style="text-decoration: underline;">Find your cluster.</a></p></span>
 IR_CENT_DISTLEARN=true|Pickup Cluster
 IR_CENT_HOLD_CHECKIN=C|^|f|"
-IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;25|Electronic Link;14|Call Number and Serial Holdings;33|Request Status;17
+IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;44|Electronic Link;11|Call Number;19|Status;15
 IR_CENT_HOLD_INST=^|U||
 #IR_CENT_HOLD_INST_VARFLD
 IR_CENT_HOLD_ITEM=C|U|E|F
