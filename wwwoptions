@@ -258,7 +258,7 @@ BUT_REQUEST_SELECTED=/screens/request_selected.gif
 ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px"/>Request
 #REQFILLTIME=14|<br />Request available in approximately %d days|<br />Current estimated availability: approximately %d days|<br />This material may be immediately available
 #REQUEST=<div style="padding-top:.5em"><img src="/screens/request.gif" alt="Request this item"/></div>|system
-REQUEST=Place a reservation on this item|system|ask|Y
+REQUEST=Place a reservation on this item|system|ask|N
 #REQUEST_ARTICLE_IFCHKIN=no
 #REQUEST_INSTRUCTION=Please enter any special instructions:
 #REQUEST_MULTI=Request All Items in Book Cart|system|ask
