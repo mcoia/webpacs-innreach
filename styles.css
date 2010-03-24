@@ -1435,3 +1435,10 @@ tr.alt td {
 	color:#c05bfd;
 }
 
+#pverify p {
+	padding: 1em 0;
+}
+
+#pverifyChoice {
+	width:40em;
+}
