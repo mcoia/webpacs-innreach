@@ -388,7 +388,7 @@ IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;44|Electronic Link;11|Call Num
 IR_CENT_HOLD_INST=^|U||
 #IR_CENT_HOLD_INST_VARFLD
 IR_CENT_HOLD_ITEM=C|U|E|F
-IR_CENT_HOLD_LIMITS=0|0
+#IR_CENT_HOLD_LIMITS=0|0
 IR_CENT_HOLD_ORDER=C| |^|F
 IR_CENT_HOLD_TABLEPARAM=BORDER=1 bordercolor="#cccccc" cellspacing=0 cellpadding=2 class="browselist" bgcolor=#f5f5f5
 IR_CENT_INST_TABLEPARAM=t|BORDER=1 bordercolor="#cccccc" cellspacing=0 cellpadding=2 class="browselist"
