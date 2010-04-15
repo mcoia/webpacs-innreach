@@ -3,8 +3,6 @@
 <br />
 <p>Type as much or as little of the Library of Congress call number as you want. For example:</p>
 <ul class="unpadded">
-<li>641.6 Ala</li>
-<li>641</li>
 <li>QA 402.6 R65 1986</li>
 <li>QA 402</li>
 </ul>
