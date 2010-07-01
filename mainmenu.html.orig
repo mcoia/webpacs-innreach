@@ -9,7 +9,6 @@
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 
-<<<<<<< HEAD
 	$('#searchtype').change(function(){
     	$("#exampleText").load("screens/example_text/" + this.value + ".inc");
 	});
@@ -18,6 +17,7 @@ $(document).ready(function () {
 </head>
 <body onLoad="document.forms[0].elements[2].focus();">
 <!--{toplogo}-->
+<!--{session}--> 
 <div class="mainMenuSrchTool">
 <form class="unpadded" action="/search/" method="get" name="searchtool" id="search">
 Search:
@@ -25,8 +25,11 @@ Search:
 <option value="Y" selected="selected">Keyword
 <option value="t">Title
 <option value="a">Author
+<<<<<<< HEAD
+<option value="s">Journals, Magazines, Newspapers
+=======
 <option value="s">Periodical Title
-<option value="v">Publisher
+>>>>>>> publisher
 <option value="l">Genre
 
 <option value="">------------------</option>
@@ -38,26 +41,7 @@ Search:
 <option value="c">Call Number (Library of Congress)
 <option value="e">Call Number (Dewey Decimal)
 <option value="g">Government Document Number
-=======
-<TABLE width="570" border="0" cellPadding="4" cellSpacing="4" class="with-borders">  
-<TR align="left" vAlign="top"><TD colspan="2" align="center">
-<form name="SearchForm" target="_parent" action="/search/Y" method="get" />
-<select name="searchtype">
-<option value="Y">KEYWORD
-<option value="t">TITLE
-<option value="a">AUTHOR
-<option value="s">JOURNAL TITLE
-<option value="v">PUBLISHER KEYWORD
-
-<option value="">------------------</option>    
-<option value="d">LC SUBJECT
-<option value="m">MEDICAL SUBJ
-<option value="h">CHILDREN'S SUBJ
-
-<option value="">------------------</option>  
-<option value="g">GOVT DOC #
->>>>>>> f5fa5f45daf0c5349cb103278f10a0efd788e3ee
-<option value="i">ISN
+<option value="i">Standard Number
 <option value="j">ISBN
 <option value="r">ISSN
 <option value="p">Music Number
@@ -78,6 +62,8 @@ Search:
 		<ul class="unpadded">
 			<li>Italian cooking</li>
 			<li>The Appeal</li>
+			<li>tax and legislat*</li>
+			<li>(lunar or solar) and eclipse</li>
 		</ul>
 	</div>
 </div>
