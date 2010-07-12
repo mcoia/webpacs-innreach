@@ -1,6 +1,6 @@
-<div class="mainMenuSrchText">Type the standard number as it appears. Punctuation and spaces can be omitted if desired. For example:
+<div class="mainMenuSrchText">Type as much or as little of the music number as you wish. For example: 
         <ul class="unpadded">
-            <li>0060254920</li>
-            <li>0303-7207</li>
+  <li>13785-9bostonmusic</li>
+  <li>13785-9</li>
         </ul>
 </div>
