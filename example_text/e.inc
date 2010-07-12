@@ -1,8 +1,9 @@
-<div class="mainMenuSrchText">Type as much or as little of the call number as you want. For example:
+<div class="mainMenuSrchText">
+<p>Note: This index will not search all call numbers in all MOBIUS libraries.</p>
+<br />
+<p>Type as much or as little of the Dewey Decimal call number as you want. For example:</p>
 <ul class="unpadded">
 <li>641.6 Ala</li>
 <li>641</li>
-<li>QA 402.6 R65 1986</li>
-<li>QA 402</li>
 </ul>
 </div>
