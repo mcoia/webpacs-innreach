@@ -27,10 +27,11 @@ Search:
 <option value="t">Title
 <option value="a">Author
 <<<<<<< HEAD
-<option value="s">Journals, Magazines, Newspapers
-=======
 <option value="s">Periodical Title
->>>>>>> publisher
+=======
+<option value="s">Journals, Magazines, Newspapers
+<option value="v">Publisher
+>>>>>>> searchtips
 <option value="l">Genre
 
 <option value="">------------------</option>
