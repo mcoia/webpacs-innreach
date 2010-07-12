@@ -5,38 +5,37 @@
 <title>Millennium Web Catalog</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
-<!--{advancedsearchbody}-->
+<body onLoad="document.forms[0].elements[1].focus();">
 <!--{toplogo}-->
-<h2 class="srchhelpHeader">Advanced Keyword Search</h2>
+<h2 class="srchhelpHeader">Keyword Search</h2>
 <!--{msg}-->
-<!--{spellcheck}-->
-<div class="srchhelpText">Please fill in the form, select limits, and click Submit.
-<div class="advSrchtool">
-<!--{advancedsearchformbegin}-->
+<div class="srchhelpText">Type the keyword(s) in the box below. Then press Enter or click the Submit button.</div>
+<div class="tool">
+<form method="get" class="unpadded">
 <span class="magFive">
-<!--{clearform}-->
+<!--{submit}-->
 </span>
-<!--{advancedsearch}-->
-<input type="hidden" name="startLimit" />
-<br>
-<span class="magFive">
-<!--{advancedsubmit}-->
-</span>
-<!--{branch}-->
-<!--{mattype}-->
-<!--{lang}-->
-<!--{DOCDATE}-->
-<!--{publish}-->
-<table border="0">
-        <tr>
-            <td>Search and Sort</td>
-            <td><select name="SORT">
-<option value="D" selected="selected">sorted by relevance</option><option value="DX">sorted by date</option><option value="AX">sorted by title</option></select></td>
-        </tr>
-</table>    
-<input type="hidden" name="endLimit" />
-<!--{advancedsearchformend}-->
+<table border="0"  class="textFix">
+<tr>
+<td align="right">Search for:</td>
+<td>
+<!--{search}-->
+</td>
+</tr>
+<tr>
+<td align="right">Sort by:</td>
+<td>
+<!--{indexsort}-->
+</td>
+</tr>
+</table>
+</form>
 </div>
+<div class="srchhelpText">Type the keyword you want to find. For example:
+<ul class="unpadded srchhelpList">
+<li>design</li>
+<li>bleachers grisham</li>
+</ul>
 </div>
 <table class="searchTipTable">
 <tr><td colspan="2" align="center" style="font-size:125%;border-bottom:1px solid #000"><strong>Search Tips</strong></td></tr>
