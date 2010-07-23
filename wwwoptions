@@ -464,7 +464,7 @@ IR_NOREAUTH_LOGOFF=Log off
 #Z39MULTI=500:100
 
 # Partner - NOT USED
-#BUT_RETHOME=/screens/rethome.gif
+BUT_RETHOME=/screens/rethome.gif
 
 # AirPAC - NOT USED
 #AIRPAC_PORT=6060
