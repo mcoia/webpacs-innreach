@@ -389,7 +389,7 @@ IR_CENT_HOLD_INST=^|U||
 IR_CENT_HOLD_ITEM=C|U|E|F
 IR_CENT_HOLD_LIMITS=32|1
 IR_CENT_HOLD_ORDER=C| |^|F
-IR_CENT_HOLD_TABLEPARAM=BORDER=1 bordercolor="#cccccc" cellspacing=0 cellpadding=2 class="browselist" bgcolor=#f5f5f5
+IR_CENT_HOLD_TABLEPARAM=class="centralHoldingsTable" cellspacing="12px"
 IR_CENT_INST_TABLEPARAM=t|BORDER=1 bordercolor="#cccccc" cellspacing=0 cellpadding=2 class="browselist"
 #IR_CENT_LOC_<code>
 IR_CENT_NO_HOLDINGS="No Local Holdings|^|^|^
