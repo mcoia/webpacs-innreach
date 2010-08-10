@@ -499,21 +499,6 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 
 .button { vertical-align: top; }
 
-table.centralHoldingsTable {
-  border: 1px solid #cccccc; 
-  border-collapse: separate;
-  margin-top:20px;
-  background: #f5f5f5; 
-}
-
-
-table.centralHoldingsTable td, table.centralHoldingsTable th {
- font-family: Arial, Helvetica, sans-serif;
- font-size: smaller; 
- border-bottom: 1px solid #cccccc;
- padding-top:10px;
-}
-
 .clear { clear:both; margin-bottom:5px; }
 
 .clear2 { clear:both; }
@@ -597,7 +582,33 @@ table.centralHoldingsTable td, table.centralHoldingsTable th {
 
 .holdingsItemsBookings { margin:0 0 8px 0; }
 
+table.holdingsTable { 
+  margin-top:20px;
+  background: #f5f5f5; 
+}
+
+
+table.holdingsTable td, table.holdingsTable th {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: smaller; 
+ border: 1px solid #cccccc;
+ padding:8px;
+}
+
 .InnovativeCredit { font-family:Arial,helvetica,Verdana,Trebuchet,sans-serif; font-size: 70%; font-style: italic; }
+
+table.instTable {
+  margin-top:20px;
+  margin-bottom:5px;
+}
+
+
+table.instTable td {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: smaller; 
+ border: 1px solid #cccccc;
+ padding:8px;
+}
 
 /* Used in Related Searches display */
 div#instructions { font-size: 90%; font-style: italic; }
