@@ -57,7 +57,7 @@ ICON_CLEAR_ALL=<img src="/screens/clear_all.gif" alt="Clear All"/>
 ICON_CLEAR_FORM=<img src="/screens/clear_form.gif" alt="Clear Form"/>
 ICON_DELETE_SELECTED=<img src="/screens/delete_selected.gif" alt="Delete Selected"/>
 ICON_SELECT_ALL=<img src="/screens/save_all.gif" alt="Save All"/>
-INSERTTAG_INHEAD=<script type="text/javascript" src="/screens/bibdisplay.js"></script><script type="text/javascript" src="/screens/jquery.min.js"></script><!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" /><![endif]-->
+INSERTTAG_INHEAD=<link rel="stylesheet"  href="/screens/print.css" type="text/css" media="print" /><script type="text/javascript" src="/screens/bibdisplay.js"></script><script type="text/javascript" src="/screens/jquery.min.js"></script><!--[if lte IE 8]><link rel="stylesheet" media="all" type="text/css" href="/screens/ie_styles.css" /><![endif]-->
 #INSERTTAG_HTML=<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd";><html xmlns="http://www.w3.org/1999/xhtml"; xml:lang="en" lang="en">
 
 #RESOURCETABLE=valign="top"|cellpadding="0" cellspacing="0" border="0"||Elsewhere
