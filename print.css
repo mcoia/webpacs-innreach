@@ -1,7 +1,6 @@
 a, a:link, a:visited {text-decoration:none;color:black;}
 body {background:none;}
 .bareBreaker{display:none;}
-#bibHoldingsTable{clear:none;}
 .bibInfoLabel, .bibInfoData, .holdingsTable, .pageContentColumn table, table.holdingsTable td, table.holdingsTable th {font-size:12px;}.bibHistoryRow{display:none;}
 .bibLinks{display:none;}
 .bibRecordLink{display:none;}
