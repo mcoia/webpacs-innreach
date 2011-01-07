@@ -1,5 +1,5 @@
 a, a:link, a:visited {text-decoration:none;color:black;}
-body {background:none;}
+body {background:none !important;}
 .bareBreaker{display:none;}
 .bibInfoLabel, .bibInfoData, .holdingsTable, .pageContentColumn table, table.holdingsTable td, table.holdingsTable th {font-size:12px;}.bibHistoryRow{display:none;}
 .bibLinks{display:none;}
