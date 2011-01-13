@@ -6,7 +6,8 @@ body {background:none !important;}
 .bibRecordLink{display:none;}
 .bibSearch{display:none;}
 #footer{display:none;}
-table.holdingsTable td, table.holdingsTable th {border:none;padding:none;}
+table.holdingsTable td, table.holdingsTable th {border:1px solid gray;padding:.5em;}
+table.holdingsTable {border-collapse:collapse;}
 .instTable{display:none;}
 .pageContentColumn, table.holdingsTable, div #bibDisplayContentMore, .bibDetail {background:none; border:none; margin:0; padding:0; width:100%; float:none;}
 .pageContentColumn img{display:none;}
