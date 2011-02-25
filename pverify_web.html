@@ -1,0 +1,216 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- Rel 2007 "Skyline" Example Set -->
+<!-- This File Last Changed: 02 September 2008 -->
+<head>
+<title>MOBIUS</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body onLoad="document.forms[0].elements[0].focus();">
+<!--{toplogo}-->
+<h2 class="srchhelpHeader">Request Verification</h2>
+<br/>
+<div class="advSrchtool">
+<div id="pverify">
+<!--{reqmsg}-->
+
+<BR>
+
+<form name="patform" method="POST">
+
+<!--{iferrmsg}-->
+
+<span class="errorMessage">
+
+<!--{iferrmsgisPIN}-->
+
+<!--{newpinmsg}-->
+
+<!--{else}-->
+
+<!--{errmsg}-->
+
+<!--{xif}-->
+
+<!--{xif}-->
+
+</span>
+
+<!--{ifrequestmoney}-->
+
+<span class="msg">
+
+<!--{requestmoney}-->
+
+</span>
+
+<!--{xif}-->
+
+
+
+
+
+<!--{extpatform}-->
+
+
+
+
+
+<!-- used if external patron authentication is unavailable -->
+
+<!--{enterinfo}-->
+
+<table width="100%">
+
+<!--{ifneedpatronname}-->
+
+<tr><td width="30%"></td><td><span class="helpNote">
+
+<!--{nameexample}-->
+
+</span></td></tr>
+
+<tr>
+
+<td>
+
+<!--{nameprompt}-->
+
+</td>
+
+<td>
+
+<!--{name}-->
+
+</td>
+
+</tr>
+
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+
+<tr><td></td><td><span class="helpNote">
+
+<!--{barcodeexample}-->
+
+</span></td></tr>
+
+<tr><td>
+
+<!--{barcodeprompt}-->
+
+</td><td>
+
+<!--{barcode}-->
+
+</td></tr>
+
+<!--{ifneedspin}-->
+
+<!--{iferrmsgisPIN}-->
+
+<tr><td colspan="2">
+
+<!--{newpinmsg}-->
+
+</td></tr><tr><td>
+
+<!--{pin1prompt}-->
+
+</td><td>
+
+<!--{pin1}-->
+
+</td></tr><tr><td>
+
+<!--{pin2prompt}-->
+
+</td><td>
+
+<!--{pin2}-->
+
+</td></tr>
+
+<!--{else}-->
+
+<tr><td></td><td><span class="helpNote">
+
+<!--{pininstructions}-->
+
+</span></td></tr><tr><td>
+
+<!--{pinprompt}-->
+
+</td><td>
+
+<!--{pin}-->
+
+</td></tr>
+
+<!--{xif}-->
+
+<!--{xif}-->
+
+<!--{xif}-->
+
+</table>
+
+<!--{xif}-->
+
+
+
+<a href="/screens/ReqInfo.html" style="text-decoration: none;" onClick="return popup(this,'req_id_format')" target="_blank">
+
+<br />
+
+<img src="/screens/id_help.gif" alt="Click for ID Help" border="0"/></a>
+
+<br />
+
+<!--{ifcampus}-->
+
+<!--{campus}-->
+
+<!--{else}-->
+
+<!--{holdshelfmenu}-->
+
+<!--{xif}-->
+
+<!--{ifreqinst}-->
+
+<!--{reqinst}-->
+
+<br />
+
+
+<!--{inst}-->
+
+<br />
+
+<!--{xif}-->
+
+<!--{ifneedNNA}-->
+
+<!--{needbyprompt}-->
+
+<!--{needby}-->
+
+<br />
+
+<!--{xif}-->
+
+<!--{submit}-->
+
+</form>
+
+<div align="left">
+
+<!--{startover}-->
+
+</div>
+</div> 
+</div>
+<!--{botlogo}-->
+</body>
+</html>
