@@ -1322,6 +1322,12 @@ tr.alt td {
 	
 }
 
+#mapTable ul li ul li {
+
+	padding-left: 1em;
+	
+}
+
 #mapTable td {
 	padding: 1em 0 .5em 1em;
 	border-bottom-color: black;
