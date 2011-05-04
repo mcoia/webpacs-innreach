@@ -535,3 +535,9 @@ SPELLCHECK=<span class="spellcheckTool">Did you mean %a? %s </span>
 #ICON_HIDE_ADDITIONAL_SESSIONS=<img src="/screens/hide_additional_sessions.gif" border="0" alt="Hide Additional Sessions">
 #ICON_PROGRAM_CAL=<img src="/screens/program_cal.gif" border="0" alt="Events Calendar">
 #TABLEPARAM_PROG_SECTIONS=width="95%" border="3" cellspacing="1" align="center"
+
+# IRSSO
+
+REMOTE_403=false
+REMOTE_USERID_6mrln=u
+
