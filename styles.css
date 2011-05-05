@@ -671,6 +671,10 @@ div#instructions { font-size: 90%; font-style: italic; }
 
 .navRow li { list-style:none;display:inline;padding:2px 5px; }
 
+.news {margin-top:2em;}
+
+.news em {font-weight:bold;}
+
 .nowrap { white-space: nowrap; }
 
 .pageDirectoryArea { color: #000000; text-align: left; }
