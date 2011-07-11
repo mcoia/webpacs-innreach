@@ -239,7 +239,7 @@ WEBPUBDEF=true
 # Saving and Exporting
 BRIEF_EXPORT=c|a|t|p
 BUT_BIBEXPORT=/screens/bibexport.gif
-BUT_CLEAR_MARKED=/screens/clear_marked.gif
+BUT_CLEAR_MARKED=/screens/clearmarked.gif
 BUT_EXPORT_MULTI=/screens/export_multi.gif
 BUT_EXPORT_VIEW_SAVES=/screens/view_saves.gif
 BUT_VIEW_SAVES=/screens/view_saves.gif
