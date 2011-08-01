@@ -4,16 +4,6 @@
 <head>
 <title>MOBIUS Union Catalog</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="/screens/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
-
-	$('#searchtype').change(function(){
-    	$("#exampleText").load("screens/example_text/" + this.value + ".inc");
-	});
-});
-</script>
 </head>
 <body onLoad="document.forms[0].elements[2].focus();">
 <!--{toplogo}-->
