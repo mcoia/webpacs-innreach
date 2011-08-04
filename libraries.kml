@@ -116,11 +116,11 @@
 			</Icon>
 		</IconStyle>
 	</Style>
-	<Style id="info">
+	<Style id="darkteal">
 		<IconStyle>
-			<scale>1.2</scale>
+			<scale>1.1</scale>
 			<Icon>
-				<href>http://maps.google.com/mapfiles/kml/shapes/info-i_maps.png</href>
+				<href>http://mobiusconsortium.org/files/Markers/small/darkteal-marker_sm.png</href>
 			</Icon>
 		</IconStyle>
 	</Style>
@@ -133,29 +133,7 @@
 		</IconStyle>
 	</Style>
 
-  <Placemark>
-    <name>Information about this map</name>
-    <Snippet>Marker Legend  - Archway  - Arthur  - Bridges  - Galahad  - Lance  - MERLIN  - Q</Snippet>
-    <description><![CDATA[<h3>Marker Legend</h3>
-<img src="http://mobiusconsortium.org/files/Markers/small/blue-marker_sm.png"> - Archway <img src="http://mobiusconsortium.org/files/Markers/small/burgundy-marker_sm.png"> - Arthur <img src="http://mobiusconsortium.org/files/Markers/small/darkblue-marker_sm.png"> - Bridges<br>
-<img src="http://mobiusconsortium.org/files/Markers/small/darkgreen-marker_sm.png"> - Galahad <img src="http://mobiusconsortium.org/files/Markers/small/green-marker_sm.png"> - Lance <img src="http://mobiusconsortium.org/files/Markers/small/orange-marker_sm.png"> - MERLIN<br>
-<img src="http://mobiusconsortium.org/files/Markers/small/pink-marker_sm.png"> - Quest <img src="http://mobiusconsortium.org/files/Markers/small/purple-marker_sm.png"> - MRRL <img src="http://mobiusconsortium.org/files/Markers/small/red-marker_sm.png"> - SWAN<br>
-<img src="http://mobiusconsortium.org/files/Markers/small/seafoam-marker_sm.png"> - SGCL / COOL <img src="http://mobiusconsortium.org/files/Markers/small/teal-marker_sm.png"> - Towers <img src="http://mobiusconsortium.org/files/Markers/small/violet-marker_sm.png"> - WILO<br>
-<img src="http://mobiusconsortium.org/files/Markers/small/yellowgreen-marker_sm.png"> - WashU <img src="http://mobiusconsortium.org/files/Markers/small/yelloworange-marker_sm.png"> - SLU]]></description>
-    <LookAt>
-      <longitude>-92.543137</longitude>
-      <latitude>38.316853</latitude>
-      <altitude>0.000000</altitude>
-      <heading>-1.429279</heading>
-      <tilt>0.000000</tilt>
-      <range>463309.968750</range>
-      <altitudeMode>relativeToGround</altitudeMode>
-    </LookAt>
-    <styleUrl>#info</styleUrl>
-    <Point>
-      <coordinates>-92.691772,37.970463,0.000000</coordinates>
-    </Point>
-  </Placemark>
+
   <Placemark>
     <name>EC East Central</name>
     <Snippet>East Central College Library 1964 Prairie Dell Rd.  Union, MO 63084-0529  Academ</Snippet>
@@ -717,6 +695,19 @@ Academic<br>
     <styleUrl>#orange</styleUrl>
     <Point>
       <coordinates>-90.311188,38.710060,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Poplar Bluff Public Library</name>
+    <description><![CDATA[Poplar Bluff Public Library<br>
+318 North Main Street<br>
+Poplar Bluff, MO 63901-5199 <br>
+Public<br>
+library@poplarbluff.org</br>
+<a href="http://poplarbluff.org/" target="_blank">http://poplarbluff.org/</a><br>]]></description>
+    <styleUrl>#darkteal</styleUrl>
+    <Point>
+      <coordinates>-90.392803,36.758056,0.000000</coordinates>
     </Point>
   </Placemark>
   <Placemark>
