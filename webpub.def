@@ -87,6 +87,9 @@ b|z||-6w7|Cont'd By||b|
 b|q|7[67][0-7]|-7|Bibliographic Link||b|
 b|q||-7|Related To||b|
 b|d||-6|Subjects||b|
+b|k|650.1|-6789|Children’s Subject||b|
+b|k|651.1|-6789|Children’s Subject||b|
+b|k||-6789|Child Subj||b|
 b|m|650.2|-6789|Medical Subject||b|
 b|m|651.2|-6789|Medical Subject||b|
 b|m||-6789|Med Subj||b|
@@ -145,9 +148,6 @@ b|y|8[6-9]...|-w|||b|
 b|y|9[0-9][0-9]..|-w|||b|
 b|y||-w|Misc Marc||b|
 b|l||-6789|LC CARD #||b|
-b|k|650.1|-6789|Children’s Subject||b|
-b|k|651.1|-6789|Children’s Subject||b|
-b|k||-6789|Child Subj||b|
 c|i||+|||b|&nbsp;
 c|C||&|||b|&nbsp;
 c|Q||||b|
