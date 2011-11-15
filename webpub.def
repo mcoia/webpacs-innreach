@@ -87,12 +87,8 @@ b|z||-6w7|Cont'd By||b|
 b|q|7[67][0-7]|-7|Bibliographic Link||b|
 b|q||-7|Related To||b|
 b|d||-6|Subjects||b|
-b|k|650.1|-6789|Children’s Subject||b|
-b|k|651.1|-6789|Children’s Subject||b|
-b|k||-6789|Children's Subject||b|
-b|m|650.2|-6789|Medical Subject||b|
-b|m|651.2|-6789|Medical Subject||b|
-b|m||-6789|Medical Subject||b|
+b|k||-6789|Children's Subjects||b|
+b|m||-6789|Medical Subjects||b|
 b|j|650.7|-2|Additional Keywords||b|
 b|j|655..|-2|Genre/Form||b|
 b|j|65[346789]|-2|Additional Keywords||b|
