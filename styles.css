@@ -595,6 +595,20 @@ table.holdingsTable td, table.holdingsTable th {
  padding:8px;
 }
 
+.idHelp {
+	padding:1em;
+}
+
+.idHelp li {
+	margin:1em;
+	list-style-type:none;
+}
+
+.idHelp p {
+	margin-bottom:1em;
+}
+
+
 .InnovativeCredit { font-family:Arial,helvetica,Verdana,Trebuchet,sans-serif; font-size: 70%; font-style: italic; }
 
 table.instTable {
