@@ -77,18 +77,17 @@
         var textGBS = "";
         for (OCLC in bookInfo) {
             var b = bookInfo[OCLC];
-            var googleButton = "<a href='" + b.preview_url + "' target='blank'>" + buttonImg;
             var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
             //form the text of Google Book contents
             if (b && (b.preview == "full")) {
-                //textGBS = "Full Text";
+                textGBS = "<p>Full Text</p>";
                 //"Google Book Search";
-                document.getElementById("googlebooks").innerHTML = bookJacket + googleButton 
+                document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + textGBS + "</a>"
             }
             else if (b && (b.preview == "partial")) {
-                //textGBS = "(Limited preview)"
+                textGBS = "<p>Limited Preview</p>"
                 //"Preview at Google Book Search";
-                document.getElementById("googlebooks").innerHTML = bookJacket + googleButton
+                document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + textGBS + "</a>"
             }
             else {
                 //document.getElementById("googlebooks").innerHTML = "None available.";
