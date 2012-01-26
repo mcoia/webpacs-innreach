@@ -161,11 +161,9 @@ div .advSrchtool { width:90%; }
 
 .bibCopyStatCont input { font-size:70%; }
 
-.bibDetail { width:80%; }
-
 #bibDisplayBody { padding:0px; margin-right:0px; }
 
-.bibDisplayContentMain { float:left; width:78%; }/*margin-right:85px; }width:98%; }*/
+.bibDisplayContentMain { float:left; width:100%; }
 
 #bibDisplayContent { }
 /*#bibDisplayContent table { width:98%; }*/
@@ -235,6 +233,16 @@ div #bibDisplayContentMore { padding-left:7px; width:78%; clear:left; float:left
 
 .bibItemsLabel { }
 
+#bibLeftColumn {
+	width:70%;
+	float:left;
+}
+
+#bibRightColumn {
+	width:150px;
+	float:right;
+}
+
 .bibLicense { }
 
 .bibLicenseEntry { color: #000000; background: #FFF8EF; text-align: left; }
@@ -251,7 +259,7 @@ div #bibDisplayContentMore { padding-left:7px; width:78%; clear:left; float:left
 
 .bibPager { text-align:right; font-size:85%; padding:5px 5px 0 0;margin:0 3px 0 5px; }
 
-.bibRecordLink { width:100%;text-align:right; }
+.bibRecordLink { width:100%;float:left; }
 
 .bibRecordLink a { font-size:.7em;padding-right: 3px; font-style: italic; }
 
@@ -557,6 +565,17 @@ table.browseResourceTable { margin-top:13px;border:0px; background-color:#F2F8FC
 
 /* This is used in the featured list display */
 .ftlistHeader { }
+
+#googlebooks {
+	text-align:center;
+}
+
+#googlebooks img {
+	display:block;
+	margin:1em 0;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 #helpCenter { margin-left:15px; margin-right:15px; font-size:90%; }
 
