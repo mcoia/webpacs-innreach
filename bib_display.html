@@ -31,13 +31,17 @@
 <!--{relsearch}-->
     </div>
     <div class="bibDisplayContentMain">
- 
+<div id="bibLeftColumn">
 <!--{recordinfo:!}-->
+<!--{recordlink}-->
 <!--{ifhaspatrate}-->
 <!--{ratings}-->
 <!--{xif}-->
+</div>
+<div id="bibRightColumn">
 <!--{bibimage}-->
-<!--{recordlink}-->
+<div id="googlebooks" name="googlebooks"></div>
+</div>
 <!--{booking}-->
 <!--{holdingslink}-->
 <!--{linkeddocs}-->
@@ -66,3 +70,46 @@
 </div><!-- close bibDisplayContent -->
 </div><!-- close bibDisplayBody -->
 <!--{botlogo}-->
+
+<script type='text/javascript'> 
+    var ProcessResults = function(bookInfo) {
+        var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
+        var textGBS = "";
+        for (OCLC in bookInfo) {
+            var b = bookInfo[OCLC];
+            var googleButton = "<a href='" + b.preview_url + "' target='blank'>" + buttonImg;
+            var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
+            //form the text of Google Book contents
+            if (b && (b.preview == "full")) {
+                //textGBS = "Full Text";
+                //"Google Book Search";
+                document.getElementById("googlebooks").innerHTML = bookJacket + googleButton 
+            }
+            else if (b && (b.preview == "partial")) {
+                //textGBS = "(Limited preview)"
+                //"Preview at Google Book Search";
+                document.getElementById("googlebooks").innerHTML = bookJacket + googleButton
+            }
+            else {
+                //document.getElementById("googlebooks").innerHTML = "None available.";
+            }
+    }
+}
+</script>
+
+<script type='text/javascript'>
+       
+var OCLC = $(".bibInfoLabel:contains('OCLC')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+
+var cburl = "http://books.google.com/books";
+// Retrieve the info for these bibkeys
+var api_url = cburl + "?jscmd=viewapi&bibkeys=OCLC:" + OCLC;
+var s = document.createElement("script");
+s.setAttribute("type", "text/javascript");
+//alert("searching for: " + OCLC);
+s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=OCLC:" + OCLC + "&callback=ProcessResults");
+document.documentElement.firstChild.appendChild(s);
+//alert (api_url);
+
+</script>
+          
