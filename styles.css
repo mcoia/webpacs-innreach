@@ -138,6 +138,20 @@ form table td.advSrchProgramsData  { width:300px; }
 
 div .advSrchtool { width:90%; }
 
+#alertMessage {
+    margin-left:1em;
+    font-size:1.2em;
+    color:#6c0000;
+}
+
+#alertMessage a {
+    font-weight:bold;
+}
+
+#alertMessage p {
+    margin-top:1em;
+}
+
 .alphaERM { text-align:center; }
 
 /*controls display of authority redirect information */
