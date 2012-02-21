@@ -15,7 +15,8 @@ if (notDomain == "/") {
   redirectUrl = searchmobius + notDomain + "&redirected"
 }
 
-if(href.indexOf("missouri.edu") != -1 ){
+if(href.indexOf("laurel.lso.missouri.edu") != -1 ){
+}else if(href.indexOf("missouri.edu") != -1 ){
     var oldDomain = "mobius.missouri.edu"
     window.location = redirectUrl;
 }else if(href.indexOf("umsystem.edu") != -1 ){
