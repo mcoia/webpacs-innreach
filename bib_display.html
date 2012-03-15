@@ -75,8 +75,8 @@
     var ProcessResults = function(bookInfo) {
         var buttonImg = "<img src='/screens/googlebutton.gif' alt='Google Preview'>"
         var textGBS = "";
-        for (OCLC in bookInfo) {
-            var b = bookInfo[OCLC];
+        for (ISBN in bookInfo) {
+            var b = bookInfo[ISBN];
             var bookJacket =  "<img src='" + b.thumbnail_url + "&zoom=1'>";
             //form the text of Google Book contents
             if (b && (b.preview == "full")) {
@@ -89,6 +89,13 @@
                 //"Preview at Google Book Search";
                 document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + textGBS + "</a>"
             }
+            else if (b && (b.preview == "noview")) {
+                textGBS = "<p>Limited Preview</p>"
+                //"Preview at Google Book Search";
+                if (b.thumbnail_url != undefined){
+                document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
+                }
+            }
             else {
                 //document.getElementById("googlebooks").innerHTML = "None available.";
             }
@@ -98,15 +105,15 @@
 
 <script type='text/javascript'>
        
-var OCLC = $(".bibInfoLabel:contains('OCLC')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
+var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
 
 var cburl = "http://books.google.com/books";
 // Retrieve the info for these bibkeys
-var api_url = cburl + "?jscmd=viewapi&bibkeys=OCLC:" + OCLC;
+var api_url = cburl + "?jscmd=viewapi&bibkeys=ISBN:" + ISBN;
 var s = document.createElement("script");
 s.setAttribute("type", "text/javascript");
-//alert("searching for: " + OCLC);
-s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=OCLC:" + OCLC + "&callback=ProcessResults");
+//alert("searching for: " + ISBN);
+s.setAttribute("src", "http://books.google.com/books?jscmd=viewapi&bibkeys=ISBN:" + ISBN + "&callback=ProcessResults");
 document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
