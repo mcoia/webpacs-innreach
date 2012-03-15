@@ -90,7 +90,6 @@
                 document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + textGBS + "</a>"
             }
             else if (b && (b.preview == "noview")) {
-                textGBS = "<p>Limited Preview</p>"
                 //"Preview at Google Book Search";
                 if (b.thumbnail_url != undefined){
                 document.getElementById("googlebooks").innerHTML = bookJacket + "<a href='" + b.preview_url + "'>" + buttonImg + "</a>"
