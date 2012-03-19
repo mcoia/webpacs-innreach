@@ -9,17 +9,10 @@
 <!--{toplogo}-->
 <script type="text/javascript">
 
-function idhelp() {
+$(document).ready(function () {
         var cluster = $('select[name="dlcamp"]').val();
         $('#basic-modal-content div:not(#' + cluster + ')').hide();
         $('#basic-modal-content [id="' + cluster + '"]').show();
-}
-
-$(document).ready(function () {
-        idhelp();
-        $('[name="dlcamp"]').change(function(){
-                idhelp();
-	});
 	$('#idHelp').click(function (e) {
 		$('#basic-modal-content').modal();
 
