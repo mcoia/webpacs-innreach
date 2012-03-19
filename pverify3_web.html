@@ -9,16 +9,14 @@
 <!--{toplogo}-->
 <script type="text/javascript">
 
-function idhelp() {
-        var cluster = $('select[name="dlcamp"]').val();
-        $('.modalboxContent div:not(#' + cluster + ')').hide();
-        $('.modalboxContent [id="' + cluster + '"]').show();
-}
-
 $(document).ready(function () {
-        idhelp();
-        $('[name="dlcamp"]').change(function(){
-                idhelp();
+        var cluster = $('select[name="dlcamp"]').val();
+        $('#basic-modal-content div:not(#' + cluster + ')').hide();
+        $('#basic-modal-content [id="' + cluster + '"]').show();
+	$('#idHelp').click(function (e) {
+		$('#basic-modal-content').modal();
+
+		return false;
 	});
 });
 
@@ -177,9 +175,12 @@ $(document).ready(function () {
 
 
 
-<a class="openmodalbox" href="javascript:void(0);">
+<a href="#">
 <img id="idHelp" src="/screens/id_help.gif">
-    <span class="modalboxContent">
+</a>
+
+<div id="basic-modal-content">
+
 <div id="6arch" class="idHelp">
 <p>Examples:</p>
 <ul>
@@ -303,18 +304,6 @@ $(document).ready(function () {
 
 </div>
 
-<div id="6ques" class="idHelp">
-
-<p>Type your ID number plus your campus code: CMU, CMSU, MVC, SFCC</p>
-<ul>
-<li>Central Methodist University = CMU</li>
-<li>Missouri Valley College = MVC</li>
-<li>State Fair Community College = SFCC</li>
-<li>University of Central Missouri = UCM</li>
-</ul>
-
-</div>
-
 <div id="9sgcl" class="idHelp">
 
 <p>Complete Library Card Barcode</p>
@@ -365,12 +354,17 @@ $(document).ready(function () {
 <li><a href="https://connect.wustl.edu/login/wuforgotpwd.aspx">Forgot your Password?</a></li>
 </ul>
 
+		<!-- preload the images -->
+		<div style='display:none'>
+			<img src='/screens/x.png' alt='' />
+		</div>
+
 </div>
 
 
 
 
-    </span>
+</div>
 </a>
 <br />
 
