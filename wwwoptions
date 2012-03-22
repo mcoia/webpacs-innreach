@@ -79,7 +79,7 @@ XSTARTOVER=/search
 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<span class="navButton">Another Search</span>
-ICON_BUT_NEWSRCH=<span class="navButtonOneLine">Another Search</span>
+ICON_BUT_NEWSRCH=<span class="navButton">Another Search</span>
 ICON_BUT_WORDSRCH=<span class="navButton">Search As Words</span>
 DROP_DOWN=Ytasdmhgioceljrp
 FRAMEURL=0
