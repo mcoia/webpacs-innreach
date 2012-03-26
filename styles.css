@@ -40,16 +40,12 @@ For 10pt, apply .7353em
 
 a img {border:none;}
 
-body { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:#FFFFFF }
-
-body.bodybg { background:url(background.gif) 2% 0% repeat-x #4D4D4D; color: #444444; }
+body { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-size:85%; font-style:normal; font-weight: normal; height:100%; text-align:center; width:100%; margin-top:0px; background:url("/screens/page-bg-gradient.gif") repeat-x scroll left top #F9F9F9; }
 
 /* Generated popup body */
 body > font { background:#FFFFFF; font-size:1.3em; line-height:2em; margin-left:3px; }
 
 body > br { line-height:0px; }
-
-body > div { background:#FFFFFF; padding-bottom:10px; padding-top:10px; }
 
 body > div.mylistsSavePage { background:none; padding-bottom:0px; padding-top:0px; }
 
@@ -100,6 +96,7 @@ float:right;
 margin-left:1%;
 padding:1%;
 width:71%;
+background-color:#ffffff;
 }
 
 .pageContentInner p { margin-left:0px; }
@@ -614,8 +611,6 @@ div .bibResourceSidebar { display:none; }
 
 .formMultiSelect { display:inline; }
 
-.fullPage { background:#ffffff; padding:0px; text-align:left; }
-
 .pageContent div.helpContent { padding-bottom:12em; }
 
 .pageContent > table .browseSearchtool em { margin-left:0px; }
@@ -729,8 +724,6 @@ div .bibResourceSidebar { display:none; }
 
 .mainSearch .form1Part, .mainMenuContent { width:600px; margin-left:auto; margin-right:auto; max-width:100%; } /*Fixed the search box so it wouldn't run into the Search Options column on narrow browsers */
 
-.minHeight { height:100%; width:97%; margin-left:auto; margin-right:auto; background:#ffffff; padding-bottom:0; padding-top:0; }
-
 .miscButtons { margin-bottom: 1em;}
 
 .mobiusLogo, .clusterLogo { position:absolute; right:10px; top:16px;}
@@ -804,6 +797,8 @@ padding:2px;
 
 .pageContent > br { display:none; }
 
+.pageContentColumn { border:2px solid #F9F9F9; }
+
 .pageContentInner > br { display:none; }
 
 .pageContentInner { margin:0 20px;}
@@ -817,10 +812,10 @@ padding:2px;
 .pageContentInnerBarePage { padding:12px 20px;}
 
 .pageNavColumn {
-background-color:#F3F3F3;
-border:1px solid #D3D3D3;
+background-color:#FFFFFF;
+border:2px solid #F9F9F9;
 float:right;
-margin:2% 1.75%;
+margin:0 1.75%;
 padding:0.5%;
 width:19%;
 }
@@ -1085,9 +1080,9 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .topLogo img { border:0; display:block; margin-left:auto; margin-right:auto }
 
-.topLogoImage { padding:20px 10px;}
+.topLogoImage { padding:5px; }
 
-.topLogoImage, .mobiusLogo, .clusterLogo {width:250px;}
+.topLogoImage, .mobiusLogo, .clusterLogo {width:130px;}
 
 .topLinks { float: right; height: auto; margin:0; padding:0; width: 50%; }
 
