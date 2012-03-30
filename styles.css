@@ -1046,6 +1046,8 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 #skipNav a:active, #skipNav a:focus { position:static; width:auto; height:auto; margin-bottom:3px; background:#FFFFFF; }
 
+.smallButton {  background: url('/screens/button_blank_small.gif') no-repeat top left; border:none; }
+
 #specializedSearch { vertical-align:bottom; margin-bottom:3px; }
 
 .submitHidden { position:absolute; left:-999px; top:-999px; }
