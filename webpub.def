@@ -144,26 +144,8 @@ b|y|8[6-9]...|-w|||b|
 b|y|9[0-9][0-9]..|-w|||b|
 b|y||-w|Misc Marc||b|
 b|l||-6789|LC CARD #||b|
-c|i||+|||b|&nbsp;
-c|C||&|||b|&nbsp;
-c|Q||||b|
-c|$||+|Location||b|
-c|h||&|||b|
-c|2||+|Latest Received||b|&nbsp;
-c|3||+|Latest Received||b|
-c|Q||||b|
-#
-# end pubdef
-#
-#
-# -----------------------------------------------------
-# Converted by cvpubdef from item_col_width: 1(23),Cv#(30),%
-# -----------------------------------------------------
-i|1||||29|b|
-i|C||||0|b|&nbsp;
-i|v||||0|b|&nbsp;
-i|#||||38|b|
-i|Q||||b|
-i|%||||0|b|
+
+#The item and checkin display in INN-Reach aren't controlled by the webpub.def.  They're controlled by the IR_CENT_HOLD_ITEM and IR_CENT_HOLD_CHECKIN wwwoptions.
+
 #
 #end converted webpub.def
