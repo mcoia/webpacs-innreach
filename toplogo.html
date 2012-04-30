@@ -11,9 +11,9 @@
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 
-	//$('#searchtype').change(function(){
-    	//$("#exampleText").load("screens/" + this.value + ".inc");
-	//});
+	$('#searchtype').change(function(){
+    	$("#exampleText").load("screens/" + this.value + ".inc");
+	});
 	//Changes the search examples
 	
 	//$('#b option:not([value^="z"])').hide(); //Hides the out-of-scope locations
@@ -35,6 +35,7 @@ if (document.body){document.body.className = "bodybg";}
 
 <div class="topLogoImage">
 <a href="/search/" tabindex="10"><img src="/screens/mobius.png" alt="MOBIUS Catalog"></a>
+</div>
 
 <div id="alertMessage"></div>
 

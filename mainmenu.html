@@ -33,16 +33,15 @@ obj.submit();
 <body>
 <!--{toplogo}-->
 
-<div class="pageContentInner">
+<div class="pageContentInner mainSearch">
 
 <h1 class="accessibleAddInfo">Search</h1>
 
-<div id="mainMenuSearch">
 <form action="/search/" method="get" name="search" id="search" onSubmit="return iiiSearchValidate();">
 
 <input type="hidden" id="iiiFormHandle_1">
 
-Search:
+<span class="mainSearchText">Search:</span>
 <select name="searchtype" id="searchtype">
 <option value="Y" selected="selected">Keyword
 <option value="t">Title
@@ -72,7 +71,7 @@ Search:
 
 <label for="scope" class="accessibleAddInfo">Location</label>
 
-<span class="formButtonArea">
+<span class="formButtonArea mainPageButton">
 
 <input type="hidden" id="iiiFormHandle_1"/>
 <a href="#" onclick="iiiDoSubmit_1();"><input type="submit" alt="Submit" value="Submit" class="smallButton" /></a>
@@ -83,7 +82,18 @@ Search:
 
 <!--</fieldset> optional-->
 </form>
-</div><!-- mainMenuSearch -->
+
+<div id="exampleText">
+	<div class="mainMenuSrchText">Type the search term you want to find. Examples:
+		<ul class="unpadded">
+			<li>Italian cooking</li>
+			<li>The Appeal</li>
+
+			<li>tax and legislat*</li>
+			<li>(lunar or solar) and eclipse</li>
+		</ul>
+	</div>
+</div>
 
 </div><!--pageContentInner -->
 
