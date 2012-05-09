@@ -113,10 +113,10 @@ td { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; font-style: 
 th { font-family:"Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; }
 
 /* traditional link colors are suggested for better usability */
-a:link { color: #014184; }
-a:active { color: #7C14B8; }
-a:visited { color: #7C14B8; }
-a:hover  { color: #7C14B8; }
+a:link { color: #003D6A; }
+a:active { color: #0096A7; }
+a:visited { color: #0096A7; }
+a:hover  { color: #0096A7; }
 
 /* Section 2 */
 /* named styles listed in alphabetical order */
@@ -311,6 +311,14 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 .bookingsVerify a { text-decoration:none; }
 
 .bookingsVerify a .buttonText  { text-decoration:underline; }
+
+#botlogo {font-family: Verdana,Geneva,Arial,Helvetica,sans-serif; font-size: 85%; text-align: center; margin: 3em auto 4em; padding: 1em 0;}
+
+#botlogoFrontPage {
+    position:absolute;
+    width:100%;
+    bottom:0;
+}
 
 /* Brief Citation display styles */
 
