@@ -3,7 +3,7 @@
 <!-- Rel 2009B Example Set -->
 <!-- This File Last Changed: 23 Mar 2010 -->
 <head>
-<title>Millennium Web Catalog - Course Search</title>
+<title>Millennium Web Catalog - ISSN Search</title>
 <script language="JavaScript">
 <!-- Hide the JS
 startTimeout(600000, "/");
@@ -20,39 +20,49 @@ startTimeout(600000, "/");
 <!--{toplogo}-->
 <div class="pageContentInner">
 
-<h1 class="pageHeader">Course Search</h1>
+<h1 class="pageHeader">ISSN Search</h1>
 
 <div id="accessibleForm" class="form2Part">
 <div class="formLeft">
 <form method="get">
 <fieldset>
 <!-- Optional legend:
-<legend>Type the course name or number you want to find, then press the Enter key or click Submit.</legend>
+<legend>Type the standard number (ISBN or ISSN) you want to find, then press the Enter key or click Submit.</legend>
 -->
-
 <div class="formEntryArea">
 <span class="formLabel">
 <label for="SEARCH">Search for:</label>
 </span>
 <!--{search}-->
 </div>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort by:</label>
+</span>
+<!--{indexsort}-->
+</div>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
+</div>
 
 <div class="formButtonArea">
 <!--{submit}-->
 </div>
-
 </fieldset>
 </form>
 </div><!--formLeft -->
+
 <div class="formRight">
-<p>Type as much or as little of the course name or course number as you wish. For example:</p>
+<p>Type the ISSN as it appears. Punctuation and spaces can be omitted if desired. For example:</p>
 <ul>
-<li>MUS 100</li>
-<li>music appreciation</li>
-<li>Zoology 201</li>
-<li>comparative vertebrate anatomy</li>
+<li>0303-7207</li>
+<li>03037207</li>
 </ul>
 </div><!--formRight -->
+
 </div><!--form2Part -->
 </div><!--pageContentInner -->
 
