@@ -730,6 +730,13 @@ div .bibResourceSidebar { display:none; }
 
 .mainMenuContentRight li { margin:0px 0px 15px 0px; }
 
+.mainMenuSrchText {
+letter-spacing:1px;
+margin:auto;
+text-align:left;
+width:55%;
+}
+
 .mainSearch { text-align:center; }
 
 .mainSearch .form1Part { float:none; margin-top:36px; text-align:center; }
