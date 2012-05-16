@@ -923,9 +923,13 @@ td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-ali
 
 .relSearch h2 { font-size:1.667em; color:#767C70; border-top:1px dotted #767C70; margin:0; }
 
-.requestForm { width: 32em; font-weight:bold; }
+.requestForm { width: 90%; }
 
 .requestForm fieldset { font-weight:normal; padding-left:5px; }
+
+.requestForm form { margin-top:1em; }
+
+.requestForm p { padding:1em 0; }
 
 .requestForm .formButtonArea { margin-left:0; }
 

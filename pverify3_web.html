@@ -3,7 +3,181 @@
 <h1 class="pageHeader">Request Verification</h1>
 
 <div id="accessibleForm" class="form1Part requestForm">
-<!--{patform}-->
+
+<div id="pverify">
+<!--{reqmsg}-->
+
+<form name="patform" method="POST">
+
+<!--{iferrmsg}-->
+
+<span class="errorMessage">
+
+<!--{iferrmsgisPIN}-->
+
+<!--{newpinmsg}-->
+
+<!--{else}-->
+
+<!--{errmsg}-->
+
+<!--{xif}-->
+
+<!--{xif}-->
+
+</span>
+
+<!--{ifrequestmoney}-->
+
+<span class="msg">
+
+<!--{requestmoney}-->
+
+</span>
+
+<!--{xif}-->
+
+<!--{extpatform}-->
+
+<!-- used if external patron authentication is unavailable -->
+
+<!--{enterinfo}-->
+
+<table width="100%">
+
+<!--{ifneedpatronname}-->
+
+<tr><td width="30%"></td><td><span class="helpNote">
+
+<!--{nameexample}-->
+
+</span></td></tr>
+
+<tr>
+
+<td>
+
+<!--{nameprompt}-->
+
+</td>
+
+<td>
+
+<!--{name}-->
+
+</td>
+
+</tr>
+
+<!--{xif}-->
+
+<!--{ifneedpatronverify}-->
+
+<tr><td></td><td><span class="helpNote">
+
+<!--{barcodeexample}-->
+
+</span></td></tr>
+
+<tr><td>
+
+<!--{barcodeprompt}-->
+
+</td><td>
+
+<!--{barcode}-->
+
+</td></tr>
+
+<!--{ifneedspin}-->
+
+<!--{iferrmsgisPIN}-->
+
+<tr><td colspan="2">
+
+<!--{newpinmsg}-->
+
+</td></tr><tr><td>
+
+<!--{pin1prompt}-->
+
+</td><td>
+
+<!--{pin1}-->
+
+</td></tr><tr><td>
+
+<!--{pin2prompt}-->
+
+</td><td>
+
+<!--{pin2}-->
+
+</td></tr>
+
+<!--{else}-->
+
+<tr><td></td><td><span class="helpNote">
+
+<!--{pininstructions}-->
+
+</span></td></tr><tr><td>
+
+<!--{pinprompt}-->
+
+</td><td>
+
+<!--{pin}-->
+
+</td></tr>
+
+<!--{xif}-->
+
+<!--{xif}-->
+
+<!--{xif}-->
+
+</table>
+
+<!--{xif}-->
+
+<!--{ifcampus}-->
+
+<!--{campus}-->
+
+<!--{else}-->
+
+<!--{holdshelfmenu}-->
+
+<!--{xif}-->
+
+<!--{ifreqinst}-->
+
+<!--{reqinst}-->
+
+<br />
+
+
+<!--{inst}-->
+
+<br />
+
+<!--{xif}-->
+
+<!--{ifneedNNA}-->
+
+<!--{needbyprompt}-->
+
+<!--{needby}-->
+
+<br />
+
+<!--{xif}-->
+
+<!--{submit}-->
+
+</form>
+
 </div>
 
 </div><!-- pageContentInner -->
