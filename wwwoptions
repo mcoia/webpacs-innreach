@@ -394,7 +394,7 @@ INSTITUTIONLABEL=<p>Please choose your library cluster from the drop-down menu b
 <p><a href="/screens/help_clusters_institutions.html" onClick="return popup(this,'find_cluster_popup')" target="_blank">Find your cluster.</a></p>
 IR_CENT_DISTLEARN=true|Pickup Cluster
 IR_CENT_HOLD_CHECKIN=C|^|f|"
-IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;44|Electronic Link;11|Call Number;19|Status;15
+IR_CENT_HOLD_HEADERS=Library;11|Shelving Location;38|;17|Call Number;19|Status;15
 IR_CENT_HOLD_INST=^|U|^|^
 IR_CENT_HOLD_ITEM=C|U|E|F
 IR_CENT_HOLD_LIMITS=0|1
