@@ -79,7 +79,7 @@ XSTARTOVER=/search
 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
-ICON_BUT_NEWSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">New Search</span></span>
+ICON_BUT_NEWSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Start Over</span></span>
 ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
 DROP_DOWN=Ytasdmhgioceljrp
 FRAMEURL=0
