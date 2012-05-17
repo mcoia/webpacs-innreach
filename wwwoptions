@@ -79,7 +79,7 @@ XSTARTOVER=/search
 
 # General and Phrase Searching
 ICON_BUT_ANOTHER=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Another Search</span></span>
-ICON_BUT_NEWSRCH=New Search
+ICON_BUT_NEWSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">New Search</span></span>
 ICON_BUT_WORDSRCH=<span class="button"><img src="/screens/ico_magnifyingglass.png" alt=""><span class="buttonText">Search as Words</span></span>
 DROP_DOWN=Ytasdmhgioceljrp
 FRAMEURL=0
@@ -265,7 +265,7 @@ ICON_BUT_REQUEST_RESET=<div onmousedown="this.className='pressedState';" onmouse
 ICON_BUT_REQUEST_SELECTED=<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';"><div class="buttonSpriteDiv"><span class="buttonSpriteSpan1"><span class="buttonSpriteSpan2">Request Selected</span></span></div></div>
 ICON_REQUEST=<img src="/screens/bullet.gif" alt="" border="0" style="margin-right:5px">Request
 #REQFILLTIME=14|<br>Request available in approximately %d days|<br>Current estimated availability: approximately %d days|<br>This material may be immediately available
-REQUEST=<div style="padding-top:.5em"><img src="/screens/request.gif" alt="Request this item"/></div>|system
+REQUEST=<span class="button"><img src="/screens/ico_checkmark.png" alt=""><span class="buttonText">Request</span></span>|system
 REQUEST_ARTICLE_IFCHKIN=no
 #REQUEST_INSTRUCTION=Please enter any special instructions:
 #REQUEST_MULTI=Request All Items in Book Cart|[match request wwwoption]
