@@ -159,11 +159,14 @@ c|Q||||b|
 # -----------------------------------------------------
 # Converted by cvpubdef from item_col_width: 1(23),Cv#(30),%
 # -----------------------------------------------------
-i|1||||29|b|
-i|C||||0|b|&nbsp;
+#i|1||||29|b|
+i|1|||Location|29|b|
+#i|C|||Call Number|0|b|
+i|C|||Call Number|0|b|
 i|v||||0|b|&nbsp;
 i|#||||38|b|
 i|Q||||b|
-i|%||||0|b|
+#i|%||||0|b|
+i|%|||Status|0|b|
 #
 #end converted webpub.def
