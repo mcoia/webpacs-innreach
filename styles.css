@@ -189,7 +189,7 @@ a:hover  { color: #0096A7; }
 
 .bibDisplayContentMore { border-top:1px dashed #767C70; clear:both; margin-bottom:15px; padding-top:20px; }
 
-.bibDisplayItems table, .requestMultiItems table { border:0; border-collapse: collapse; margin-bottom:20px; }
+.bibDisplayItems table, .requestMultiItems table { border:0; border-collapse: collapse; margin-bottom:20px; margin-top:20px; }
 
 .bibDisplayItems th, .reserveBibs th, .resourceDisplayBibs th, .resourceResource th { color:#767C70; }
 
