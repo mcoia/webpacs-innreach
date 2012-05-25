@@ -676,7 +676,15 @@ div .bibResourceSidebar { display:none; }
 
 .holdingsDivider { border:1px solid #D3D3D3; margin:3px 0; }
 
-#idHelpButton { margin:10px; text-align:center; width:76px; }
+.idHelp { display:none; float:left; margin-left:9.5em; width:30em; }
+
+.idHelp li {list-style-type:none; margin-top:.3em;}
+
+#accessibleForm .idHelp ul { margin-left:0; padding-left:0; }
+
+#idHelpButton { margin:10px; text-align:center; width:76px; float:left; }
+
+#idHelpButton:hover { cursor:pointer; }
 
 #idHelpButton p:first-child { background-color: #1D4069; color:#ffffff; border-top-right-radius:10px; border-top-left-radius:10px; -moz-border-top-right-radius:10px; -moz-border-top-left-radius:10px; font-weight:bold; padding: .2em 0; }
 
