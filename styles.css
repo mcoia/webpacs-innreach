@@ -442,7 +442,7 @@ table.browseResourceTable { border:0; }
 
 .browseSearchtool  td { border:none; }
 
-.browseSearchtool { background:url('tile_search.jpg') repeat-x bottom left; border-color:#D3D3D3; border-style:solid; border-width:0 0 1px 0; font-size:.9em; padding:0; }
+.browseSearchtool { background:url('tile_search.jpg') repeat-x bottom left; border-color:#D3D3D3; border-style:solid; border-width:0 0 1px 0; font-size:1em; padding:0; }
 
 #accessibleForm .browseSearchtool { background:none; border:none; margin:10px; font-size:1.0em; }
 
