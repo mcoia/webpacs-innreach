@@ -510,6 +510,26 @@ span.buttonText:hover {text-decoration:underline;}
 
 .checkinInfoHoldingsLabel { height:auto; width: 19%; font-weight:bold; text-align:right; }
 
+#clusterHelpInst, #clusterHelpCluster { display:none; }
+
+#clusterHelpInst p, #clusterHelpCluster p {text-align:center; font-weight:bold; }
+
+#clusterHelpInst table, #clusterHelpCluster table { margin-left:auto; margin-right:auto; padding-top:20px; }
+
+#clusterHelpInst th, #clusterHelpCluster th { background-color: #1D4069; color:#FFFFFF; font-weight: bold; text-align:center; }
+
+#clusterHelpInst th, #clusterHelpCluster th, #clusterHelpInst td, #clusterHelpCluster td { border:2px solid #FFFFFF; padding: .5em 1em;  }
+
+#clusterHelpInst tr:nth-child(odd), #clusterHelpCluster tr:nth-child(odd) { background-color: #f2fbfc; }
+
+#clusterHelpInst tr:nth-child(even), #clusterHelpCluster tr:nth-child(even) { background-color: #ffffff; }
+
+#clusterHelpCluster li { list-style-type:none; margin-top:.2em; }
+
+#clusterHelpCluster td:first-child { width:10em; text-align:center; }
+
+a#clusterLink, a#seeCluster, a#seeInst { text-decoration:underline; color: #0096A7; cursor:pointer; }
+
 .ecommerceFormDone { background:#ffffff; margin-left:auto; margin-right:auto; padding:0px; text-align:left; width:97%; padding-bottom:12em; }
 
 .ecommerceFormDone > div, .ecommerceFormDone > span { margin:10px 20px 15px; }
