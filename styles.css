@@ -231,7 +231,11 @@ table.bibItems { clear:both; }
 
 .bibItems .bibItemsEntry td, .bibItems .bibItemsHeader th { padding:1px 8px; }
 
-.bibRecordLink { padding:8px 0 8px 6px; }
+.bibRecordLink { font-style:normal; padding-left:0px ; font-size:.9em;}
+
+.bibRecordLink div { float:left; }
+
+.bibRecordLink .bibInfoLabel { width:14%; }
 
 .bibResourceSidebar { background:#FFFFFF url('tile_vgradient.jpg') repeat-x top left; display:inline; float:right; margin-right:10px; width:192px; padding-bottom:10px; }
 
