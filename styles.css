@@ -273,9 +273,11 @@ div #bibDisplayContentMore { padding-left:7px; width:78%; clear:left; float:left
 
 .bibPager { text-align:right; font-size:85%; padding:5px 5px 0 0;margin:0 3px 0 5px; }
 
-.bibRecordLink { width:100%;float:left; }
+.bibRecordLink { font-style:normal; padding-left:0px ; font-size:1.15em;}
 
-.bibRecordLink a { font-size:.7em;padding-right: 3px; font-style: italic; }
+.bibRecordLink div { float:left; }
+
+.bibRecordLink .bibInfoLabel { width:14%; }
 
 .bibResource { }
 

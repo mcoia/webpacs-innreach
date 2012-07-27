@@ -175,7 +175,7 @@ ICON_BIB_HOLDINGS_ITEMS=View Copies
 ICON_BIB_PAGING_CAPTION=Result page:
 ICON_BIB_PAGING_NEXT=<img src="/screens/bib_paging_next.gif" class="button" border="0" alt="Next Record" />
 ICON_BIB_PAGING_PREV=<img src="/screens/bib_paging_prev.gif" class="button" border="0" alt="Previous Record" />
-ICON_RECORDLINK=<div class="bibRecordLink"><img src="/screens/permlink.gif" alt=""/>&nbsp;<a id="recordnum" href="%s">Link to this record - %s</a></div>
+ICON_RECORDLINK=<div class="bibRecordLink"><div class="bibInfoLabel">Link to this record</div><div class="bibInfoData"><a id="recordnum" href="%s">%s</a></div></div>
 #LINK856TEXT=Connect to
 MARC=yes
 #SHOWOREC=no_cdate
