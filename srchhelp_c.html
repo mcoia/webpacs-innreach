@@ -1,47 +1,77 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 02 September 2008 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: 23 Mar 2010 -->
 <head>
-<title>MOBIUS</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
-<body onLoad="document.forms[0].elements[1].focus();">
-<!--{toplogo}-->
-<!--{session}-->
-<br />
-<h2 class="srchhelpHeader">Library of Congress Call Number Search</h2>
-<div class="srchhelpText">Type the call number you want to find, then press the Enter key or click Submit.</div>
-<div class="tool">
-<form method="get" class="unpadded">
-<span class="magFive">
-<!--{submit}-->
-</span>
-<table border="0"  class="textFix">
-<tr>
-<td align="right">Search for:</td>
-<td>
-<!--{search}-->
-</td>
-</tr>
-<tr>
-<td align="right">Sort by:</td>
-<td>
-<!--{indexsort}-->
-</td>
-</tr>
+<title>MOBIUS Catalog - Library of Congress Call Number Search</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
 
-</table>
-</form>
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
+</head>
+<body>
+<!--{toplogo}-->
+<div class="pageContentInner">
+<!--{session}-->
+
+<h1 class="pageHeader">Library of Congress Call Number Search</h1>
+
+<div id="accessibleForm" class="form2Part">
+<div class="formLeft">
+<form method="get">
+<fieldset>
+<!-- Optional legend:
+<legend>Type the call number you want to find, then press the Enter key or click Submit.</legend>
+-->
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
+</span>
+<!--{search}-->
 </div>
-<div class="srchhelpText">
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="sortdropdown">Sort by:</label>
+</span>
+<!--{indexsort}-->
+</div>
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Search in the:</label>
+</span>
+<!--{scope}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
+</form>
+</div><!--formLeft -->
+
+<div class="formRight">
 <p><strong>Note: This index will not search all call numbers in all MOBIUS libraries.</strong></p>
-<br />
 <p>Type as much or as little of the Library of Congress call number as you want. For example:</p>
-<ul class="unpadded srchhelpList">
+<ul>
 <li>QA 402.6 R65 1986</li>
 <li>QA 402</li>
 </ul>
-</div>
+</div><!--formRight -->
+
+</div><!--form2Part -->
+</div><!-- pageContentInner -->
+
 <!--{botlogo}-->
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].SEARCH.focus(); }
+catch(err) {}
+//--><!]]></script>
 </body>
 </html>

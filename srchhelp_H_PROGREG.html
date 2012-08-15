@@ -1,78 +1,99 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- 2006 Pro "Bare-style" shickman -->
-<!-- This file last changed: 13 June 2007 -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<!-- Rel 2009B Example Set -->
+<!-- This File Last Changed: Jan 25 2010 -->
 <head>
-<title>MOBIUS - Programs</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style>
-table input , table select {font-size:1.1em;}
-table table {font-size:1em;}
-</style>
+<title>MOBIUS Catalog - Programs</title>
+<script language="JavaScript">
+<!-- Hide the JS
+startTimeout(600000, "/");
+// -->
+
+</script>
+<noscript>
+<meta http-equiv="Refresh" content="600;URL=/" />
+</noscript>
+<meta http-equiv="X-UA-Compatible" content="IE=8;FF=3;OtherUA=4">
+<link rel="stylesheet" type="text/css" href="/screens/styles_print.css" media="print">
 </head>
 
 <!--{progsearchbody}-->
 <!--{toplogo}-->
+<div class="pageContentInner">
+<!--{session}-->
 <!--{patron}-->
 <!--{msg}-->
-<h2 class="srchhelpHeader">Our Programs</h2>
-<div class="srchhelpText">Here you can search our database for classes, lectures, and other activities sponsored or hosted by the library.</div>
-<div class="advSrchtool">
+<h1 class="pageHeader">Our Programs</h1>
+<p>Here you can search our database for classes, lectures, and other activities sponsored or hosted by the library.</p>
+<div id="accessibleForm" class="form2Part">
+<div class="formLeft">
 <!--{progsearchformbegin}-->
-<span class="magFive">
-<!--{submit}-->
+<fieldset>
 
-<a href="/iii/calendar"> <img src="/screens/program_cal.gif" alt="Programs Calendar" border="0"></a>
+<div class="formEntryArea">
+<span class="formLabel">
+<label for="SEARCH">Search for:</label>
 </span>
-
-<table cellpadding="2" cellspacing="2" style="font-size:.9em">
-<tr>
-<td align="right">Search for:</td>
-<td>
+<!--START progsearch -->
 <!--{progsearch}-->
-</td>
-</tr>
-<tr>
-<td align="right">Location:</td>
-<td>
+<!--END progsearch -->
+</div>
+
+<div class="formEntryArea formScopeSearch">
+<span class="formLabel">
+<label for="searchscope">Location:</label>
+</span>
 <!--{scope}-->
-</td>
-</tr>
-<tr>
-<td colspan="2">
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
 <!--{gtype}-->
-</td>
-</tr>
 <!--hardcode alpha sort for programs only-->
-<tr><td colspan="2">
-<input type="hidden" name="SORT" value="AX"/>
-</td>
-</tr>
+<input type="hidden" name="SORT" value="AX">
 <!--end hardcoded sort-->
-<tr>
-<td align="right">Start date:</td>
-<td>
+</span>
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+Start date:
+</span>
 <!--{sessiondatestart}-->
-</td>
-</tr>
-<tr>
-<td align="right">End date:</td>
-<td>
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+End date:
+</span>
 <!--{sessiondateend}-->
-</td>
-</tr>
-</table>
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
+</fieldset>
 <!--{progsearchformend}-->
 </div>
-<div class="srchhelpText">Explore your interests and expand your horizons at your library!
-<br/>Popular topics include:
-<ul class="unpadded">
+
+<div class="formRight">
+<p>Explore your interests and expand your horizons at your library!</p>
+<p>Popular topics include:</p>
+<ul>
 <li>Gardening</li>
 <li>Children's Storytime</li>
 <li>Study Skills</li>
 <li>Writing Workshops</li>
 <li>Digital Photography</li>
 </ul>
+<p id="formLinks">
+<a href="/iii/calendar" class="browseSaveJump"><span class="button"><img src="/screens/ico_calendar.gif" alt=""><span class="buttonText">Events Calendar</span></span></a>
+</p>
+</div><!-- formRight -->
+</div><!-- form2Part -->
+
 </div>
+
 <!--{botlogo}-->
 </body>
 </html>

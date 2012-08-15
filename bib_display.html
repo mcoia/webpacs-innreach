@@ -1,74 +1,112 @@
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 29 August 2008 -->
 <!--{toplogo}-->
 <!--{ifbibdisplay}-->
 <!--{xif}-->
 <!--{catedit}-->
+
 <div id="bibDisplayBody">
-    <div align="center">
+<div class="navigationRowRecord">
 <!--{navrow}-->
-    </div>
-    <div id="bibDisplayContent">
-        <div class="bibSearch">
+<!--{innreach}-->
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
 <!--{searchtool}-->
-        </div>
-<!-- close tool -->
-    <div class="bibHistoryRow">
-        <div class="bibSearchHistory">
+<div class="bibSearchHistory">
 <!--{searchhistory}-->
-        </div>
-        <div class="bibPager">
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
 <!--{pager}-->
-        </div>
-    </div>
-    <div class="bibClear">
-    </div>
-    <div class="bibResourceSidebar">
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
 <!--{ifhasresourcetable}-->
 <!--{resourcetable}-->
 <!--{xif}-->
+<!--Optional INNReach resources.-->
 <!--{innreach}-->
 <!--{relsearch}-->
-    </div>
-    <div class="bibDisplayContentMain">
-<div id="bibLeftColumn">
-<!--{recordinfo:!}-->
+</div>
+
+<div class="bibDisplayJacket">
+<!--{bibimage}-->
+<div id="googlebooks" name="googlebooks"></div>
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
 <!--{recordlink}-->
 
 <!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
 <!--{ratings}-->
+</div>
 <!--{xif}-->
-</div>
-<div id="bibRightColumn">
-<!--{bibimage}-->
-<div id="googlebooks" name="googlebooks"></div>
-</div>
+
 <!--{booking}-->
 <!--{holdingslink}-->
+<div class="testlinkeddocs">
 <!--{linkeddocs}-->
+</div>
+<div class="bibDisplayUrls">
 <!--{URLS}-->
+</div>
+
 <!--{bloblinks}-->
 <!--{imagelinks}-->
 <!--{artthumb}-->
 <!--{xmlframe}-->
-<!--{holds}-->
-<!--{items}-->
-<!--{orders}-->
-    </div>
-</div>
-<div id="bibHoldingsTable">
-<!--{holdings}-->
-</div>
-
-<div id="bibDisplayContentMore">
-    <div>
-        <h1 class="bareBreaker">Details</h1>
 <!--{ifTOC}-->
 <!--{TOC}-->
-<!--{xif}-->        
+<!--{xif}-->
+<!--{holds}-->
+
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsMain">
+<!--{holdings}-->
+<!--{items}-->
+</div>
+</div>
+
+<!--{orders}-->
+
+<div class="bibDisplayContentMore">
 <!--{recordinfo:#}-->
 </div>
+
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<!--{patronreviewsfull}-->
+
+</div>
+
+</div>
+
+
 </div><!-- close bibDisplayContent -->
+<div class="clear"></div>
 </div><!-- close bibDisplayBody -->
 <!--{botlogo}-->
 
@@ -102,7 +140,6 @@
     }
 }
 </script>
-
 <script type='text/javascript'>
        
 var ISBN = $(".bibInfoLabel:contains('ISBN')").siblings(".bibInfoData").text().replace(/[^0123456789]/g,"")
@@ -118,4 +155,4 @@ document.documentElement.firstChild.appendChild(s);
 //alert (api_url);
 
 </script>
-          
+

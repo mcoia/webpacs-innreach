@@ -1,69 +1,68 @@
 <!-- begin toplogo.html file -->
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 19 August 2008 -->
+<!-- Rel 2009B Example Set -->
+<!-- Updated: 06 Oct 2010 -->
 
-<link rel="shortcut icon" type="ximage/icon" href="/screens/favicon.ico" />
-
-<SCRIPT language="JavaScript">
-<!-- hide from older browsers
-function popup(mylink, windowname)
-{
-if (! window.focus)return true;
-var href;
-if (typeof(mylink) == 'string')
-   href=mylink;
-else
-   href=mylink.href;
-window.open(href, windowname, 'width=800,height=400,resizable=yes,scrollbars=yes');
-return false;
-}
-//-->
-</SCRIPT>
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-6717423-6']);
-  _gaq.push(['_setDomainName', 'none']);
-  _gaq.push(['_setAllowLinker', true]);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-<script type="text/javascript" src="/screens/jquery-1.6.2.min.js"></script>
-<script type="text/javascript" src="/screens/domainredirect2.js"></script>
-<script type="text/javascript" src="/screens/jquery.simplemodal.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="/screens/jquery.cookie.js"></script>
+<script type="text/javascript" src="/screens/domainredirect.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
+<!--<script type="text/javascript" src='/screens/sms.js'> </script> -->
 <script type="text/javascript">
 $(document).ready(function () {
 	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
 
 	$('#searchtype').change(function(){
-    	$("#exampleText").load("screens/example_text/" + this.value + ".inc");
+    	$("#exampleText").load("screens/" + this.value + ".inc");
 	});
+	//Changes the search examples
+	
+	//$('#b option:not([value^="z"])').hide(); //Hides the out-of-scope locations
+	//$('#b option[value=""]').show(); //Shows the any location for the scopes
 });
 </script>
 
+<script type="text/javascript">
+if (document.body){document.body.className = "bodybg";}
+</script>
 
-<div class="topLogoDiv">
-<div id="skipNav"><a href="#content">Skip to content</a></div>
+<link rel="stylesheet" type="text/css" href="/screens/styles_s0.css" / >
 
-<div id="mobiusIcon">
-<a href="/"><img src="/screens/images/MOBIUS_logo_30px_no-tag.png" alt="MOBIUS: Linking Missouri's Libraries"/></a>
+<div class="minHeight">
+<div class="fullPage">
+
+<div id="skipNav"><a href="#content" tabindex="1">Skip to content</a></div>
+<div class="topLogo">
+
+<div class="topLogoImage">
+<a href="/search/" tabindex="10"><img src="/screens/mobius.png" alt="MOBIUS"></a>
 </div>
-</div>
+
+<div id="alertMessage"></div>
 
 <!--{patronrecord}-->
-<div class="clear"> <!-- content div -->
+<!--{session}-->
+
+</div><!--topLogo-->
+
+<div class="linkBanner">
+
+<div class="navRight">
+<ul>
+<li><a href="/libinfo">MOBIUS Libraries</a></li>
+<li><a href="/help">Help</a></li>
+</ul>	
+
+</div>
+
+</div><!--linkBanner-->
+
+<div class="clear"></div>
+
+
 <div class="pageNavColumn"><!-- nav menu column-->
 
 <h1 class="navHeader">Search Options</h1>
+
 <ul id="rightCol">
 <li><a href="/search/X">Advanced Search</a></li>
 <li><a href="/search/Y">Keyword</a></li>
@@ -75,43 +74,20 @@ $(document).ready(function () {
 <li><a href="/search/m">Medical Subject (MESH)</a></li>
 <li><a href="/search/h">Children's Subject</a></li>
 <li><a href="#">Numerical Search</a>
-    <ul>
-        <li><a href="/search/j">ISBN</li>
-        <li><a href="/search/r">ISSN</li>
-        <li><a href="/search/i">Standard Number</li>
-        <li><a href="/search/c">Call Number (Library of Congress)</a></li>
-        <li><a href="/search/e">Call Number (Dewey Decimal)</li>
-        <li><a href="/search/g">Government Document Number</li>
-        <li><a href="/search/p">Music Number</li>
-        <li><a href="/search/o">OCLC Number</li>
-
-    </ul>
+			<ul>
+				<li><a href="/search/j">ISBN</a></li>
+				<li><a href="/search/r">ISSN</a></li>
+				<li><a href="/search/i">Standard Number</a></li>
+				<li><a href="/search/c">Call Number (Library of Congress)</a></li>
+				<li><a href="/search/e">Call Number (Dewey Decimal)</a></li>
+				<li><a href="/search/g">Government Document Number</a></li>
+                                <li><a href="/search/p">Music Number</a></li>
+                                <li><a href="/search/o">OCLC Number</a></li>
+			</ul>
 </li>
 </ul>
-
-
-
-<!--
-<li><a href="/feeds">Feeds</a></li>
-<li><a href="/screens/rpro.html">Research Pro</a></li>
-<li><a href="/iii/calendar">Programs Calendar</a></li>
-<li><a href="/">KidsOnline</a></li>
-<li><a href="/ftlist">Featured item lists</a></li>
-<li><a href="/screens/resources_index.html">Other resources</a></li>
--->
-
-<!--
-</ul>
-
-<h1 class="navHeader">Course Reserves</h1>
-<ul class="leftCol">
-<li><a href="/search/r">Course Search</a></li>
-<li><a href="/search/p">Instructor Search</a></li>
--->
-
-</ul>
-</div><!--Styling div-->
+        
+</div>
 <div class="pageContentColumn"><!-- content container -->
-<a name="content"></a>
-<div id="alertMessage"></div>
+<a name="content" id="content"></a>
 <!--end toplogo.html-->

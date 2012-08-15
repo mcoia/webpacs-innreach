@@ -1,50 +1,71 @@
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 01 July 2008 -->
-<!-- This table is used to create consistent look & feel with main pages of the Web OPAC. Top and bottom logos & navigation are not included in pop-up windows. -->
-<div class="spacer">
+<div class="minHeight">
+<div class="fullPage">
+<div class="pageContent">
+<div class="pageContentInner popupContentInner">
 <!--Beginning main page content-->
-<h2 class="popupFormHeader">Modify Patron Information</h2>
-<div class="popupForm">
+<h1 class="popupFormHeading">Modify Patron Information</h1>
+<div id="accessibleForm" class="form1Part">
 <!--{formbegin}-->
+<fieldset>
+<legend>
 <!--{newpinfo}-->
-<table width="90%" border="0" class="textFix">
-<tr><td><strong>Alias/Nickname:</strong></td>
-<td>
-<!--{user_name}-->
-</td></tr>
-<tr><td><strong>Address:</strong></td>
-<td>
-<!--{addr1a}-->
-</td></tr>
-<tr><td><strong>City:</strong></td>
-<td>
-<!--{addr1b}-->
-</td></tr>
-<tr><td><strong>State:</strong></td>
-<td>
-<!--{addr1c}-->
-</td></tr>
-<tr><td><strong>ZIP Code:</strong></td>
-<td>
-<!--{addr1d}-->
-</td></tr>
-<tr><td><strong>
-<!--{emailprompt}-->
-:</strong></td><td>
-<!--{email}-->
-</td></tr>
-</table>
-<br/>
-<span class="button">
-<!--{submit}-->
-<!--{cancel}-->
+</legend>
+
+<!--
+<div class="formEntryArea">
+<label for="name"><span class="formLabel">
+Alias/Nickname:
 </span>
-<br />
-<!--{notices}-->
-<br/>
-<!--{formend}-->
+-->
+ <!--{user_name}-->
+ <!--
+</label>
 </div>
-</div>
-<!-- This table is used to create consistent look & feel with main pages of the Web OPAC. Top and bottom logos & navigation are not included in pop-up windows. -->
+-->
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{addr1prompt}-->
+</span>
+<!--{addr1a}-->
+
 </div>
 
+<div class="formEntryArea">
+<span class="formLabel"><label for="addr1c">
+State
+</label></span>
+<!--{addr1c}-->
+
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel"><label for="addr1d">
+ZIP Code
+</label></span>
+<!--{addr1d}-->
+
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{emailprompt}-->
+</span>
+<!--{email}-->
+</div>
+
+<div class="formEntryArea">
+<!--{notices}-->
+</div>
+
+<div class="formButtonArea">
+<!--{submit}-->
+<!--{cancel}-->
+</div>
+</fieldset>
+<!--{formend}-->
+</div><!-- accessibleForm -->
+</div><!-- popupContentInner -->
+</div><!-- pageContent -->
+</div><!-- fullPage -->
+</div>

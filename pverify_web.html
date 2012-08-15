@@ -1,216 +1,112 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 02 September 2008 -->
-<head>
-<title>MOBIUS</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
-<body onLoad="document.forms[0].elements[0].focus();">
 <!--{toplogo}-->
-<h2 class="srchhelpHeader">Request Verification</h2>
-<br/>
-<div class="advSrchtool">
-<div id="pverify">
-<!--{reqmsg}-->
-
-<BR>
-
-<form name="patform" method="POST">
-
+<div class="pageContentInner">
+<h1 class="pageHeader">Login</h1>
+<div class="form1Part formLogin" id="accessibleForm">
+<!--{formbegin}-->
 <!--{iferrmsg}-->
-
-<span class="errorMessage">
-
+<span class="errormessage">
 <!--{iferrmsgisPIN}-->
-
 <!--{newpinmsg}-->
-
 <!--{else}-->
-
 <!--{errmsg}-->
-
 <!--{xif}-->
-
-<!--{xif}-->
-
 </span>
-
-<!--{ifrequestmoney}-->
-
-<span class="msg">
-
-<!--{requestmoney}-->
-
-</span>
-
 <!--{xif}-->
 
-
-
-
-
-<!--{extpatform}-->
-
-
-
-
-
-<!-- used if external patron authentication is unavailable -->
-
+<fieldset>
+<legend>
 <!--{enterinfo}-->
+</legend>
 
-<table width="100%">
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
 
 <!--{ifneedpatronname}-->
-
-<tr><td width="30%"></td><td><span class="helpNote">
-
-<!--{nameexample}-->
-
-</span></td></tr>
-
-<tr>
-
-<td>
-
+<div class="formEntryArea">
 <!--{nameprompt}-->
-
-</td>
-
-<td>
-
 <!--{name}-->
-
-</td>
-
-</tr>
-
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</div>
 <!--{xif}-->
 
 <!--{ifneedpatronverify}-->
-
-<tr><td></td><td><span class="helpNote">
-
-<!--{barcodeexample}-->
-
-</span></td></tr>
-
-<tr><td>
-
+<div class="formEntryArea">
 <!--{barcodeprompt}-->
-
-</td><td>
-
 <!--{barcode}-->
-
-</td></tr>
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</div>
 
 <!--{ifneedspin}-->
 
 <!--{iferrmsgisPIN}-->
-
-<tr><td colspan="2">
-
+<p>
 <!--{newpinmsg}-->
-
-</td></tr><tr><td>
-
+</p>
+<div class="formEntryArea">
+<!-- <label for="pin1"> -->
+<span class="formLabel">
 <!--{pin1prompt}-->
-
-</td><td>
-
+</span>
 <!--{pin1}-->
-
-</td></tr><tr><td>
-
+<!-- </label> -->
+</div>
+<div class="formEntryArea">
+<!-- <label for="pin2"> -->
+<span class="formLabel">
 <!--{pin2prompt}-->
-
-</td><td>
-
+</span>
 <!--{pin2}-->
-
-</td></tr>
+<!-- </label> -->
+</div>
 
 <!--{else}-->
-
-<tr><td></td><td><span class="helpNote">
-
-<!--{pininstructions}-->
-
-</span></td></tr><tr><td>
-
+<div class="formEntryArea">
 <!--{pinprompt}-->
-
-</td><td>
-
 <!--{pin}-->
-
-</td></tr>
-
-<!--{xif}-->
-
-<!--{xif}-->
+<span class="formLabelExample">
+<!--{pininstructions}-->
+</span>
+</div>
 
 <!--{xif}-->
-
-</table>
-
+<!--{xif}-->
 <!--{xif}-->
 
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
 
-
-<a href="/screens/ReqInfo.html" style="text-decoration: none;" onClick="return popup(this,'req_id_format')" target="_blank">
-
-<br />
-
-<img src="/screens/id_help.gif" alt="Click for ID Help" border="0"/></a>
-
-<br />
-
-<!--{ifcampus}-->
-
-<!--{campus}-->
-
-<!--{else}-->
-
-<!--{holdshelfmenu}-->
-
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
 <!--{xif}-->
-
-<!--{ifreqinst}-->
-
-<!--{reqinst}-->
-
-<br />
-
-
-<!--{inst}-->
-
-<br />
-
-<!--{xif}-->
-
-<!--{ifneedNNA}-->
-
-<!--{needbyprompt}-->
-
-<!--{needby}-->
-
-<br />
-
-<!--{xif}-->
-
 <!--{submit}-->
-
-</form>
-
-<div align="left">
-
-<!--{startover}-->
+<input type="submit" class="submitHidden">
+</div>
+</fieldset>
+<!--{formend}-->
 
 </div>
-</div> 
-</div>
+
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
-</body>
-</html>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+try { document.forms[0].elements[1].focus(); }
+catch(err) {}
+//--><!]]></script>

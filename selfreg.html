@@ -1,58 +1,72 @@
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 01 July 2008 -->
 <!--{toplogo}-->
-<h2 class="srchhelpHeader">Welcome! This is Patron Self Registration</h2>
-<div class="srchhelpText">
-This page allows you to register on-line as a patron of our library. You will have limited privileges.
-</div>
-<div class="advSrchTool">
+<div class="pageContentInner">
+<h1 class="pageHeader">Welcome! This is Patron Self Registration</h1>
+<p>This page allows you to register on-line as a patron of our library. You will have limited privileges.</p>
+<div id="accessibleForm" class="form1Part">
 <form method="post" class="unpadded" autocomplete="off"  onsubmit="return selfRegChecker();">
 <!--
-The hidden template name below overrides the selfreg_template EO; if certain users need a special template, set this input accordingly when you create the version of selfreg.html for those users.
+The hidden template name below provides the patron template name IF a template name is not defined in the selfreg URL or in the selfreg_template web option.
 -->
 <!--
-<input type="hidden" name="TemplateName" value="YOUR VALUE">
-<br />
+<input type="hidden" name="TemplateName" value="YOUR_VALUE">
 -->
 <!--{iferrmsg}-->
-<div style="font-size:1.3em;color:#990000;font-weight:bold;letter-spacing:1px;">
+<div class="errormessage">
 <!--{errmsg}-->
 </div>
 <!--{xif}-->
-<div id="selfRegMessage" style="font-size: 1.3em; color: #990000; font-weight: bold; letter-spacing: 1px;">
+<div class="errormessage" id="selfRegMessage">
 </div>
-<div><strong>Please enter the following information: (<span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:5px;">*</span> means required field)</strong></div>
-<table cellpadding="3" cellspacing="1">
-<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="nfirst">First name:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
-<td>
-<input name="nfirst" value="" size="40" maxlength="40" id="nfirst"></td></tr>
-<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="nlast">Last name:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
-<td>
-<input name="nlast" value="" size="40" maxlength="60" id="nlast"></td></tr>
-<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="user_name">Alias/Nickname:</label></td>
-<td>
-<input name="user_name" value="" size="40" maxlength="25" id="user_name"></td></tr>
-<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="stre_aaddress">Address:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
-<td>
-<input name="stre_aaddress" value="" size="40" maxlength="128" id="stre_aaddress"></td></tr>
-<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="city_aaddress">City:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
-<td>
-<input name="city_aaddress" value="" size="40" maxlength="48" id="city_aaddress"></td></tr>
-<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="stat_aaddress">State:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
-<td>
-<input name="stat_aaddress" value="" size="15" maxlength="32" id="stat_aaddress"></td></tr>
-<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="post_aaddress">ZIP Code:</label><span style="color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:2px;font-family:arial;">*</span></td>
-<td>
-<input name="post_aaddress" value="" size="15" maxlength="32" id="post_aaddress"></td></tr>
-<tr><td><label style="font-size:.9em;letter-spacing:1px;font-family:arial;"for="zemailaddr">Email:</label></td>
-<td>
-<input name="zemailaddr" value="" size="40" maxlength="128" id="zemailaddr"></td></tr>
-</table>
+<fieldset>
+<legend>Please enter the following information: (<span class="formRequired">*</span> means required field)</legend>
 
+<div class="formEntryArea">
+<span class="formLabel"><label for="nfirst">First name:<span class="formRequired">*</span></label></span>
+<!--{firstname}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="nlast">Last name:<span class="formRequired">*</span></label></span>
+<!--{lastname}-->
+</div>
+<!-- For optional Alternate ID:
+<div class="formEntryArea">
+<span class="formLabel"><label for="user_name">Alias/Nickname:</label></span>
+ -->
+   <!--{user_name}-->
+<!-- For optional Alternate ID:
+</div>
+-->
+<div class="formEntryArea">
+<span class="formLabel"><label for="stre_aaddress">Address:<span class="formRequired">*</span></label></span>
+<!--{street}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="city_aaddress">City:<span class="formRequired">*</span></label></span>
+<!--{city}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="stat_aaddress">State:<span class="formRequired">*</span></label></span>
+<!--{state}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="post_aaddress">ZIP Code:<span class="formRequired">*</span></label></span>
+<!--{postalcode}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel"><label for="zemailaddr">Email:</label></span>
+<!--{emailaddress}-->
+</div>
+<div class="formButtonArea">
+<span>
+<!--{submit}-->
+</span>
+</div>
+</fieldset>
 
-<br/>
-<input type="image" src="screens/submit.gif" value="submit"/>
 </form>
+</div> <!--accessibleForm -->
+</div><!-- pageContentInner -->
+
 <script type="text/javascript">
 function selfRegChecker(){
 var regForm = document.getElementsByTagName("INPUT");
@@ -125,6 +139,15 @@ break;
 }
 }
 return true;
+}
+
+function iiiDoSubmit_1()
+{
+//getFormHandleForm() is in common.js
+	if(selfRegChecker()){
+		var obj = getFormHandleForm(1);
+		obj.submit();
+	}
 }
 </script>
 <!--{botlogo}-->

@@ -1,58 +1,89 @@
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 01 July 2008 -->
 <!--{toplogo}-->
-<!--{formbegin}-->
-<div class="bookingsSelect">
-<span class="pageMainAreaHeader">
-Place a booking<br />
-</span>
+<div class="pageContentInner">
+
+<h1 class="pageHeader">Place a booking</h1>
+
+<div>
 <!--{record_info}-->
-<!--{iferr}-->
-<!--{error_msg}-->
-<!--{xif}-->
 </div>
-<div class="bookingsSelect">
-<div class="bookingsSelectTime">
-<div class="bookingsLocation">
+
+<!--{iferr}-->
+<div class="errormessage">
+<!--{error_msg}-->
+</div>
+<!--{xif}-->
+
+<div id="accessibleForm" class="form2Part bookingForm">
+
+<!--{formbegin}-->
+
+<div class="formLeft">
+
+<fieldset>
+
+<div class="formEntryArea">
+
 <!--{iflocation}-->
-Select a location:
+<h2>Select a location:</h2>
 <!--{location}-->
 <!--{xif}-->
-</div>
-Select a time:<br />
-Begin:
+
+<h2>Begin time:</h2>
 <!--{timedayhour}-->
+
+</div>
+</fieldset>
+
+
+<!--{ifendtime}-->
+<fieldset>
 <!--{ifrepeat}-->
-<div class="bookingsSelectRepeat">
+<div class="formEntryArea">
 Repeat:
 <!--{repeat}-->
 </div>
-<div class="bookingsSelectRepeat">
+<div class="formEntryArea">
 <!--{duration}-->
 </div>
 <!--{xif}-->
-<div class="bookingsSelectRepeat">
-<!--{ifendtime}-->
+<div class="formEntryArea">
 <!--{endtimedayhour}-->
+</div>
+</fieldset>
 <!--{xif}-->
-</div>
-</div>
-</div>
-<div class="bookingsSelectCal">
-<!--{calendar}-->
-<!--{calendar_legend}-->
-<br />
-<!--{calendar_type}-->
-</div>
-<div class="bookingsSelect">
+
 <!--{ifneednote}-->
-Note:
+<fieldset>
+<div class="formEntryArea">
+<h2>Note:</h2>
 <!--{note}-->
+</div>
+</fieldset>
 <!--{xif}-->
-<span class="button">
+
+<div class="formButtonArea">
 <!--{submit}-->
 <!--{cancel}-->
-</span>
 </div>
+
+</div>
+
+<div class="formRight">
+<div class="formEntryArea">
+<p>
+<!--{calendar_legend}-->
+</p>
+<div class="bookingsCalendar">
+<!--{calendar}-->
+</div>
+<!--{calendar_type}-->
+</div>
+</div><!-- formRight -->
+
 <!--{formend}-->
+
+<div class="clear"></div>
+
+</div><!-- accessibleForm -->
+</div><!-- pageContentInner -->
 <!--{botlogo}-->

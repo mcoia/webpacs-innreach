@@ -1,133 +1,151 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 02 September 2008 -->
-<head>
-<title>MOBIUS</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-</head>
-<body>
 <!--{toplogo}-->
+<div class="pageContentInner">
 <!--{patron}-->
-<h2 class="srchhelpHeader">Suggest a Title for Purchase</h2>
+<h1 class="pageHeader">Suggest a Title for Purchase</h1>
 <!--{ifpinerrormessage}-->
-<div class="srchhelpText">
+<div>
 <span class="errormessage">
 <!--{pinerrormessage}-->
 </span>
 </div>
 <!--{xif}-->
-<br/>
-<div class="advSrchtool">
-<div class="srchhelpText">Additional items library should acquire:</div>
-<form method="POST">
-<table border="0" class="textFix">
-<tr>
-<td align="right" width="20%"><label for="author">Author:</label></td>
-<td width="80%">
-<input name="author" value="" size="40" maxlength="40">
-</td>
-</tr>
-<tr>
-<td align="right"><label for="title">Title:</label></td>
-<td>
-<input name="title" value="" size="40" maxlength="40">
-</td>
-</tr>
-<tr>
-<td align="right"><label for="publish">Publisher &amp; where &amp; when published:</label></td>
-<td>
-<input name="publish" value="" size="60" maxlength="60">
-</td>
-<tr>
-<td align="right">Where you saw this item mentioned:</td>
-<td>
-<input name="mention" value="" size="60" maxlength="60">
-</td>
-</tr>
-<tr>
-<td align="right">Other information:</td>
-<td>
-<input name="other" value="" size="40" maxlength="40">
-</td>
-</tr>
 
-<!-- Patron verification form. -->
+<div id="accessibleForm" class="form1Part">
+<form method="POST">
+
+<!--{ifneedpatronverify}-->
+
+<fieldset class="formLogin">
+<legend>
+<!--{enterinfo}-->
+</legend>
+
+<!--{ifextpat}-->
+<h2>Students, Staff, and Faculty</h2>
+<div class="formEntryArea">
+<label for="extpatid"><span class="formLabel">
+Username:
+</span></label>
+<!--{extpatid}-->
+<label for="extpatpw"><span class="formLabel">
+Password:
+</span></label>
+<!--{extpatpw}-->
+</div>
+<h2>Visitors</h2>
+<!--{xif}-->
+
 <!--{ifneedpatronname}-->
-<tr>
-<td align="right">
+<div class="formEntryArea">
 <label for="name">
 <!--{nameprompt}-->
-</label></td>
-<td valign="top">
-<!--{name}-->
-<br>
-<!--{nameexample}-->
-</td>
-</tr>
-<!--{xif}-->
-<!--{ifneedpatronverify}-->
-<tr>
-<td align="right">
-<label for="name">
-<!--{barcodeprompt}-->
-</label></td>
-<td valign="top">
-<!--{barcode}-->
-<br>
-<!--{barcodeexample}-->
-</td></tr>
-<!--{ifneedspin}-->
-<!--{ifpinerrormessageisPIN}-->
-<tr>
-<td align="center" colspan="2">
-<!--{newpinmessage}-->
-</td></tr>
-<tr>
-<td align="right">
-<label for="pin1">
-<!--{pin1prompt}-->
-</label></td>
-<td valign="top">
-<!--{pin1}-->
-</td></tr>
-<tr>
-<td align="right">
-<label for="pin2">
-<!--{pin2prompt}-->
-</label></td>
-<td valign="top">
-<!--{pin2}-->
-</td></tr>
-<!--{else}-->
-<tr>
-<td align="right">
-<label for="pin1">
-<!--{pinprompt}-->
 </label>
-</td>
-<td valign="top">
+<!--{name}-->
+<span class="formLabelExample">
+<!--{nameexample}-->
+</span>
+</div>
+<!--{xif}-->
+
+<div class="formEntryArea">
+<!--{barcodeprompt}-->
+<!--{barcode}-->
+<span class="formLabelExample">
+<!--{barcodeexample}-->
+</span>
+</div>
+
+<!--{ifneedspin}-->
+
+<!--{ifpinerrormessageisPIN}-->
+<p>
+<!--{newpinmsg}-->
+</p>
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pin1prompt}-->
+</span>
+<!--{pin1}-->
+</div>
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{pin2prompt}-->
+</span>
+<!--{pin2}-->
+</div>
+
+<!--{else}-->
+<div class="formEntryArea">
+<!--{pinprompt}-->
 <!--{pin}-->
-<br>
+<span class="formLabelExample">
 <!--{pininstructions}-->
-</td></tr>
+</span>
+</div>
+
 <!--{xif}-->
-<!--{xif}-->
-<!--{xif}-->
-<!--{ifalternate_id}-->
-<tr>
-<td align="right">&nbsp;</td>
-<td valign="top">
-<!--{user_name}-->
-</td></tr>
 <!--{xif}-->
 
-</table>
+    <!--{ifalternate_id}-->
+    <!--{user_name}-->
+    <!--{xif}-->
 
-<input name="submit" type="SUBMIT" value="SUBMIT THIS SUGGESTION">
+<div class="formButtonArea">
+<!--{ifneedspin}-->
+<!--{pinresetrequest}-->
+<!--{xif}-->
+</div>
+</fieldset>
+<!--{xif}-->
 
+<fieldset>
+<legend>
+Additional items library should acquire:
+</legend>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{authorprompt}-->
+</span>
+<!--{author}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{titleprompt}-->
+</span>
+<!--{title}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{publishprompt}-->
+</span>
+<!--{publish}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{mentionprompt}-->
+</span>
+<!--{mention}-->
+</div>
+
+<div class="formEntryArea">
+<span class="formLabel">
+<!--{otherprompt}-->
+</span>
+<!--{other}-->
+</div>
+
+</fieldset>
+
+<div class="formButtonArea">
+<!--{submit}-->
+</div>
 
 </form>
 </div>
+
+</div><!-- pageContentInner -->
 <!--{botlogo}-->
-</body>
-</html

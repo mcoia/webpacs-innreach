@@ -1,155 +1,140 @@
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 28 August 2008 -->
-<!-- This table is used to create consistent look & feel with main pages of the Web OPAC. Top and bottom logos & navigation are not included in pop-up windows. -->
-
-<div class="spacer">
-
-<h2 class="popupFormHeader">Payment Confirmation</h2>
+<div class="minHeight">
+<div class="fullPage">
+<div class="pageContent">
+<div class="pageContentInner popupContentInner">
+<!--Beginning main page content-->
+<h1 class="popupFormHeading">Payment Confirmation</h1>
+<div id="accessibleForm" class = "popupForm form1Part">
 <!--{formbegin}-->
-<!-- FOR USE IN PHRASE SEARCH PAGES (e.g.: srchhelp_a.html) ONLY -->
-<!-- FOR ADVANCED SEARCH PAGES USE TOKEN: advancedsearchformbegin -->
-
-<div class="popupForm patPayconfirmContainer">
-<span class="msg">
+<p>
 <!--{infocorrectprompt}-->
-</span>
+</p>
 
-<!-- Main Page div containing "left" and "right" columns to standardize presentation of Fines and Payment info. -->
-<div class="patPayconfirmFeeDisplay">
-
-<table width="100%" border="0" align="left">
-<tr>
-<td colspan="2" align="left" class="patFuncTitle">
+<!-- Main Page containing "left" and "right" boxes to standardize presentation of Fines and Payment info. -->
+<div class="ecommerceFormOptions">
+<h2>
 Fees/Fines:
-</td>
-</tr>
-<tr>
+</h2>
 
-<td colspan="2">
+<fieldset>
+
+<div class="payFormFines formEntryArea">
 <!--{finestable}-->
-</td>
-</tr>
-<tr>
-<td align="right">
-<!--{totalfinesprompt}-->
-:
-</td>
-<td align="center">
-<!--{amount}-->
-</td>
-</tr>
-<tr>
-<td align="right">
-TOTAL:
-</td>
-
-<td align="center">
-<!--{total}-->
-</td>
-</tr>
-</table>
 </div>
 
-<div class="patPayconfirmBillingDisplay">
-<table width="100%">
-<tr>
-<td colspan="2" align="left" class="patFuncTitle">
+<div class="payFormTotals formEntryArea">
+<div>
+<!--{totalfinesprompt}-->
+<!--{amount}-->
+</div>
+<div>
+<!--{servicechargeprompt}-->
+<!--{servicecharge}-->
+</div>
+
+<div>
+TOTAL:
+<!--{total}-->
+</div>
+</div>
+</fieldset>
+</div>
+
+<!-- end left box -->
+
+<!-- Begin right box; contains Patron Payment Information -->
+<div class="ecommerceFormPay">
+
+<h2>
 Billing Information:
-</td>
-</tr>
-<tr>
-<td align="right"><label for="name">Name:</label></td>
-<td align="left">
+</h2>
+
+<fieldset>
+
+<div class="ecommerceFormEntryArea">
+<label for="name"><span class="formLabel">
+Name:
+</span></label>
 <!--{name}-->
-</td>
-</tr>
-<tr>
-<td align="right"><label for="address1">Address:</label></td>
-<td align="left">
+</div>
+
+<div class="ecommerceFormEntryArea">
+<label for="address1"><span class="formLabel">
+Address:
+</span></label>
 <!--{address1}-->
-</td>
-</tr>
-<tr>
+</div>
 
-<td align="right"><label for="city">City:</label></td>
-<td align="left">
+<div class="ecommerceFormEntryArea">
+<label for="city"><span class="formLabel">
+City:
+</span></label>
 <!--{city}-->
-</td>
-</tr>
-<tr>
-<td align="right"><label for="state">State:</label></td>
-<td align="left">
+</div>
+
+<div class="ecommerceFormEntryArea">
+<label for="state"><span class="formLabel">
+State:
+</span></label>
 <!--{state}-->
-</td>
-</tr>
-<tr>
-<td align="right"><label for="zip">Zip Code:</label></td>
-<td align="left">
+</div>
 
+<div class="ecommerceFormEntryArea">
+<label for="zip"><span class="formLabel">
+Zip Code:
+</span></label>
 <!--{zip}-->
-</td>
-</tr>
-<tr>
-<td align="right"><label for="email">Email:</label></td>
-<td align="left">
-<!--{emailaddr}-->
-</td>
-</tr>
-<tr>
-<td colspan="2" align="left" class="patFuncTitle">
-Credit Card Information:
-</td>
-</tr>
+</div>
 
-<tr>
-<td align="right"><label for="ccnum">Card Number:</label></td>
-<td align="left">
+<div class="ecommerceFormEntryArea">
+<label for="emailaddr"><span class="formLabel">
+Email:
+</span></label>
+<!--{emailaddr}-->
+</div>
+
+<h2 class="ecommerceFormPayHead">Credit Card Information:</h2>
+
+<div class="ecommerceFormEntryArea">
+<label for="ccnum"><span class="formLabel">
+Card Number:
+</span></label>
 <!--{ccnum}-->
-</td>
-</tr>
-<tr>
-<td align="right"><label for="ccexp_month">Expiration:</label></td>
-<td align="left">
+</div>
+
+<div class="ecommerceFormEntryArea">
+<label for="ccexpmonth"><span class="formLabel">
+Expiration:
+</span></label>
 <!--{ccexpmonth}-->
 /
 <!--{ccexpyear}-->
-</td>
-</tr>
-<tr>
+</div>
 
-<td align="right"><label for="cvv">Security Code:</label></td>
-<td align="left">
+<div class="ecommerceFormEntryArea">
+<label for="cc_cvv2"><span class="formLabel">
+Security Code:
+</span></label>
 <!--{cc_cvv2}-->
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center" class="patFuncTitle">
-<img src="/screens/csc.gif" width="150" height="54" alt="Security Code" />
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">
-<br/>
-<!--{ecompaidlibrary}-->
-<br/>
 
-<input type="hidden" id="iiiFormHandle_1"/>
+<div class="ecommerceFormExample">
+<img src="/screens/csc.gif" width="150" height="54" alt="Security Code" />
+</div>
+
+</div>
+</fieldset>
+</div>
+<!-- end right box -->
+
+<div class="formButtonArea">
 <!--{submit}-->
-&nbsp;&nbsp;&nbsp;
 <!--{cancel}-->
-</td>
-</tr>
-</table>
+</div>
 
 <!--{formend}-->
+</div><!-- accessibleForm -->
+<div class="clear"></div>
+</div><!-- popupContentInner -->
+</div><!-- pageContent -->
+</div><!-- fullPage -->
 </div>
-</div>
-<div class="clear2"></div>
-</div>
-
-<!--End of main page content-->
-<!-- This table is used to create consistent look & feel with main pages of the Web OPAC. Top and bottom logos & navigation are not included in pop-up windows. -->
-
-<div class="pageNavAreaPopupBottom clear2">&nbsp;</div>
-
-<!--this is customized <screens/payconfirm.html>-->

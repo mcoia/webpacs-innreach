@@ -1,5 +1,3 @@
-<!-- Rel 2007 "Skyline" Example Set -->
-<!-- This File Last Changed: 27 June 2008 -->
 <!--{toplogo}-->
 
 <div id="bibDisplayBody">
@@ -14,13 +12,34 @@
 <div class="resourceHistory">
 <!--{searchhistory}-->
 </div>
-<div class="resourcePager">
+</div>
+<div>
 <!--{pager}-->
+</div>
+
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!--Optional INNReach resources.-->
+<!--{innreach}-->
+<!--{relsearch}-->
+</div>
+
+<div class="bibDisplayJacket">
+<!--{bibimage}-->
+<div class="bibMedia">
+<!--{media}-->
 </div>
 </div>
 
-<div>
-<div style="float:left">
+<div class="resourceDisplayContentMain">
+
+
+<!-- table to make display consistent with recordinfo token data -->
 <table width="100%">
 <tr>
 <td class="resourceInfoLabel" align="left" width="30%">
@@ -32,30 +51,33 @@ Resource Home:
 </tr>
 </table>
 <!--{recordinfo:#}-->
-<!-- table added by njames to make display consistent with recordinfo token data -->
-<table width="100%">
-<tr>
-<td class="resourceInfoLabel" align="left" width="30%">
-Ratings:
-</td>
-<td class="resourceInfoData" align="left" width="70%">
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
 <!--{ratings}-->
-</td>
-</tr>
-</table>
-<div class="resourceRecLink">
+</div>
+<!--{xif}-->
+
+<div class="bibDisplayPermLink actionButtonArea">
 <!--{recordlink}-->
 </div>
+
+<div class="resourceDisplayLicenseHeader"><h2>License</h2></div>
 <div class="resourceLicenseArea">
 <!--{license}-->
 </div>
 
-</div>
-</div>
+
 <div class="clear"></div>
+<div class="resourceDisplayBibs">
 <!--{bib}-->
+</div>
+
 <!--{relsearch}-->
+
 <!--{reslink}-->
+</div><!-- close resourceDisplayContentMain -->
 </div><!-- close bibDisplayContent -->
+<div class="clear"></div>
 </div><!-- close bibDisplayBody -->
 <!--{botlogo}-->
