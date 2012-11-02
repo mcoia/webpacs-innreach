@@ -332,7 +332,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitClear { clear:both; }
 
-.briefcitDetail, .briefcitAuthDetail  { display:inline; float:left; padding:0px 0 0px 3px; width:65%; }
+.briefcitDetail, .briefcitAuthDetail  { display:inline; float:left; padding:0px 0 0px 3px; width:70%; }
 
 .briefcitAuthDetail { margin-bottom:12px; }
 
@@ -370,7 +370,7 @@ div.bookingsVerify { padding:0; margin-top:18px; }
 
 .briefcitMediaEnd { display:none; }
 
-.briefcitJacket  { float:left; margin:5px 15px; width:15px; display:inline; }
+.briefcitJacket  { float:left; margin:5px 15px; width:100px; display:inline; }
 
 .briefcitStatus { font-weight:bold; }
 
