@@ -1,4 +1,5 @@
 <!--{toplogo}-->
+
 <!--{ifbibdisplay}-->
 <!--{xif}-->
 <!--{catedit}-->
@@ -35,6 +36,7 @@
 <div id="syndetics">
 <!--{bibimage}-->
 </div>
+
 <div class="bibMedia">
 <!--{media}-->
 </div>
@@ -71,37 +73,22 @@
 <!--{items}-->
 </div>
 </div>
-
-<div class="bibDisplayContentMore">
-<!--{recordinfo:#}-->
-<div id="syn_anotes"></div>
-<div id="syn_awards"></div>
-<div id="syn_blreview"></div>
-<div id="syn_abreview"></div>
-<div id="syn_chreview"></div>
-<div id="syn_criticasreview"></div>
-<div id="syn_dbchapter"></div>
-<div id="syn_gmsummary"></div>
-<div id="syn_hbreview"></div>
-<div id="syn_itasummary"></div>
-<div id="syn_kireview"></div>
-<div id="syn_ljreview"></div>
-<div id="syn_nyreview"></div>
-<div id="syn_pwreview"></div>
-<div id="syn_sljreview"></div>
-<div id="syn_series"></div>
-<div id="syn_spreview"></div>
-<div id="syn_spsummary"></div>
-<div id="syn_summary"></div>
-<div id="syn_swedreview"></div>
-<div id="syn_swedsummary"></div>
-<div id="syn_swedtoc"></div>
-<div id="syn_toc"></div>
-<div id="syn_fiction"></div>
-<div id="syn_avprofile"></div>
-<div id="syn_avsummary"></div>
-<div id="syn_video_clip"></div>
+<div class="bibDisplayContentMore"></div>
+  <div id="syndeticsInformation">
+    <ol>
+      <li id="synList1" class="synInfo">
+        <h3>Summary</h3>
+        <div id="syn_summary"></div>
+      </li>
+      <li id="synList2" class="synInfo">
+        <h3>Table of Contents</h3>
+        <div id="syn_toc"></div>
+      </li>
+    </ol>
 </div>
+
+
+<!--{recordinfo:#}-->
 
 <div class="bibDisplayUrls">
 <!--{URLS}-->
@@ -141,10 +128,29 @@
 
 
 
-
 </div><!-- close bibDisplayContent -->
 <div class="clear"></div>
 </div><!-- close bibDisplayBody -->
-<script src="http://plus.syndetics.com/widget.php?id=mobius" type="text/javascript"></script>
-<!--{botlogo}-->
 
+
+
+
+<script>
+ function myfunc() {
+  $('.synInfo > div').each(function() {
+    if ($(this).children().length > 0) {
+      $(this).parent().toggle();
+    }
+  });
+
+  $('#synList1').click(function() {
+    $('#syn_summary').slideToggle();
+  });
+  
+  $('#synList2').click(function() {
+    $('#syn_toc').slideToggle();
+  }); 
+}
+</script>
+<script src="http://plus.syndetics.com/widget.php?id=mobius&callback=myfunc" type="text/javascript"></script>
+<!--{botlogo}-->
