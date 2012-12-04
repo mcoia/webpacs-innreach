@@ -77,11 +77,11 @@
   <div id="syndeticsInformation">
     <ol>
       <li id="synList1" class="synInfo">
-        <h3>Summary</h3>
+        <h3>Summary<span id="summarySwirl"></span></h3>
         <div id="syn_summary"></div>
       </li>
       <li id="synList2" class="synInfo">
-        <h3>Table of Contents</h3>
+        <h3>Table of Contents<span id="tocSwirl"></span></h3>
         <div id="syn_toc"></div>
       </li>
     </ol>
@@ -133,24 +133,64 @@
 </div><!-- close bibDisplayBody -->
 
 
-
+<script src="http://plus.syndetics.com/widget.php?id=mobius" type="text/javascript"></script>
 
 <script>
- function myfunc() {
-  $('.synInfo > div').each(function() {
-    if ($(this).children().length > 0) {
-      $(this).parent().toggle();
-    }
-  });
 
-  $('#synList1').click(function() {
-    $('#syn_summary').slideToggle();
-  });
-  
-  $('#synList2').click(function() {
-    $('#syn_toc').slideToggle();
-  }); 
-}
+  var intv;
+    var count = 0;
+    var countTotal = 300;
+    var checkFrequency = 30;
+    function checkdivs () 
+    {
+      count++; 
+      if (count < countTotal) {
+        checkdata(false);
+
+    }
+    else { 
+       window.clearInterval(intv);
+      checkdata(true);
+    } 
+  }
+  function checkdata (final) 
+  {
+    var divs = new Array ('syn_summary', 'syn_toc');
+    var li = new Array ('synList1', 'synList2');
+    var swirl = new Array ('summarySwirl', 'tocSwirl');
+    for (i = 0; i < divs.length; i++) 
+    {
+        var test = $('#'+ divs[i]).text();
+        if (test.length > 0) 
+        {
+            $('#' + li[i]).show(); 
+             $('#' + swirl[i]).hide();
+             count = countTotal;
+        }
+        else if(final)
+        {
+          $('#' + li[i]).hide();
+        }
+        if(final)
+        {
+          $('#tocSwirl').hide();
+          $('#summarySwirl').hide();
+        }
+    }
+  }
+    $(document).ready(function()
+    {
+        intv = window.setInterval("checkdivs()", checkFrequency);
+        $('#synList1').click(function()
+        {
+            $('#syn_summary').slideToggle(); 
+        });
+        $('#synList2').click(function()
+        {
+            $('#syn_toc').slideToggle();
+        });  
+        
+    });
 </script>
-<script src="http://plus.syndetics.com/widget.php?id=mobius&callback=myfunc" type="text/javascript"></script>
+
 <!--{botlogo}-->

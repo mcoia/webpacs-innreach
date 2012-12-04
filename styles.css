@@ -192,7 +192,7 @@ a:hover  { color: #0096A7; }
 #syndeticsInformation { padding: 1.3em 0.7em 1.3em 0.7em; float:center; }
 
 #synList1, #synList2 { 
-	display: none; 
+	display: block; 
 	list-style-type:none; 
 	}
 
@@ -208,6 +208,12 @@ a:hover  { color: #0096A7; }
 	background-color: #0096a7; 
 	margin: 0px 0px 15px 0px
 }
+
+#summarySwirl, #tocSwirl { background: url("loading-gif-animation.gif") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 20px;
+    margin-top: 3px;
+    width: 18px;}
 
 #syn_summary { display: none; cursor: hand; cursor: pointer;}
 
