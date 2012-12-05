@@ -214,10 +214,21 @@ a:hover  { color: #0096A7; }
     height: 20px;
     margin-top: 3px;
     width: 18px;}
+   /* {{Information |Description= A animated "loading" status symbol |Date= June 22nd 2006 |Author= FlipDarius }}*/
 
-#syn_summary { display: none; cursor: hand; cursor: pointer;}
+.upArrow {background: url("uparrow.png") no-repeat scroll 0 0 transparent; }
 
-#syn_toc { display: none; cursor: hand; cursor: pointer;}
+.downArrow { background: url("downarrow.png") no-repeat scroll 0 0 transparent; }
+
+#arrowSum, #arrowToc {
+    float: left;
+    height: 20px;
+    margin-top: 3px;
+    width: 18px; }
+
+#syn_summary { display: none; cursor: hand; }
+
+#syn_toc { display: none; cursor: hand; }
 
 .bibDisplayItems table, .requestMultiItems table { border:0; border-collapse: collapse; margin-bottom:20px; margin-top:20px; }
 
