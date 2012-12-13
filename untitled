@@ -1,0 +1,268 @@
+<!--{toplogo}-->
+
+<!--{ifbibdisplay}-->
+<!--{xif}-->
+<!--{catedit}-->
+
+<div id="bibDisplayBody">
+<div class="navigationRowRecord">
+<!--{navrow}-->
+<!--{innreach}-->
+</div>
+<div id="bibDisplayContent">
+<div class="bibSearch">
+<!--{searchtool}-->
+<div class="bibSearchHistory">
+<!--{searchhistory}-->
+</div>
+</div><!-- bibSearch -->
+
+<div class="bibPager">
+<!--{pager}-->
+</div>
+
+<div class="bibClear"></div>
+
+<div class="bibResourceSidebar">
+<!--{ifhasresourcetable}-->
+<!--{resourcetable}-->
+<!--{xif}-->
+<!--Optional INNReach resources.-->
+<!--{innreach}-->
+<!--{relsearch}-->
+</div>
+
+<div class="bibDisplayJacket">
+<div id="syndetics">
+<!--{bibimage}-->
+</div>
+
+<div class="bibMedia">
+<!--{media}-->
+</div>
+</div>
+
+<div class="bibDisplayContentMain">
+
+<!--{recordinfo:a}-->
+
+<h1 class="bibDisplayTitle">
+<!--{recordinfo:t}-->
+</h1>
+
+<!--{recordinfo:pRe}-->
+<!--{recordlink}-->
+
+<!--{ifhaspatrate}-->
+<div class="bibDisplayRatings">
+<!--{ratings}-->
+</div>
+<!--{xif}-->
+
+<!--{booking}-->
+<!--{holdingslink}-->
+<div class="testlinkeddocs">
+<!--{linkeddocs}-->
+</div>
+
+
+
+<div class="bibDisplayItems">
+<div class="bibDisplayItemsMain">
+<!--{holdings}-->
+<!--{items}-->
+</div>
+</div>
+<div class="bibDisplayContentMore"></div>
+  <div id="syndeticsInformation">
+  	<ol>
+      <div id="synList1">
+        <li>Summary</span></li>
+      </div>
+        <div id="syn_summary"></div>
+  	
+      <div id="synList2">
+        <li>Table of Contents</span></li></div>
+        <div id="syn_toc"></div>
+    </ol>
+</div>
+
+
+<!--{recordinfo:#}-->
+
+<div class="bibDisplayUrls">
+<!--{URLS}-->
+</div>
+
+<!--{bloblinks}-->
+<!--{imagelinks}-->
+<!--{artthumb}-->
+<!--{xmlframe}-->
+<!--{ifTOC}-->
+<!--{TOC}-->
+<!--{xif}-->
+<!--{holds}-->
+
+</div>
+
+<!--{orders}-->
+
+
+
+
+<!--{IFELCONTENT:365}-->
+<!-- Replace the number for your enhanced content in Pathfinder Pro -->
+<div class="bibDisplayContentMore">
+<ul id="elContent">
+<!--{ELCONTENT:365}-->
+</ul>
+</div>
+<!--{xif}-->
+
+
+
+<div class="bibDisplayContentMore bibDisplayReviews">
+<!--{patronreviewsfull}-->
+
+</div>
+
+
+
+</div><!-- close bibDisplayContent -->
+<div class="clear"></div>
+</div><!-- close bibDisplayBody -->
+<script src="http://plus.syndetics.com/widget.php?id=mobius&callback=myfunc" type="text/javascript"></script>
+
+
+
+<script>
+ function myfunc()
+    {
+           var divs = new Array ('syn_summary', 'syn_toc');
+          var li = new Array ('synList1', 'synList2');
+      for (i = 0; i < divs.length; i++) 
+      {
+          var test = $('#'+ divs[i]).text();
+          if (test.length > 0) 
+          {
+              $('#' + li[i] + ' li').show(); 
+
+          }
+          else
+          {
+            $('#' + li[i] + ' li').hide();
+
+          }
+        }
+
+    $(document).ready(function()
+    {
+        intv = window.setInterval("myfunc()");
+        $('#synList1').click(function()
+        {
+            $('#syn_summary').show();
+        });
+        $('#synList2').click(function()
+        {
+            $('#syn_toc').show();
+        });  
+        
+    });
+        };
+
+      
+
+
+    /* function myfunc()
+    {
+           var divs = new Array ('syn_summary', 'syn_toc');
+          var li = new Array ('synList1', 'synList2');
+      for (i = 0; i < divs.length; i++) 
+      {
+          var test = $('#'+ divs[i]).text();
+          if (test.length > 0) 
+          {
+              $('#' + li[i] + ' li').show(); 
+
+          }
+          else
+          {
+            $('#' + li[i] + ' li').hide();
+
+          }
+        }
+
+    $(document).ready(function()
+    {
+        intv = window.setInterval("myfunc()");
+        $('#synList1').click(function()
+        {
+            $('#syn_summary').show();
+        });
+        $('#synList2').click(function()
+        {
+            $('#syn_toc').show();
+        });  
+        
+    });
+        };
+
+        
+
+    function myfunc() {
+    alert("thisworks");
+  };  
+  var intv;
+    var count = 0;
+    function checkdivs () 
+    {
+      count++; 
+      if (count < 300) {
+        checkdata(false);
+
+    }
+    else { 
+       window.clearInterval(intv);
+      checkdata(true);
+    } 
+  }
+  function checkdata (final) {
+          var divs = new Array ('syn_summary', 'syn_toc');
+          var li = new Array ('synList1', 'synList2');
+            var swirl = new Array ('summaryswirl', 'tocswirl');
+      for (i = 0; i < divs.length; i++) 
+      {
+          var test = $('#'+ divs[i]).text();
+          if (test.length > 0) 
+          {
+              $('#' + li[i] + ' li').show(); 
+               $('#' + swirl[i] + ' li').hide();
+
+          }
+          else
+          {
+            $('#' + li[i] + ' li').hide();
+
+          }
+
+      }
+      if (final){
+            $('#tocswirl').hide();
+            $('#summaryswirl').hide();
+      }
+  }
+    $(document).ready(function()
+    {
+        intv = window.setInterval("checkdivs()", 30);
+        $('#synList1').click(function()
+        {
+            $('#syn_summary').slideToggle(); 
+        });
+        $('#synList2').click(function()
+        {
+            $('#syn_toc').slideToggle();
+        });  
+        
+    });*/
+</script>
+<!--{botlogo}-->
