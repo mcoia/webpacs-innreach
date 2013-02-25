@@ -1,25 +1,4 @@
 <!--{toplogo}-->
-
-<script type="text/javascript">
-
-$(document).ready(function () {
-        var cluster = $('select[name="dlcamp"]').val();
-        $('#basic-modal-content div:not(#' + cluster + ')').hide();
-        $('#basic-modal-content [id="' + cluster + '"]').show();
-	$('#idHelp').click(function (e) {
-		$('#basic-modal-content').modal({position: ["15%"]});
-
-		return false;
-	});
-});
-
-
-
-</script>
-<h2 class="srchhelpHeader">Request Verification</h2>
-<br/>
-<div class="advSrchtool">
-
 <script>
 $(document).ready(function () {
         var cluster = $('select[name="dlcamp"]').val();
@@ -186,37 +165,6 @@ $(document).ready(function () {
 </ul>
 </div>
 
-
-<a href="#">
-<img id="idHelp" src="/screens/id_help.gif">
-</a>
-
-<div id="basic-modal-content">
-
-<div id="6arch" class="idHelp">
-<p>Examples:</p>
-<ul>
-<li>0012345<strong>EC</strong> (East Central College)</li>
-<li>V00123450<strong>JC</strong> (Jefferson  College)</li>
-<li>0234567<strong>SC</strong> (St. Charles Community College)</li>
-<li>01234<strong>COP</strong> (St. Louis College of Pharmacy)</li>
-<li>A01234567<strong>ST</strong> (St. Louis Community College)</li>
-</ul>
-</div>
-
-<div id="6arth" class="idHelp">
-<p>Enter your I.D. number plus your Location Code: CC,LU, M, SC, WC, WW</p>
-<li>Columbia College = CC</li>
-<li>Lincoln University = LU</li>
-<li>Missouri State Library = M</li>
-<li>Stephens College = SC</li>
-<li>Westminster College = WC</li>
-<li>William Woods University = WW</li> 
-</div>
-
-<div id="6brid" class="idHelp">
-<p>Type your ID no. plus your campus code:</p>
-
 <div id="6arth" class="idHelp">
 <p><strong>Enter your I.D. number plus your Location Code: CC,LU, M, SC, WC, WW</strong></p>
 <li>Columbia College = CC</li>
@@ -229,154 +177,20 @@ $(document).ready(function () {
 
 <div id="6brid" class="idHelp">
 <p><strong>Type your ID no. plus your campus code:</strong></p>
-
 <p>CL,CS,F,HS,KGS,LU,LCC,M,MBC,EWL</p>
 <ul>
-<li>Concordia Seminary = CL</li>	
+<li>Concordia Seminary = CS</li>	
 <li>Covenant Theological Seminary = CS</li>
 <li>Fontbonne University = F</li>
 <li>Harris-Stowe State University = HS</li>
 <li>Kenrick-Glennon Seminary = KGS</li>
 <li>Lindenwood University = LU</li>
 <li>Logan College of Chiropractic = LCC</li>
-<li>Maryville University = Use all 10 digits on your ID card + M</li>
+<li>Maryville University =Use all 10 digits on your ID card + M</li>
 <li>Missouri Baptist University = MBC</li>
 <li>Webster University / Eden Theological Seminary = EWL</li>
 </ul>
 </div>
-
-
-<div id="9camd" class="idHelp">
-
-<p>Complete Library Card Barcode</p>
-
-</div>
-
-<div id="9chrs" class="idHelp">
-
-<p>Complete Library Card Barcode</p>
-
-</div>
-
-<div id="6gala" class="idHelp">
-<p>Type your ID number plus your campus code: MAC, SEMO, TRCC</p>
-<ul>
-<li>Mineral Area College = MAC</li>
-<li>Southeast Missouri State University = SEMO</li>
-<li>Three Rivers Community College = TRCC</li>
-</ul>
-</div>
-
-<div id="6wilo" class="idHelp">
-<p>Type your campus ID plus your campus code: AU,KCAI,MBTS,MCC,RG,SPST,WJ</p>
-<ul>
-<li>Avila University = AU</li>
-<li>Kansas City Art Institute = KCAI</li>
-<li>MCC - Blue River = MCC</li>
-<li>MCC - Longview = MCC</li>
-<li>MCC - Maple Woods = MCC</li>
-<li>MCC - Penn Valley = MCC</li>
-<li>Midwestern Baptist Theological Seminary = MBTS</li>
-<li>Rockhurst University = RG</li>
-<li>Saint Paul School of Theology = SPST</li>
-<li>William Jewell College = WJ</li>
-</ul>
-</div>
-
-<div id="6lanc" class="idHelp">
-<p>Type your ID number plus your campus code: CS, HLG, ATSU (staff), KCOM (students), LSTC, MACC or TSU.</p>
-<ul>
-<li>A.T. Still University - Missouri (staff) = ATSU</li>
-<li>A.T. Still University - Missouri (students) = KCOM</li>
-<li>Culver-Stockton College = CS</li>
-<li>Hannibal-LaGrange University = HLG</li>
-<li>Linn State Technical College = LSTC</li>
-<li>Moberly Area Community College = MACC</li>
-<li>Truman State University = TSU</li>
-</ul>
-</div>
-
-<div id="6mrln" class="idHelp">
-
-<p>Univ Missouri (all four campuses): 8-digit EMPL ID (or student number)**</p>
-<p>Example: <strong>12563478</strong></p>
-
-<p>**If you are, or have been, <strong>affiliated with more than one campus</strong> (as a student and/or employee), you must use your <strong>one-letter</strong> campus code following the 8-digit ID:</p>
-
-<ul>
-<li>00426543<strong>c</strong>  MU (Mizzou)</li>
-<li>11223344<strong>r</strong>  MO S&T</li>
-<li>22334455<strong>k</strong>  UMKC</li>
-<li>33445566<strong>t</strong>  UMSL</li>
-</ul>
-
-<p>Courtesy & Proxy borrowers:</p>
-<p>Please inquire at your Home Library Circulation Desk.</p>
-
-</div>
-
-<div id="6mrrl" class="idHelp">
-
-<p>Complete Library Card Barcode</p>
-
-</div>
-
-<div id="6ques" class="idHelp">
-
-<p>Type your ID number plus your campus code: CMU, CMSU, MVC, SFCC</p>
-<ul>
-<li>Central Methodist University = CMU</li>
-<li>Missouri Valley College = MVC</li>
-<li>State Fair Community College = SFCC</li>
-<li>University of Central Missouri = UCM</li>
-</ul>
-
-</div>
-
-<div id="9sgcl" class="idHelp">
-
-<p>Complete Library Card Barcode</p>
-
-</div>
-
-<div id="6sluu" class="idHelp">
-
-<p>Enter your SLU Banner ID number</p>
-
-</div>
-
-<div id="6swan" class="idHelp">
-
-<p>Type your ID number plus your campus code: AGTS, BBC, CC, COTT, DU, FIPP, MSSU, MSU, OTC, or SBU</p>
-<ul>
-<li>Assemblies of God Theological Seminary = AGTS</li>
-<li>Baptist Bible College = BBC</li>
-<li>Cottey College = COTT</li>
-<li>Crowder College = CC</li>
-<li>Drury University = DU</li>
-<li>Ozarks Technical Community College = OTC</li>
-<li>Missouri Southern State University = MSSU</li>
-<li>Missouri State University = MSU</li>
-<li>Southwest Baptist University = SBU</li>
-</ul>
-
-</div>
-
-<div id="6towe" class="idHelp">
-
-<p>Type your ID number plus your campus code: CA, MW, NCMC, NW</p>
-<ul>
-<li>Conception Abbey Seminary = CA</li>
-<li>Missouri Western State University = MW</li>
-<li>North Central Missouri College = NCMC</li>
-<li>Northwest Missouri State University = NW</li>
-</ul>
-
-</div>
-
-<div id="6wash" class="idHelp">
-
-
 
 <div id="9camd" class="idHelp">
 
@@ -508,7 +322,6 @@ $(document).ready(function () {
 
 <div id="6wash" class="idHelp">
 
-
 <p>Enter your Washington University ID number</p>
 <p><strong>*WUSTL KEY Users</strong></p>
 <ul>
@@ -523,18 +336,9 @@ $(document).ready(function () {
 
 </div>
 
-
-
-
-
-</div>
-</a>
-<br />
-
 </div>
 
 <div class="clear"></div>
-
 
 <!--{ifcampus}-->
 
