@@ -32,6 +32,10 @@ b|p|264 3|-6789|Manufacture||b|
 b|p|2644.|-6789|Copyright date||b|
 b|p|264 4|-6789|Copyright date||b|
 #
+# converted from HOLDINGS_POS field tag: 'e'
+#
+b|e||-6|Edition||b|
+#
 # end HOLDINGS_POS
 #
 #
@@ -42,7 +46,6 @@ b|T|||||
 b|e|254|-6|Format||b|
 b|e|255|-6|Map Information||b|
 b|e|256|-6|Computer Information||b|
-b|e||-6|Edition||b|
 b|r|306|-6|||b|
 b|r|310|-6|Frequency||b|
 b|r|321|-6|Former Frequency||b|

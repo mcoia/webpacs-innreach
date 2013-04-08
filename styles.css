@@ -192,21 +192,21 @@ a:hover  { color: #0096A7; }
 #syndeticsInformation { padding: 1.3em 0.7em 1.3em 0.7em; float:center; }
 
 #synList1, #synList2 { 
-	display: block; 
-	list-style-type:none; 
-	}
+    display: block; 
+    list-style-type:none; 
+    }
 
 #synList1 h3, #synList2 h3 {
-	height: 1.3em; 
-	width: 100%;
-	padding: 0.4em 0.5em 0.5em 0.5em; 
-	text-align: center;  
-	color: #FFFFFF; 
-	font-weight: bold; 
-	text-decoration: none;  
-	cursor: pointer; 
-	background-color: #0096a7; 
-	margin: 0px 0px 15px 0px
+    height: 1.3em; 
+    width: 100%;
+    padding: 0.4em 0.5em 0.5em 0.5em; 
+    text-align: center;  
+    color: #FFFFFF; 
+    font-weight: bold; 
+    text-decoration: none;  
+    cursor: pointer; 
+    background-color: #0096a7; 
+    margin: 0px 0px 15px 0px
 }
 
 #summarySwirl, #tocSwirl { background: url("loading-gif-animation.gif") no-repeat scroll 0 0 transparent;
@@ -234,7 +234,9 @@ a:hover  { color: #0096A7; }
 
 .bibDisplayItems th, .reserveBibs th, .resourceDisplayBibs th, .resourceResource th { color:#767C70; }
 
-.bibDisplayItems td, .reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibItems td, .bibHoldings td, .bibVol td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; padding: 5px 7px; }
+.bibDisplayItems td, .reserveBibs td, .resourceDisplayBibs td, .resourceResource td, .bibHoldings td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; padding: 5px 3px; word-break:break-all;}
+
+.bibVol td { border-top:1px solid #ECECEC; border-bottom:none; vertical-align:top; }
 
 .bibDisplayItemsHeader, .resourceDisplayLicenseHeader { font-size:.8333em; float:left; margin:.5em 0 0 5%; }
 
@@ -244,13 +246,33 @@ a:hover  { color: #0096A7; }
 
 .bibDisplayJacket  { float:left; margin:0; display:inline; width:145px; text-align:center; }
 
+table.bibLinks {
+    background-color: #F4F4F4;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 1em;
+}
+
+.bibDisplayUrls th{
+    padding:.5em 0 .25em 0;
+}
+
+.bibDisplayUrls td{
+    padding-bottom:..25em;
+}
+
+.bibDisplayUrls td:last-child{
+    padding-bottom:1em;
+}
+
+.bibItems td {padding: 3px 12px 3px 2px;}
+
 .bibLinks th { text-align:center; }
 
 .bibMedia  { margin-left:auto; margin-right:auto; }
 
 .bibMedia   img { margin-top:10px;  }
 
-.bibDisplayPermLink { float:right; }
+.bibDisplayPermLink { margin: 1em 0; }
 
 .bibDisplayProgramInfo { float:right; font-size:1.1em; margin:5% 5% 15px 0; }
 
@@ -475,7 +497,7 @@ table.browseResourceTable { border:0; }
 
 .browseResourceTableEntry select { overflow:hidden; }
 
-.browseSaveJump	 { height:1.2em; overflow:hidden; padding:3px 0 3px 10px; }
+.browseSaveJump  { height:1.2em; overflow:hidden; padding:3px 0 3px 10px; }
 
 .browseSaveJump a:link,.browseSaveJump a:visited  { color: #014184; font-family:Arial,"Arial Unicode MS",Helvetica,Verdana,sans-serif; font-weight:bold; padding:6px 5px 3px 0px; text-decoration:none; width:auto; }
 
