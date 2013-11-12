@@ -52,9 +52,11 @@ b|r|321|-6|Former Frequency||b|
 b|r|336|-6|||b|
 b|r|337|-6|||b|
 b|r|338|-6|||b|
+b|r|34[0-7]|-6|||b|
 b|r|350|-6|||b|
 b|r|359|-6|||b|
 b|r|362|-6|Publication History||b|
+b|r|380|-6|||b|
 b|r||-6|Description||b|
 b|s||-6|Series||b|
 b|n|505|-67|Contents||b|
