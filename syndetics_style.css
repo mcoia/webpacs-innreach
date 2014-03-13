@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* Reviews Content CSS */
+
+
+p {
+  margin-top: 0.5em;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0.5em;
+}
+.syn_body {
+  padding: 5px 5px 15px;
+  text-align: left;
+}
+.syn_body.syn_truncate a:link,
+.syn_body.syn_truncate a:visited,
+.syn_body.syn_truncate a:active {
+  color: #336699; 
+  text-decoration: none;
+  font-style: italic;
+}
+.syn_body a:hover {
+  font-weight: bold; 
+  color: #336699; 
+  text-decoration: underline;
+}
+.syn_list ul {
+  list-style: none;
+  padding: 0px 0px 5px 5px;
+}
+.syn_list_item {
+  clear:both;
+  position:relative;
+  padding: 5px 0px;
+}
+.syn_title {
+  padding-top: 8px;
+  color: #455D7B;
+  font-weight: bold;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #455D7B;
+}
+.syn_toc_item_page_num {
+  float:right;
+  overflow:hidden;
+  font-weight: bold;
+  font-style: italic;
+}
+.syn_toc_item_title {
+  float:left;
+  overflow:hidden;
+  padding-left:10px;
+}
+.syn_toc_label {
+  float:left;
+  overflow:hidden;
+  text-align:left;
+  width:100px;
+}
+
+/* Title profile */
+.syn_fp {
+  padding: 5px 0px;
+}
+.syn_fp_title {
+  font-weight: bold;
+}
+.syn_fp_character,
+.syn_fp_biographee {
+  padding: 10px 0px 5px 10px;
+}
+.syn_fp_character span.syn_fp_tag_seperator, 
+.syn_fp_biographee span.syn_fp_tag_seperator {
+  display:inline;
+}
+.syn_fp_characters span.syn_fp_tag 
+.syn_fp_biographees span.syn_fp_tag {
+  display:inline;
+  padding-left: 2px;
+}
+span.syn_fp_tag_title {
+  font-style:italic;
+}
+/* Video Profile */
+.syn_av {
+  padding: 5px 0px;
+}
+.syn_av_title {
+  font-weight: bold;
+}
+span.syn_av_tag_title {
+  font-style:italic;
+}
+#syn_avprofile .syn_copyright {
+  padding-top: 5px;
+}
