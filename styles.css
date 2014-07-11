@@ -139,7 +139,7 @@ a:hover  { color: #0096A7; }
 .formEntryArea { }
 .formRequired { color:#990000;font-weight:bold;font-size:1.3em;position:relative;top:5px; }
 .formsTogether { width:780px; }
-.formsTogether .form1Part { width:96%; }
+.formsTogether .form1Part { width:75%; }
 
 .additionalCopies { margin: 20px 6px; }
 
