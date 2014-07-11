@@ -278,8 +278,11 @@ function getElemByClass(oElm, strTagName, strClassName){
 
 function hideSynExportPage(){
   if(window.location.href.indexOf("++export") > -1) {
-    document.getElementById("synList1").style.display="none";
-    document.getElementById("synList2").style.display="none";
+    var hideSyn = document.getElementsByClassName('hideSyn'), i;
+
+    for (var i = 0; i < hideSyn.length; i ++) {
+        hideSyn[i].style.display = 'none';
+    }
   }
 }
 
