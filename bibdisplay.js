@@ -19,7 +19,7 @@ function init() {
 	highlightRows();
 	stripeSubjectTables();
 	stripeBrowseTables();
-	
+	hideSynExportPage();
 };
 
 /* for Mozilla/Opera9 */
@@ -276,4 +276,10 @@ function getElemByClass(oElm, strTagName, strClassName){
     return (arrReturnElements)
 }
 
+function hideSynExportPage(){
+  if(window.location.href.indexOf("++export") > -1) {
+    document.getElementById("synList1").style.display="none";
+    document.getElementById("synList2").style.display="none";
+  }
+}
 
