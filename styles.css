@@ -161,6 +161,15 @@ a:hover  { color: #0096A7; }
     font-weight:bold;
 }
 
+#newMemberMessage {
+    margin-left:1em;
+    font-size:1.125em;
+}
+
+#newMemberMessage a {
+    font-weight:bold;
+}
+
 .availLimMessage { font-style:normal; }
 
 .bibClear { clear:both; }
