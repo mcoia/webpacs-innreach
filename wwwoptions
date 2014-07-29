@@ -465,7 +465,7 @@ BIBIMAGE_TEXT=Book Cover
 #Z39MULTI=500:100
 
 # Partner
-PARTNER=prospector.coalliance.org&Search Prospector@129.19.152.47
+PARTNER=prospector.coalliance.org&<span id="prospector">Search Prospector</span>@129.19.152.47
 #PARTNER=encore.coalliance.org&Search Prospector@129.19.152.24
 ICON_BUT_RETHOME=<span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Home</span></span>
 
