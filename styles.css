@@ -915,7 +915,7 @@ padding:2px;
 
 .navigationRow noscript h2, .bibSearchHistory noscript h2 { font-size:1em; margin:-3px 10px 0 0; color:#FF0000; }
 
-.navigationRow select { font-size:.83333em; width:200px; margin-top: 15px; }
+.navigationRow select { font-size:.83333em; width:200px; margin-top: 39px; }
 
 .pageContent { clear:both; }
 
@@ -1034,6 +1034,8 @@ th.patFuncTitle,tr.patFuncTitle{ background:#FFFFFF url('tile_header.jpg') repea
 .on_ice td, .on_ice a, .on_ice select { color:#999999; }
 
 .patTop  { float:left; background:#FFFFFF; display:inline; margin:20px; width:350px; }
+
+.prospectorButton  {cursor:pointer; width:99px; height:45px; padding: 11px 5px 0 10px}
 
 td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-align:right; vertical-align:baseline; width:30%; }
 
