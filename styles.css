@@ -1035,7 +1035,15 @@ th.patFuncTitle,tr.patFuncTitle{ background:#FFFFFF url('tile_header.jpg') repea
 
 .patTop  { float:left; background:#FFFFFF; display:inline; margin:20px; width:350px; }
 
-.prospectorButton  {cursor:pointer; padding: 10px 5px 0 10px; border: 1px solid black; border-radius: 25px; background: url("/screens/glossy-gradient.png") repeat-x scroll;}
+.prospectorButton  {    background: url("/screens/glossy-gradient.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 3px grey;
+    cursor: pointer;
+    padding: 0 5px 0 10px;
+    width: 312.2px;
+    height: 38.5px;
+}
 
 td.progInfoLabel { color:#767C70; font-weight:bold; padding-right:25px; text-align:right; vertical-align:baseline; width:30%; }
 
