@@ -170,6 +170,11 @@ a:hover  { color: #0096A7; }
     font-weight:bold;
 }
 
+.newMemberLogo {   
+  display: inline;
+  padding: 25px;
+}
+
 .availLimMessage { font-style:normal; }
 
 .bibClear { clear:both; }
