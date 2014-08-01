@@ -25,7 +25,7 @@ startTimeout(600000, "/");
     <li><a href="#requesting">Requesting</a></li>
     <li><a href="#searching">Searching</a></li>
     <li><a href="#searchtips">Searching (Advanced)</a></li>
-    <li><a href="#prospectortips">Searching and Borrwoing from Prospector</a></li>
+    <li><a href="#prospectortips">Searching and Borrowing from Prospector</a></li>
 </ul>
 
 <a name="requesting"></a>
@@ -156,7 +156,84 @@ Keyword search results are usually grouped by relevance to bring the most likely
 <a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
 </p>
 
+<a name="prospectortips"></a>
+<h2 class="helpSubhead">Searching and Borrowing from Prospector</h2>
 
+<h3>Multiple Words</h3>
+<p>When searching multiple words the system will automatically supply the Boolean &quot;and&quot; operator between each word; multiple words entered for the search will all occur somewhere in the retrieved records though not necessarily in the order entered. Both examples on the right will retrieve the same results.</p>
+
+<div class="helpExample">
+<h4>Examples</h4>
+<p>Using multiple words:<br>
+<a href="/search/X?SEARCH=university+science+department">university science department</a><br>
+<a href="/search/X?SEARCH=university+and+science+and+department">university and science and department</a>
+</p>
+</div>
+
+<h3>Phrase Searches</h3>
+<p>Search for complete phrases by enclosing them in quotation marks. Words enclosed in double quotes will appear together in all results exactly as typed.</p>
+
+<div class="helpExample">
+<h4>Examples</h4>
+<p>A phrase Search:<br>
+<a href="/search/X?SEARCH=%22university+science+department%22">&quot;university science department&quot;</a>
+</p>
+</div>
+
+<h3>Wildcards</h3>
+<!--<p><strong>*</strong>&nbsp;&nbsp;&nbsp;The asterisk ('*') matches up to five non-space characters, starting at the specified position in the word. For example, &quot;inter*&quot; will match &quot;internal&quot; and &quot;internet&quot;, but will not match &quot;international&quot;. The '*' wildcard may only appear after at least two characters.</p>
+<p>The '*' wildcard may also be embedded in a search string. For example, &quot;colo*r&quot; would match both &quot;color&quot; and &quot;colour&quot;.</p> -->
+<p><strong>*</strong>&nbsp;&nbsp;&nbsp;Matches any number of non-space characters, starting at the specified position in the word. For example, &quot;comput*&quot; will match all words that begin with &quot;comput&quot; (e.g., &quot;computer&quot;, &quot;computation&quot;, etc.).<br>The '*' wildcard may also be embedded in a search string.</p>
+<p><strong>?</strong>&nbsp;&nbsp;&nbsp;You may use a question mark ('?') to replace a single character anywhere within a word.</p>
+
+<div class="helpExample">
+<h4>Examples</h4>
+<p>* Wildcard:<br>
+<a href="/search/X?SEARCH=environment*+polic*">environment* polic*</a><br>
+<a href="/search/X?SEARCH=comp*">comp*</a>
+</p>
+<p>? Wildcard:</strong><br>
+<a href="/search/X?SEARCH=wom%3Fn">wom?n</a>
+</p>
+</div>
+
+<h3>Boolean Operators</h3>
+<p>Use AND or OR to specify multiple words in any field, any order. Use AND NOT to exclude words. Select the operator you wish to use from the selection list on the Advanced Search form.</p>
+
+<div class="helpExample">
+<h4>Examples</h4>
+<p>Using Boolean operators:<br>
+<a href="/search/X?SEARCH=stocks+and+bonds">stocks and bonds</a><br>
+<a href="/search/X?SEARCH=stocks+or+bonds">stocks or bonds</a><br>
+<a href="/search/X?SEARCH=stocks+and+not+bonds">stocks and not bonds</a>
+</p>
+</div>
+
+<h3>Field Limits</h3>
+<p>Field limits may be specified by selecting a field limit from the selection list. These limits appear before the word or phrase to be searched. A field limit causes the system to search only the specified field for the specified word(s).</p>
+<h4>Field Limits and their meanings:</h4>
+<ul>
+    <li>Author: Search only author fields</li>
+    <li>Title: Search only title fields</li>
+    <li>Subject: Search only subject fields</li>
+    <li>Note: Search only note fields</li>
+    <li>Subject: Search only subject fields</li>
+</ul>
+
+<h3>Grouping</h3>
+<p>Keyword search results are usually grouped by relevance to bring the most likely titles to the top of the list. Each group represents a similar level of relevance and results are sorted within the group by date or title. To get an ungrouped result set, use boolean operators to form a complex query.
+</p>
+
+<p><img src="/screens/relevance5.gif" alt="Most relevant">&nbsp;Most relevant titles&nbsp;</p>
+<p><img src="/screens/relevance4.gif" alt="Highly relevant">&nbsp;Highly relevant titles&nbsp;</p>
+<p><img src="/screens/relevance3.gif" alt="Very relevant">&nbsp;Very relevant titles&nbsp;</p>
+<p><img src="/screens/relevance2.gif" alt="Relevant">&nbsp;Relevant titles&nbsp;</p>
+<p><img src="/screens/relevance1.gif" alt="Other relevant">&nbsp;Other relevant titles&nbsp;</p>
+
+
+<p class="actionButtonArea">
+<a href="#content"><span class="button"><img src="/screens/ico_up.gif" alt=""><span class="buttonText">Back to top</span></span></a>
+</p>
 
 
 </div>
