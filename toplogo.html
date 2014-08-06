@@ -33,8 +33,22 @@ $(document).ready(function () {
     //adds prospector link after Another search on navRow
     //$("#anotherSearch").after('<a href="http://encore.coalliance.org/iii/encore/search/C__S" + keywords + "__Orightresult__U?lang=eng&suite=def""><span class="button"><img alt="" src="/screens/ProspectorButtonForMOBIUS.png" cursor="pointer" display="block" width="82.5px" height="37.5px";></span></a>');
     //$("#anotherSearch").after('<a href="' + prospetorUrl + '"><span class="button"><img alt="" src="/screens/prospectorfavicon.ico"><span class="buttonText">Search Prospector</span></span></a>');
-    var prospectorUrl = 'http://encore.coalliance.org/iii/encore/search/C__S' + $('#searcharg').val() + '__Orightresult__U?lang=eng';
-    $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrl + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
+    var prospectorUrl = 'http://encore.coalliance.org/iii/encore/search/C__S' + $('#searcharg').val() + '__Orightresult__U?lang=eng';  
+    $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrl + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>'); 
+    $(".bibSearchHistory").after('<a href="' + prospectorUrl + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
+    
+    var prospectorUrlTitle = 'http://encore.coalliance.org/iii/encore/search/C__St%3A%20(' + $('#searcharg').val() + ')__Orightresult__U?lang=eng';
+    if ($('#searchtype:contains("Title")').length) {
+        $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrlTitle + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
+    };
+    var prospectorUrlAuthur = 'http://encore.coalliance.org/iii/encore/search/C__Sa%3A%20(' + $('#searcharg').val() + ')__Orightresult__U?lang=eng';
+    if ($('#searchtype:contains("Authur")').length) {
+        $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrlAuthur + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
+    };
+    var prospectorUrlSubject = 'http://encore.coalliance.org/iii/encore/search/C__Sd%3A%20(' + $('#searcharg').val() + ')__Orightresult__U?lang=eng';
+    if ($('#searchtype:contains("Subject")').length) {
+        $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrlSubject + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
+    };
 });
 </script>
 
