@@ -35,16 +35,19 @@ $(document).ready(function () {
     //$("#anotherSearch").after('<a href="' + prospetorUrl + '"><span class="button"><img alt="" src="/screens/prospectorfavicon.ico"><span class="buttonText">Search Prospector</span></span></a>');
     var prospectorUrl = 'http://encore.coalliance.org/iii/encore/search/C__S' + $('#searcharg').val() + '__Orightresult__U?lang=eng';  
     $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrl + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>'); 
+    //creates button on individual record page but only passes search variable 
     $(".bibSearchHistory").after('<a href="' + prospectorUrl + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
-    
+    //button for title search
     var prospectorUrlTitle = 'http://encore.coalliance.org/iii/encore/search/C__St%3A%20(' + $('#searcharg').val() + ')__Orightresult__U?lang=eng';
     if ($('#searchtype:contains("Title")').length) {
         $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrlTitle + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
     };
+    //button for authur search
     var prospectorUrlAuthur = 'http://encore.coalliance.org/iii/encore/search/C__Sa%3A%20(' + $('#searcharg').val() + ')__Orightresult__U?lang=eng';
     if ($('#searchtype:contains("Authur")').length) {
         $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrlAuthur + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
     };
+    //button for subject search
     var prospectorUrlSubject = 'http://encore.coalliance.org/iii/encore/search/C__Sd%3A%20(' + $('#searcharg').val() + ')__Orightresult__U?lang=eng';
     if ($('#searchtype:contains("Subject")').length) {
         $(".browseScreen .browseSearchtool").after('<a href="' + prospectorUrlSubject + '"><img alt="" src="/screens/ProspectorButton4MOBIUS_new.png" class="prospectorButton"></a><a href="http://searchmobius.org/help#prospectortips"><span class="button"><span class="prospectorButtonText">Learn More</span></span></a>');
