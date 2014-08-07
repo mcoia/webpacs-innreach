@@ -162,12 +162,10 @@ a:hover  { color: #0096A7; }
 }
 
 #newMemberMessage {
-    margin-left:1em;
-    font-size:1.125em;
-}
-
-#newMemberMessage a {
-    font-weight:bold;
+    font-size: 1.125em;
+    width: 50em;
+    text-align: center;
+    margin: auto;
 }
 
 .newMemberLogo {   
@@ -1040,8 +1038,11 @@ th.patFuncTitle,tr.patFuncTitle{ background:#FFFFFF url('tile_header.jpg') repea
 
 .patTop  { float:left; background:#FFFFFF; display:inline; margin:20px; width:350px; }
 
+#prospectorWrap {
+    margin: .5em auto;
+    text-align: center;
+}
 .prospectorButton  { 
-    margin: .5em auto auto 5em;
     border: 1px solid black;
     border-radius: 8px;
     box-shadow: 2px 2px 3px grey;
