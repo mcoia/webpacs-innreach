@@ -1,13 +1,14 @@
 $(document).ready(function () {
-	$(window).load(function() {
+
 
 //adds prospector button to scrhelp index pages
 		function updateProspectorButtonIndex() {
 			var indexChar = searchhelpIndex.slice(-1);	//gets index from variable on searchhelp_ pages
 			searchIndexVal = $("#SEARCH").val(); //gets search text
 
-				if(indexChar.match(/t|a|d/)) {
-					prospectorArgIndex = indexChar + ":(" + searchIndexVal + ")"; //creates url for t/a/d indexes
+				if((indexChar.match(/t|a|d/) || searchIndexVal.length > 0)) {
+					indexVar = indexChar.replace(/Y/g, ""); //removes y on keyword search
+					prospectorArgIndex = indexVar + ":(" + searchIndexVal + ")"; //creates url for t/a/d indexes
 				}
 				else {
 					prospectorArgIndex = searchIndexVal; //creates url for keyword and other indexes
@@ -26,5 +27,5 @@ prospectorButton = "<div id='prospectorWrapAdv'><a id='prospectorLink' href=''><
 			updateProspectorButtonIndex(); // Just set the href initially
 		}
 
-	})
+
 });
