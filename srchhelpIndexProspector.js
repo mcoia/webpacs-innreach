@@ -3,7 +3,7 @@ $(document).ready(function () {
 
 //adds prospector button to scrhelp index pages
 		function updateProspectorButtonIndex() {
-			var indexChar = searchhelpIndex.slice(-1);	
+			var indexChar = searchhelpIndex.slice(-1);	//gets index from variable on searchhelp_ pages
 			searchIndexVal = $("#SEARCH").val(); //gets search text
 
 				if(indexChar.match(/t|a|d/)) {
