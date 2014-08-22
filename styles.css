@@ -1042,6 +1042,10 @@ th.patFuncTitle,tr.patFuncTitle{ background:#FFFFFF url('tile_header.jpg') repea
     margin: .5em auto;
     text-align: center;
 }
+#prospectorWrapAdv {
+    margin: .5em auto;
+    text-align: left;
+}
 .prospectorButton  { 
     border: 1px solid black;
     border-radius: 8px;
