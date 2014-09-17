@@ -69,7 +69,7 @@
             $(".bibSearch").after(prospectorButton); 
             title = $(".bibInfoLabel:contains('Title')").next().text();
             // keep stuff before the slash, drop non-alphanumeric
-            tidyTitle = title.split("/", 1).join().replace(/[^a-z0-9]/gmi, " ").replace(/\s+/g, " ").trim(); 
+            tidyTitle = title.split("/", 1).join().replace(/\((.*?)\)/g, " ").replace(/\[(.*?)\]/g, " ").replace(/^[.\X]*$/gmi, " ").replace(/\s+/g, " ").trim(); 
 
             $("#prospectorLink").attr("href", prospectorUrl + '"' + tidyTitle + '"');
         }
