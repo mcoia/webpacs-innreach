@@ -166,7 +166,7 @@ background-color: lightpink;
 
 #newMemberMessage {
     font-size: 1.125em;
-    width: 50em;
+    width: 100%;
     text-align: center;
     margin: auto;
 }
