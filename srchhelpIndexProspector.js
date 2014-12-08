@@ -18,7 +18,7 @@ $(document).ready(function () {
 
 prospectorUrl = "http://encore.coalliance.org/iii/encore/search/C__S";
 
-prospectorButton = "<div id='prospectorWrapAdv'><a id='prospectorLink' href=''><img alt='search in prospector' src='/screens/ProspectorButton4MOBIUS_new.png' class='prospectorButton'></a><a href='http://searchmobius.org/help#prospectortips'><span class='button prospectorButtonText'>Learn More</span></a></div>";
+prospectorButton = "<div id='prospectorWrapAdv'><a id='prospectorLink' href=''><img alt='search in prospector' src='/screens/ProspectorButton4MOBIUS.png' class='prospectorButton'></a><a href='http://searchmobius.org/help#prospectortips'><span class='button prospectorButtonText'>Learn More</span></a></div>";
 
 		if ($("#SEARCH").val() > ""){ //for individual search index pages
 			$(".pageHeader").after(prospectorButton); // drop a button that doesn't go anywhere
