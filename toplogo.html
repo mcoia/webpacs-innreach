@@ -74,7 +74,9 @@
             $("#prospectorLink").attr("href", prospectorUrl + tidyTitle);
         }
 
-        
+        $('#prospectorLink').on('click', function() {
+          ga('send', 'event', 'prospectorLink', 'click');
+        });
 
     });
 </script>
