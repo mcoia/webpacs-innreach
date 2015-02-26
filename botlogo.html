@@ -567,5 +567,9 @@ Washington University
 $('#emoLink').on('click', function() {
   ga('send', 'event', 'emoLink', 'click');
 });
+$("#searcharg").on('submit', function() {
+  ga('send', 'event', $("#searcharg").val(), 'submit', 'searchTerm');
+});
+
 </script>
 <!-- end botlogo.html file -->
