@@ -19,7 +19,7 @@ function init() {
 	highlightRows();
 	stripeSubjectTables();
 	stripeBrowseTables();
-	
+	hideSynExportPage();
 };
 
 /* for Mozilla/Opera9 */
@@ -275,3 +275,14 @@ function getElemByClass(oElm, strTagName, strClassName){
     }
     return (arrReturnElements)
 }
+
+function hideSynExportPage(){
+  if(window.location.href.indexOf("++export") > -1) {
+    var hideSyn = document.getElementsByClassName('hideSyn'), i;
+
+    for (var i = 0; i < hideSyn.length; i ++) {
+        hideSyn[i].style.display = 'none';
+    }
+  }
+}
+

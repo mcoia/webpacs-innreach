@@ -8,78 +8,34 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="http://www.google.com/jsapi"></script>
 
-<script type="text/javascript" id="script">
-google.load('visualization', '1');
 
-var tableid = 764441;
-var map;
-var lastWindow;
+<script type="text/javascript">
+  function initialize() {
+    var map = new google.maps.Map(document.getElementById('googft-mapCanvas'), {
+      center: new google.maps.LatLng(38.5, -92.8),
+      zoom: 7,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
 
-function initialize() {
-  map = new google.maps.Map(document.getElementById('map_canvas'), {
-    center: new google.maps.LatLng(38.5, -92.25),
-    zoom: 7,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  });
-
-  setData();
-}
-
-function setData() {
-  // Create a Chart Tools query to send to Fusion Tables
-  var query = new google.visualization.Query(
-      'http://www.google.com/fusiontables/gvizdata?tq=' +
-      encodeURIComponent("SELECT name, coordinates, description, cluster FROM 764441")
-  );
-  query.send(getData);
-}
-
-// Define callback function, this is called when the results are returned
-function getData(response) {
-
-  // For more information on the response object, see the documentation
-  // http://code.google.com/apis/visualization/documentation/reference.html#QueryResponse
-  var numRows = response.getDataTable().getNumberOfRows();
-
-  for (i = 0; i < numRows; i++) {
-    var string_coordinates = response.getDataTable().getValue(i, 1);
-    var split_coordinates = string_coordinates.split(",");
-    var lat = split_coordinates[0];
-    var lng = split_coordinates[1];
-    var coordinate = new google.maps.LatLng(lat, lng);
-
-    // Get row data for the info window
-    var name = response.getDataTable().getValue(i, 0);
-    var description = response.getDataTable().getValue(i, 2);
-    var cluster = response.getDataTable().getValue(i, 3);
-
-    createMarker(name, description, cluster, coordinate);
+    layer = new google.maps.FusionTablesLayer({
+      map: map,
+      heatmap: { enabled: false },
+      query: {
+        select: "col5",
+        from: "1FQXaWyVYwsffuiqqs1-k08fzYd1g1hH39vxocA",
+        where: ""
+      },
+      options: {
+        styleId: 2,
+        templateId: 2
+      }
+    });
   }
-}
 
-function createMarker(name, description, cluster, coordinate) {
-  // Create the marker
-  var marker = new google.maps.Marker({
-    map: map, 
-    position: coordinate,
-    icon: new google.maps.MarkerImage("/screens/" + cluster + ".png")
-  });
-
-  google.maps.event.addListener(marker, 'click', function(event) {
-    if (lastWindow) {
-      lastWindow.close();
-    } else {
-      lastWindow = new google.maps.InfoWindow();
-    }
-
-    // Set the position and contents of the info window, and open the window
-    lastWindow.setPosition(coordinate);
-    lastWindow.setContent(name + "<br />" + description);
-    lastWindow.open(map);
-  });
-}
-
+  google.maps.event.addDomListener(window, 'load', initialize);
 </script>
+
+
 <noscript>
 <meta http-equiv="Refresh" content="600;URL=/" />
 </noscript>
@@ -89,10 +45,8 @@ function createMarker(name, description, cluster, coordinate) {
 <body onload="initialize()">
 <!--{toplogo}-->
 <!--{session}-->
-<div id="map_canvas"></div>
 
-
-
+<div id="googft-mapCanvas"></div>
 <div id="mapTable">
 
 <table>
@@ -139,12 +93,13 @@ function createMarker(name, description, cluster, coordinate) {
 </td>
 <td>
 <ul>
+<li><a href="http://bridges.searchmobius.org/search~S11">Concordia Seminary</a></li>  
 <li><a href="http://bridges.searchmobius.org/search~S1">Covenant Theological Seminary</a></li>
 <li><a href="http://bridges.searchmobius.org/search~S2">Fontbonne University</a></li>
 <li><a href="http://bridges.searchmobius.org/search~S3">Harris-Stowe State University</a></li>
 <li><a href="http://bridges.searchmobius.org/search~S4">Kenrick-Glennon Seminary</a></li>
 <li><a href="http://bridges.searchmobius.org/search~S5">Lindenwood University</a></li>
-<li><a href="http://bridges.searchmobius.org/search~S6">Logan College of Chiropractic</a></li>
+<li><a href="http://bridges.searchmobius.org/search~S6">Logan University</a></li>
 <li><a href="http://bridges.searchmobius.org/search~S7">Maryville University</a></li>
 <li><a href="http://bridges.searchmobius.org/search~S8">Missouri Baptist University</a></li>
 <li><a href="http://bridges.searchmobius.org/search~S9">Webster University / Eden Theological Seminary</a></li>
@@ -191,6 +146,17 @@ function createMarker(name, description, cluster, coordinate) {
 
 </tr>
 
+<tr>
+<td class="cluster">
+<img src="/screens/goldfarb.png"><a href="http://www.barnesjewishcollege.edu/?id=5485&sid=1">Goldfarb</a>
+</td>
+<td>
+<ul>
+<li><a href="http://www.barnesjewishcollege.edu/?id=5485&sid=1">Goldfarb School of Nursing at Barnes-Jewish College</a></li>
+</ul>
+</td>
+
+</tr>
 
 <tr>
 <td class="cluster">
@@ -209,7 +175,8 @@ function createMarker(name, description, cluster, coordinate) {
 <li><a href="http://kansascity.searchmobius.org/search~S12/">Business & Technology</a></li>
 </ul>
 </li>
-<li><a href="http://kcencore.searchmobius.org">Midwestern Baptist Theological Seminary</a></li>
+<li><a href="http://kansascity.searchmobius.org/search~S7/">Midwestern Baptist Theological Seminary</a></li>
+<li><a href="http://www.park.edu/library/">Park University</a></li>
 <li><a href="http://kansascity.searchmobius.org/search~S8/">Rockhurst University</a></li>
 <li><a href="http://kansascity.searchmobius.org/search~S9/">Saint Paul School of Theology</a></li>
 <li><a href="http://kansascity.searchmobius.org/search~S6/">William Jewell College</a></li>
@@ -227,7 +194,7 @@ function createMarker(name, description, cluster, coordinate) {
 <li><a href="http://lance.searchmobius.org/search~S3/">A.T. Still University - Missouri</a></li>
 <li><a href="http://lance.searchmobius.org/search~S1/">Culver-Stockton College</a></li>
 <li><a href="http://lance.searchmobius.org/search~S2/">Hannibal-LaGrange University</a></li>
-<li><a href="http://lance.searchmobius.org/search~S4/">Linn State Technical College</a></li>
+<li><a href="http://lance.searchmobius.org/search~S4/">State Technical College of Missouri</a></li>
 <li><a href="http://lance.searchmobius.org/search~S5/">Moberly Area Community College</a></li>
 <li><a href="http://lance.searchmobius.org/search~S6/">Truman State University</a></li>
 </ul>
@@ -266,17 +233,6 @@ University of Missouri Archives and WHMC</a></li>
 
 </tr>
 
-<tr>
-<td class="cluster">
-<img src="/screens/poplarbluff.png"><a href="http://poplarbluff.org/">Poplar Bluff Public Library</a>
-</td>
-<td>
-<ul>
-<li><a href="http://poplarbluff.org/">Poplar Bluff Public Library</a></li>
-</ul>
-</td>
-
-</tr>
 
 <tr>
 <td class="cluster">
@@ -288,6 +244,18 @@ University of Missouri Archives and WHMC</a></li>
 <li><a href="http://quest.searchmobius.org/search~S3">Missouri Valley College</a></li>
 <li><a href="http://quest.searchmobius.org/search~S4">State Fair Community College</a></li>
 <li><a href="http://quest.searchmobius.org/search~S2">University of Central Missouri</a></li>
+</ul>
+</td>
+
+</tr>
+
+<tr>
+<td class="cluster">
+<img src="/screens/slam.png"><a href="http://www.slam.org/Education/library.php">SLAM</a>
+</td>
+<td>
+<ul>
+<li><a href="http://www.slam.org/Education/library.php">Saint Louis Art Museum</a></li>
 </ul>
 </td>
 
@@ -326,11 +294,11 @@ University of Missouri Archives and WHMC</a></li>
 </td>
 <td>
 <ul>
-<li><a href="http://swan.searchmobius.org/search~S10">Assemblies of God Theological Seminary</a></li>
 <li><a href="http://swan.searchmobius.org/search~S9">Baptist Bible College</a></li>
 <li><a href="http://swan.searchmobius.org/search~S8">Cottey College</a></li>
 <li><a href="http://swan.searchmobius.org/search~S1/">Crowder College</a></li>
 <li><a href="http://swan.searchmobius.org/search~S2/">Drury University</a></li>
+<li><a href="http://swan.searchmobius.org/search~S10/">Evangel University</a></li>
 <li><a href="http://swan.searchmobius.org/search~S12/">Forest Institute of Professional Psychology</a></li>
 <li><a href="http://swan.searchmobius.org/search~S3/">Missouri Southern State University</a></li>
 <li><a href="http://swan.searchmobius.org/search~S6/">Missouri State University</a></li>
@@ -358,6 +326,18 @@ University of Missouri Archives and WHMC</a></li>
 
 <tr>
 <td class="cluster">
+<img src="/screens/tccl.png"><a href="http://www.tulsalibrary.org/">TCCL</a>
+</td>
+<td>
+<ul>
+<li><a href="http://www.tulsalibrary.org/">Tulsa City-County Library</a></li>
+</ul>
+</td>
+
+</tr>
+
+<tr>
+<td class="cluster">
 <img src="/screens/washu.png"><a href="http://catalog.wustl.edu">Washington University</a>
 </td>
 <td>
@@ -369,7 +349,11 @@ University of Missouri Archives and WHMC</a></li>
 </tr>
 
 </table>
+
+
+
 </div>
+
 
 <!--{botlogo}-->
 
