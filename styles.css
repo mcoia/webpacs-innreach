@@ -151,7 +151,18 @@ a:hover  { color: #0096A7; }
 
 #accessibleForm .advancedSearch fieldset fieldset { border:none; padding:0; text-align:left; margin:0 0 6px 0; }
 
+#alertMessage {
+margin: auto;
+font-size: 1.2em;
+color: black;
+text-align: center;
+padding: 1em;
+background-color: lightpink;
+}
 
+#alertMessage a {
+    font-weight:bold;
+}
 
 #newMemberMessage {
     font-size: 1.125em;
