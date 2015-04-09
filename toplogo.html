@@ -5,11 +5,11 @@
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script type="text/javascript" src="/screens/jquery.cookie.js"></script>
 <script type="text/javascript" src="/screens/domainredirect.js"></script>
+<script type="text/javascript" src="/screens/alertMessage.js"></script>
 <script type="text/javascript" src="/screens/srchhelpIndexProspector.js"></script>
 <script src="/screens/menu-collapsed.js" type="text/javascript"></script>
 <!--<script type="text/javascript" src='/screens/sms.js'> </script> -->
 <script type="text/javascript">
-    
 
     function updateProspectorButton() {
         searchType = $("#searchtype option:selected").val();
@@ -97,7 +97,7 @@ if (document.body){document.body.className = "bodybg";}
 <a href="/search/" tabindex="10"><img src="/screens/mobius.png" alt="MOBIUS"></a>
 </div>
 
-<!--<div id="alertMessage">Keyword searches are returning incomplete results at this time.  Please use an index search, such as title or author, for a more complete search.</div>-->
+<div id="alertMessage"></div>
 
 <!--{patronrecord}-->
 <!--{session}-->
