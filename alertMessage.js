@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+/*$( document ).ready(function() {
 var now = new Date();
 
 var sunday = new Date("April 12, 2015");
@@ -13,4 +13,4 @@ else if (now > sunday)
 {
   $('#alertMessage').hide();
 }  
-});
+});*/
