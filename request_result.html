@@ -1,8 +1,10 @@
 <!--{toplogo}-->
 <script type="text/javascript">
-if($( "div.requestResult:contains('Sorry, no copies available for requests.')" ).length){
+$(document).ready(function () {
+if($( "div.requestResult:contains('Sorry,')" ).length){
  $(".noreauth").hide(); 
 }
+  });
 </script>
 <div class="pageContentInner">
 <!--{session}-->
