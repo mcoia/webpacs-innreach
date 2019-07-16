@@ -1199,6 +1199,13 @@ div.rssChannelEntries { border:none; background:#FFFFFF; }
 
 .submitHidden { position:absolute; left:-999px; top:-999px; }
 
+.surveyButton  { 
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px grey;
+    cursor: pointer;
+}
+
 /* Staff view */
 
 .pageContent > table em { margin-left:15px; }

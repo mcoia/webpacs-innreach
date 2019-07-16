@@ -1,0 +1,34 @@
+#banner {
+	height: 150px;
+	border-bottom: 2px solid;
+    background: linear-gradient(#0096A7, #ffffff, #ffffff, #36648B);
+	}
+	
+#bannerleft {
+	float: left;
+	/*width: 185px;*/
+	/*height: 176px;*/
+	margin-top: 35px;
+	margin-left: 10px;
+	cursor: pointer;
+	}
+
+#bannerright {
+	float: right;
+	/*width: 185px;*/
+	/*height: 176px;*/
+	margin-top: 42px;
+	margin-right: 10px;
+            
+}	
+
+.encoreLogo {
+    display: none;
+	}
+
+.surveyButton  { 
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px grey;
+    cursor: pointer;
+    }

@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     $(document).ready(function () {
     	$("span:contains(WebPAC PRO)").hide(); //Hide the iii footer
-
+		
     	$('#searchtype').change(function(){
         	$("#exampleText").load("screens/" + this.value + ".inc");
     	});
@@ -61,7 +61,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $("#clusterHelpInst").show();
             $("#clusterHelpCluster").hide();
         });
-
+        
+			
         prospectorButton = "<div id='prospectorWrap'><a id='prospectorLink' href=''><img alt='search in prospector' src='/screens/ProspectorButton4MOBIUS.png' class='prospectorButton'></a><a href='http://classic.searchmobius.org/help#prospectortips'><span class='button prospectorButtonText'>Learn More</span></a></div>";
         
         if($(".browseScreen")[0]) {
@@ -86,6 +87,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $("#prospectorLink").attr("href", prospectorUrl + tidyTitle);
         }
     });
+	
+
 </script>
 
 <script type="text/javascript">
